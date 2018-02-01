@@ -1,0 +1,31 @@
+//@version=3
+//@Author:
+
+//This indicator was made to allow three average moving averages and one
+//exponencial moving average to be displayed without needing to use up 4 charting indicators individually
+
+study(title="3 Simple Moving Averages and EMA", shorttitle="3SMA & EMA", overlay=true)
+
+// Checkbox's for the other 2 MA's
+a = input(true, title="Enable 2nd MA")
+b = input(true, title="Enable 3rd MA")
+
+len = input(50, minval=1, title="Length")
+len2 = input(100, minval=1, title="Length2")
+len3 = input(200, minval=1, title="Length3")
+len4= input(200, minval=1, title="Length4")
+
+src = input(close, title="Source")
+src2 = input(close, title="Source2")
+src3 = input(close, title="Source3")
+src4 = input(close, title="Source4")
+
+out = sma(src, len)
+out2 = sma(src2, len2)
+out3 = sma(src3, len3)
+out4 = ema(src3, len3)
+
+plot(out, title="MA", color=red)
+plot(a and out2 ? out2: na, title="MA2", color=green)
+plot(b and out3 ? out3: na, title="MA3", color=blue)
+plot(out4, title="EMA", color=red)

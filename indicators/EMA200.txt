@@ -1,0 +1,14 @@
+//@version=3
+//@Author:
+
+//This indicator is EMA 200 default 
+
+study(title="Exponential Moving Averages 200", shorttitle="EMA", overlay=true)
+
+len = input(200, minval=1, title="Length")
+
+src = input(close, title="Source")
+
+out = ema(src, len)
+
+plot(out, title="EMA", color=red)

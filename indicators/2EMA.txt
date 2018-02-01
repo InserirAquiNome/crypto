@@ -1,0 +1,23 @@
+//@version=3
+//@Author:
+
+//This indicator was made to allow double exponential moving averages to be displayed without needing to use up 2 charting indicators individually
+
+study(title="2 Exponential Moving Averages", shorttitle="2EMA", overlay=true)
+
+// Checkbox's for the other 2 MA's
+a = input(true, title="Enable 2nd MA")
+b = input(true, title="Enable 3rd MA")
+
+len = input(50, minval=1, title="Length")
+len2 = input(200, minval=1, title="Length2")
+
+src = input(close, title="Source")
+src2 = input(close, title="Source2")
+
+out = ema(src, len)
+out2 = ema(src2, len2)
+
+plot(out, title="EMA", color=red)
+plot(a and out2 ? out2: na, title="EMA2", color=green)
+

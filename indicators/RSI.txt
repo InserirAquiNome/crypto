@@ -1,0 +1,16 @@
+//@version=3
+//@Author:
+
+study(title="Relative Strength Index", shorttitle="RSI")
+
+src = close, len = input(14, minval=1, title="Length")
+
+up = rma(max(change(src), 0), len)
+down = rma(-min(change(src), 0), len)
+rsi = down == 0 ? 100 : up == 0 ? 0 : 100 - (100 / (1 + up / down))
+
+plot(rsi, color=purple)
+band1 = hline(70)
+band2 = hline(50,color=teal)
+band0 = hline(30)
+fill(band1, band0, color=purple, transp=90)
