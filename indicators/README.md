@@ -1,6 +1,6 @@
 # Indicators
 
-Indicators to tradingview!
+Indicators for tradingview!
 
 On tradingview charts click on pine editor at the bottom, paste the code and save it.
 
