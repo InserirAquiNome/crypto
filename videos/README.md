@@ -1,4 +1,4 @@
-# Videos tirados do youtube e outras fontes
+# Videos from youtube and other sources
 
 
 ## Youtube channels/videos:
