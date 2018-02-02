@@ -31,11 +31,26 @@ There is some simple rules and steps,  on bitcoin that most people don't realize
 
 More on wallets and security 
 
-    https://en.bitcoin.it/wiki/Category:Security
+https://en.bitcoin.it/wiki/Category:Security
 
-    https://en.bitcoin.it/wiki/Securing_your_wallet
+https://en.bitcoin.it/wiki/Securing_your_wallet
 
-    https://en.bitcoin.it/wiki/Cold_storage
+https://en.bitcoin.it/wiki/Cold_storage
+
+
+More about bitcoin:
+
+Andreas M. Antonopoulos Youtube https://www.youtube.com/channel/UCJWCJCWOxBYSi5DhCieLOLQ
+
+Follow Andreas on Twitter: https://twitter.com/aantonop 
+
+Follow Andreas on Facebook: https://facebook.com/AndreasMAntonopoulos 
+
+Mastering Bitcoin The definitive technical guide to Bitcoin and Open Blockchains: https://BitcoinBook.info 
+
+The Internet of Money Vol 1 & 2, A collection of Andreas' talks explaining why bitcoin and open blockchains matter, for a general audience: https://TheInternetOfMoney.info
+
+
 
 ## Support my work
 
