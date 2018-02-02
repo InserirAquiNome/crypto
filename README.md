@@ -20,9 +20,9 @@ There is some simple rules and steps,  on bitcoin that most people don't realize
 
  * Follow this two rules
  
-  1. Ignore the FUD
+   1. Ignore the FUD
   
-  2. HODL on every correction and buy on corrections/or dips
+   2. HODL on every correction and buy on corrections/or dips
   
    And you most likely will reach the top of the S curve:
  
