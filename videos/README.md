@@ -12,3 +12,11 @@ Simplicity: A New Language for Blockchains - BPASE '18 https://www.youtube.com/w
 Bulletproofs - BPASE '18 https://www.youtube.com/watch?v=gZjDKgR4dw8
 
 Hardening Lightning - BPASE '18 https://www.youtube.com/watch?v=V3f4yYVCxpk
+
+MimbleWimble with Andrew Poelstra https://www.youtube.com/watch?v=aHTRlbCaUyM
+
+Mimblewimble and Scriptless Scripts | Andrew Poelstra (Blockstream) | RWC 2018 https://www.youtube.com/watch?v=ovCBT1gyk9c
+
+TumbleBit by Ethan Heilman and Leen AlShenibr (Scaling Bitcoin Milan 2016) https://www.youtube.com/watch?v=iGVSnxz1mn8
+
+Transmission 36 - Joinmarkets, Coinjoin, Bitcoin Mixing, Bitcoin Fungblity https://www.youtube.com/watch?v=0_4Tv8iEsOo
