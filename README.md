@@ -14,6 +14,7 @@ There is some simple rules on bitcoin that most people don't realize:
 
   * Put every bitcoin in cold storage. Use a TREZOR wallet https://trezor.io/ for safety. 
 
+
    There is also cold storage wallets solutions in software like Armory wallet but this one needs two different computers https://github.com/goatpig/BitcoinArmory/releases/ 
 
 ... One cold storage wallet in software that needs only one machine is https://en.bitcoin.it/wiki/BitKey 
