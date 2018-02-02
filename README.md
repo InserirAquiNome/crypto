@@ -55,4 +55,3 @@ The Internet of Money Vol 1 & 2, A collection of Andreas' talks explaining why b
 ## Support my work
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
-~                                                                                                                   
