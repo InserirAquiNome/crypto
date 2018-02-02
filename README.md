@@ -29,7 +29,7 @@ There is some simple rules and steps,  on bitcoin that most people don't realize
  
 ![alt text](https://i.imgur.com/CLcf1Pm.jpg "Logo Title Text 1")
 
-More on wallets and security 
+### More on wallets and security 
 
 https://en.bitcoin.it/wiki/Category:Security
 
@@ -38,7 +38,7 @@ https://en.bitcoin.it/wiki/Securing_your_wallet
 https://en.bitcoin.it/wiki/Cold_storage
 
 
-More about bitcoin:
+### More about bitcoin:
 
 Andreas M. Antonopoulos Youtube https://www.youtube.com/channel/UCJWCJCWOxBYSi5DhCieLOLQ
 
