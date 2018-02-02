@@ -37,6 +37,11 @@ https://en.bitcoin.it/wiki/Securing_your_wallet
 
 https://en.bitcoin.it/wiki/Cold_storage
 
+https://en.bitcoin.it/wiki/Private_key
+
+https://en.bitcoin.it/wiki/Deterministic_wallet
+
+#### Note: If you loose your private key or your seed key, you can't sign any transactions and your bitcoins are lost forever.  Managing private keys in bitcoin is a problem because some people loose them. And there is only 21M bitcoins available, you can't afford to loose something so scarce. 
 
 ### More about bitcoin:
 
