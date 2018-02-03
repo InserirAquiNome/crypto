@@ -56,7 +56,6 @@ Mastering Bitcoin The definitive technical guide to Bitcoin and Open Blockchains
 The Internet of Money Vol 1 & 2, A collection of Andreas' talks explaining why bitcoin and open blockchains matter, for a general audience: https://TheInternetOfMoney.info
 
 
-
 ## Support my work
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
