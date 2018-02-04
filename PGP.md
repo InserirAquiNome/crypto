@@ -188,6 +188,35 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
    ```
 
 
+I made a simple bash script that check the integrity and the authenticity at
+once, called verify.sh
+
+```bash
+#!/bin/bash
+
+release_sig=$1
+
+if [[ -z $release_sig ]] ; then
+  printf "\n\nUsage: ./verify.sh release_sig\n"
+  exit 0
+fi
+
+gpg --verify-files $release_sig
+
+sha256sum --ignore-missing -c $release_sig
+```
+
+Is output is like this
+
+```
+$ ./verify.sh SHA256SUMS.asc 
+gpg: Signature made Sat 11 Nov 2017 13:52:22 WET using RSA key ID 36C2E964
+gpg: Good signature from "Wladimir J. van der Laan (Bitcoin Core binary release signing key) <laanwj@gmail.com>"
+bitcoin-0.15.1-x86_64-linux-gnu.tar.gz: OK
+sha256sum: WARNING: 20 lines are improperly formatted
+
+```
+
 ## Links:
 
 http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
