@@ -1,8 +1,6 @@
-# PGP
-
-## When downloading files from the internet is needed to check their integrity and authenticity 
+# PGP - When downloading files from the internet is needed to check their integrity and authenticity 
   
-### Integrity check
+## Integrity check
 
 A file downloaded from the internet could be different from the original one. In
 this way is needed to compare the file downloaded and the original one.
@@ -127,7 +125,7 @@ bitcoin-0.15.1-x86_64-linux-gnu.tar.gz: OK
 sha256sum: WARNING: 20 lines are improperly formatted
 ```
 
-### Authenticity check
+## Authenticity check
 
 **This tutorial is based on this work** 
 
@@ -189,7 +187,7 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
    ```
 
 
-### Links:
+## Links:
 
 http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
 
