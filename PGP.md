@@ -156,7 +156,7 @@ Accept all of the default options.
 
 5. You need to sign the person’s public key with your private key, to tell PGP that you “accept” the key. This contains a few steps on it’s own:
 
-   * List the keys in your keyring with
+ * List the keys in your keyring with
   
   `$ gpg --list-keys`
   
