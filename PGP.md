@@ -158,15 +158,15 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
 
    * List the keys in your keyring with
   
-  `$ gpg --list-keys`
+     `$ gpg --list-keys`
   
      The output will look like:
   
-  ```bash
-  ... 
-  pub   4096R/36C2E964 2015-06-24 [expires: 2019-02-14]
-  uid               Wladimir J. van der Laan (Bitcoin Core binary release signing key) <laanwj@gmail.com>
-  ```
+      ```bash
+       ... 
+       pub   4096R/36C2E964 2015-06-24 [expires: 2019-02-14]
+       uid               Wladimir J. van der Laan (Bitcoin Core binary release signing key) <laanwj@gmail.com>
+       ```
   * The “name” of their key is the part after “4096R/” in the line
   
   `pub    4096R/36C2E964 2015-06-24 [expires: 2019-02-14]`
