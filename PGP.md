@@ -139,7 +139,7 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
 
 2. Create your private key with
 
-`$ gpg --gen-key`
+   `$ gpg --gen-key`
   
 Accept all of the default options.
 
@@ -152,15 +152,15 @@ Accept all of the default options.
 
    `$ gpg --import laanwj.asc`
 
-    (change the filename to whatever is appropriate).
+   (change the filename to whatever is appropriate).
 
 5. You need to sign the person’s public key with your private key, to tell PGP that you “accept” the key. This contains a few steps on it’s own:
 
-  * List the keys in your keyring with
+   * List the keys in your keyring with
   
   `$ gpg --list-keys`
   
-  The output will look like:
+     The output will look like:
   
   ```bash
   ... 
