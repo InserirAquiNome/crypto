@@ -174,7 +174,8 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
   
       `$ gpg --sign-key 36C2E964`
 
-6. Now you can verify the signature of the file you downloaded. With TrueCrypt and it’s installer, this command was:
+6. Now you can verify the signature of the file you downloaded. With
+   bitcoin-client  and it’s installer, this command was:
 
    `$ gpg --verify SHA256SUMS.asc`
 
