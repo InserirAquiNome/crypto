@@ -197,3 +197,8 @@ https://futureboy.us/pgp.html
 https://bitzuma.com/posts/how-to-verify-an-electrum-download-on-windows/
 
 https://bitcointalk.org/index.php?topic=1836004.msg18341475#msg18341475
+
+
+## Support my work
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")

@@ -21,4 +21,11 @@ TumbleBit by Ethan Heilman and Leen AlShenibr (Scaling Bitcoin Milan 2016) https
 
 Transmission 36 - Joinmarkets, Coinjoin, Bitcoin Mixing, Bitcoin Fungblity https://www.youtube.com/watch?v=0_4Tv8iEsOo
 
-Bitcoin is such much more than this, but why it has value in a simple way  https://www.cnbc.com/2018/01/16/skeptics-say-bitcoin-has-no-value-heres-why-theyre-wrong.html
+Bitcoin is such much more than this, but why it has value in a simple way
+https://www.cnbc.com/2018/01/16/skeptics-say-bitcoin-has-no-value-heres-why-theyre-wrong.html
+
+
+## Support my work
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
+
