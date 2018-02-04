@@ -62,7 +62,12 @@ To subscribe them go to [more information about this list] (https://lists.linuxf
 
 5. Create a filter to when receiving email any email from an mailing list goes automatically to that folder. Like a filter based on mail *subject*.
 
+
+This is my Claws Mail 
+
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/clawsmail3.png "Logo Title Text 1")
+
+Like you can see I have to mail lists on it:   *bitcoin-dev* and *lightning-dev*
 
 ## Support my work
 
