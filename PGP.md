@@ -188,7 +188,7 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
    ```
 
 
-Links:
+### Links:
 
 http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
 
