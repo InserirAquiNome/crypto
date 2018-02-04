@@ -1,4 +1,5 @@
-# PGP & SHA256SUM - When downloading files from the internet is needed to check their integrity and authenticity 
+# PGP & SHA256SUM 
+# When downloading files from the internet is needed to check their integrity and authenticity 
   
 ## Integrity check
 
