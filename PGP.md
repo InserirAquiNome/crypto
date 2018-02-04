@@ -179,13 +179,13 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
 
   `$ gpg --verify SHA256SUMS.asc`
 
-which outputted:
+   which outputted:
 
-```bash
-$ gpg --verify SHA256SUMS.asc   
-gpg: Signature made Sat 11 Nov 2017 13:52:22 WET using RSA key ID 36C2E964
-gpg: Good signature from "Wladimir J. van der Laan (Bitcoin Core binary release signing key) <laanwj@gmail.com>"
-```
+   ```bash
+   $ gpg --verify SHA256SUMS.asc   
+   gpg: Signature made Sat 11 Nov 2017 13:52:22 WET using RSA key ID 36C2E964
+   gpg: Good signature from "Wladimir J. van der Laan (Bitcoin Core binary release signing key) <laanwj@gmail.com>"
+   ```
 
 
 Links:
@@ -193,3 +193,7 @@ Links:
 http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
 
 https://futureboy.us/pgp.html
+
+https://bitzuma.com/posts/how-to-verify-an-electrum-download-on-windows/
+
+https://bitcointalk.org/index.php?topic=1836004.msg18341475#msg18341475
