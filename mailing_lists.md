@@ -67,7 +67,7 @@ This is my Claws Mail
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/clawsmail3.png "Logo Title Text 1")
 
-Like you can see I have to mail lists on it:   *bitcoin-dev* and *lightning-dev*
+Like you can see I have two mail lists on it:   *bitcoin-dev* and *lightning-dev*
 
 ## Support my work
 
