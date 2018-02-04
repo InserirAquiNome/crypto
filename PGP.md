@@ -141,7 +141,7 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
 
    `$ gpg --gen-key`
   
-Accept all of the default options.
+   Accept all of the default options.
 
 3. Download the public key of the person/institution you want to verify. For
    bitcoin-client , their public key is available here.
@@ -156,7 +156,7 @@ Accept all of the default options.
 
 5. You need to sign the person’s public key with your private key, to tell PGP that you “accept” the key. This contains a few steps on it’s own:
 
- * List the keys in your keyring with
+  * List the keys in your keyring with
   
   `$ gpg --list-keys`
   
