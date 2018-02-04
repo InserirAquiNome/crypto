@@ -143,7 +143,7 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
    Accept all of the default options.
 
 3. Download the public key of the person/institution you want to verify. For
-   bitcoin-client , their public key is available here.
+   bitcoin-client , their public key is available here:
    
    https://bitcoin.org/en/full-node#other-linux-distributions
 
