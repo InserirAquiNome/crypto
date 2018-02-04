@@ -131,7 +131,7 @@ sha256sum: WARNING: 20 lines are improperly formatted
 
 **This tutorial is based on this work** 
 
-*source* http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
+*source:* http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
 
 
 If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
