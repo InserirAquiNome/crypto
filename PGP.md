@@ -189,7 +189,7 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
 
 
 I made a simple bash script that check the integrity and the authenticity at
-once, called verify.sh
+once. It's called verify.sh:
 
 ```bash
 #!/bin/bash
@@ -206,7 +206,7 @@ gpg --verify-files $release_sig
 sha256sum --ignore-missing -c $release_sig
 ```
 
-Is output is like this
+Is output is like this:
 
 ```
 $ ./verify.sh SHA256SUMS.asc 
