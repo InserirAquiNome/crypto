@@ -167,18 +167,17 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
        pub   4096R/36C2E964 2015-06-24 [expires: 2019-02-14]
        uid               Wladimir J. van der Laan (Bitcoin Core binary release signing key) <laanwj@gmail.com>
        ```
-  * The “name” of their key is the part after “4096R/” in the line
+    * The “name” of their key is the part after “4096R/” in the line
   
-  `pub    4096R/36C2E964 2015-06-24 [expires: 2019-02-14]`
+    `pub    4096R/36C2E964 2015-06-24 [expires: 2019-02-14]`
   
-  * Sign their public key with:
+    * Sign their public key with:
   
-  `$ gpg --sign-key 36C2E964`
+    `$ gpg --sign-key 36C2E964`
 
 6. Now you can verify the signature of the file you downloaded. With TrueCrypt and it’s installer, this command was:
 
 `$ gpg --verify SHA256SUMS.asc`
-
 
 which outputted:
 
@@ -189,7 +188,7 @@ gpg: Good signature from "Wladimir J. van der Laan (Bitcoin Core binary release 
 ```
 
 
-
 Links:
 http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
+
 https://futureboy.us/pgp.html
