@@ -65,7 +65,7 @@ $ sha256sum bitcoin-0.15.1-x86_64-linux-gnu.tar.gz
 I can see that they are identical! So the file integrity is checked and it's
 correct.
 
-Now when you have a txt file with the SHA256 sum and the name of the file on it
+Now when you have a txt file with the SHA256 sum and the name of the file on it,
 in this format:
 
 ```bash
