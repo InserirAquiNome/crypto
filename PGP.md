@@ -80,7 +80,7 @@ $ sha256sum -c bitcoin-0.15.1-x86_64-linux-gnu.tar.gz.sha256sum
 bitcoin-0.15.1-x86_64-linux-gnu.tar.gz: OK
 ```
 It automatically checks the SHA256 sum on that txt file with the SHA256 of the
-file. Of course the file was to be on that directory.
+file. Of course the file was to be on the current directory.
 
 When you get from the website something like 
 
