@@ -73,7 +73,7 @@ $ cat bitcoin-0.15.1-x86_64-linux-gnu.tar.gz.sha256sum
 387c2e12c67250892b0814f26a5a38f837ca8ab68c86af517f975a2a2710225b  bitcoin-0.15.1-x86_64-linux-gnu.tar.gz
 ```
  
-I have the SHA256 sum and the name of the file in that format. So I can do this:
+I can do this:
 
 ```bash
 $ sha256sum -c bitcoin-0.15.1-x86_64-linux-gnu.tar.gz.sha256sum 
