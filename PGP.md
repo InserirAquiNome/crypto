@@ -130,7 +130,6 @@ sha256sum: WARNING: 20 lines are improperly formatted
 ## Authenticity check
 
 **This tutorial is based on this work** 
-
 *source:* http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
 
 
