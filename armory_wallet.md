@@ -49,13 +49,36 @@ https://en.bitcoin.it/wiki/Consensus
 
 https://en.bitcoin.it/wiki/Prohibited_changes
 
-We can say that bitcoin is a voting system totally decentralized and it's first application was a financial system. But similar systems based on the same principles can be used for voting, taking decisions, government and so much more.
-This is the revolution of bitcoin as decentralized and incorruptible voting system. And we are still grasping it's potential.
+Bitcoin is a voting system totally decentralized and it's first application was a financial system. But similar systems based on the same principles can be used for voting, taking decisions, government and so much more.
+
+The bitcoin network is a P2P network, every peer of the newtork are equally privileged and equipotent participants without the need for central coordination by servers or stable hosts. Peers are both suppliers and consumers of resources of the network.
+
+In the bitcoin network, every ten minutes a block is mined by miners, miners are also nodes or they couldn't participate on the bitcoin network. Then, the mining nodes broadcast that block to every node (peer) of the network. 
+
+Each node will check if that block is valid on rules of that node enforced by the software running on it. 
+
+If it's valid the node broadcast that block to the rest of the network. 
+
+If it's not valid the node will not broadcast that block on the network. And also will stop talking with the node which broadcasted the block in the first place. This cut of communication can be temporary or permanent.
+
+In this way nodes that broadcast blocks with different rules are quickly isolated from the network. 
+
+When they are more than one they create their own network, sharing their own resources and enforcing their own rules and creating a new coin.
+
+The bitcoin network have rules but don't have rules. The rules are enforced by software. 
+
+To change the rules everyone controlling the nodes need to change the software running on it.
+
+And if anyone can run a full node, the bitcoin network is decentralized and anyone can participate on it.
+
+This is the revolution of bitcoin as decentralized and incorruptible voting system of equal participants.
+
+And we are still grasping it's potential.
 Bitcoin is a young technology and it's needs to grow, scale and embrace every challenge on it's path.
 
 In our days we ear everyone talking about bitcoin and the blockchain revolution. 
 Governments and banks say that the true revolution is the blockchain. In other words their blockchain and a voting system centralized here only a few can say what is valid or not.
-And if you believe them, you will not understand what is the bitcoin and what it matters so much.
+And if you believe them, you will not understand what is the bitcoin and what it matters so much and why is beautiful.
 
 ## Building Armory
 
