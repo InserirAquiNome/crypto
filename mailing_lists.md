@@ -63,7 +63,7 @@ To subscribe them go to [more information about this list](https://lists.linuxfo
 
 4. On Claws Mail, *File->Import mbox file* and choose your destination file.
 
-5. Create a filter to when receiving email any email from an mailing list goes automatically to that folder. Like a filter based on mail *subject*.
+5. Create a filter to when receiving email any email from an mailing list goes automatically to that folder. Like a filter based on email *subject* .
 
 
 This is my Claws Mail 
