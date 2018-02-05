@@ -53,7 +53,7 @@ https://lists.linuxfoundation.org/pipermail/bitcoin-dev/
 To subscribe them go to [more information about this list](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/).
 
 
-## How to download archive mailing lists and import them to Claws Mail
+## How to download archived mailing lists and import them to Claws Mail
 
 1. On the site download the compressed file of mailing lists. 
 
