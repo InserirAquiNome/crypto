@@ -17,7 +17,8 @@ The online machine needs to run a full bitcoin node.
 
 Most people holding bitcoin aren't running full nodes and which means they are trusting someone to provide the balance of their address. Only running a full node allows trust less interaction with bitcoin.
 
-Most bitcoin users are using wallets that are SPV wallets like TREZOR, electrum and etc... Trezor is completely trusted website. You CAN choose your own server, but its hard. But TREZOR is still one of the best hardware wallets solutions available at the moment.
+Most bitcoin users are using wallets that are SPV wallets like TREZOR, electrum and etc... Trezor is completely trusted website. You CAN choose your own server, but its hard. 
+But TREZOR is still one of the best hardware wallets solutions available at the moment.
 
 To full understand the revolution means you need to run a full node.
 I will provide some links why this matters:
