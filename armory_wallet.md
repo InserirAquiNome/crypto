@@ -6,7 +6,7 @@ This is some of my personal notes from my own experience on build the Armory wal
 
 Armory wallet supports cold storage and for that purpose you need to keep you private keys offline. That's the definition of cold storage.
 This means that you need a machine that will remain offline since the OS and Armory wallet was installed. This machine can't ever touch the internet again.
-Because there is a physical separation from this machine to the internet it's called an air gaped machine. And this machine is also called the signer machine because it signs the transactions. The only way that a machine can sign a transaction is because it's holds the private keys.
+Because there is a physical separation from this machine to the internet it's called an air gaped machine. This machine is also called the signer machine because it signs the transactions. The only way that a machine can sign a transaction is because it's holds the private keys.
 And that's the problem with wallets that keep the private keys online if someone steals the private keys they can sign your transactions and move your bitcoin around.
 
 Using Armory with two machines is not easy but Armory is a very power full software.
