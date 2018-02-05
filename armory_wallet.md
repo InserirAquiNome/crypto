@@ -9,7 +9,7 @@ This means that you need a machine that will remain offline since the OS and Arm
 Because there is a physical separation from this machine to the internet it's called an air gaped machine. This machine is also called the signer machine because it signs the transactions. The only way that a machine can sign a transaction is because it's holds the private keys.
 And that's the problem with wallets that keep the private keys online if someone steals the private keys they can sign your transactions and move your bitcoin around.
 
-Using Armory with two machines is not easy but Armory is a very power full software.
+Using Armory with two machines is not easy but Armory is a very powerful software.
 
 The Armory wallet with cold storage needs to machines: the offline machine or signer and the online machine.
 
