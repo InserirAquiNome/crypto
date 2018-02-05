@@ -43,7 +43,7 @@ You can use different clients like:
     
    * And many others. 
     
-    Choose the one you like the most.
+     Choose the one you like the most.
 
 
 ## Some mailing lists
