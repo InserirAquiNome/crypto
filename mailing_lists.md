@@ -50,7 +50,7 @@ https://lists.linuxfoundation.org/pipermail/lightning-dev/
 
 https://lists.linuxfoundation.org/pipermail/bitcoin-dev/
 
-To subscribe them go to [more information about this list] (https://lists.linuxfoundation.org/pipermail/bitcoin-dev/)
+To subscribe them go to [more information about this list](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/)
 
 
 ## How to download archive mailing lists and import them to Claws Mail
