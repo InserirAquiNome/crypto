@@ -21,7 +21,7 @@ Most bitcoin users are using wallets that are SPV wallets like TREZOR, electrum 
 
 But TREZOR is still one of the best hardware wallets solutions available at the moment.
 
-To full understand the revolution means you need to run a full node.
+To full understand the bitcoin revolution, you need to run a full node.
 I will provide some links why this matters:
 
 https://medium.com/@lopp/securing-your-financial-sovereignty-3af6fe834603
