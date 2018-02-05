@@ -11,7 +11,7 @@ And that's the problem with wallets that keep the private keys online if someone
 
 Using Armory with two machines is not easy but Armory is a very powerful software.
 
-The Armory wallet with cold storage needs to machines: the offline machine or signer and the online machine.
+The Armory wallet with cold storage needs two machines: the offline machine or signer and the online machine.
 
 The online machine needs to run a full bitcoin node.
 
