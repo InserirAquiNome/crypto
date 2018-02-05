@@ -55,7 +55,7 @@ The bitcoin network is a P2P network, every peer of the newtork are equally priv
 
 In the bitcoin network, every ten minutes a block is mined by miners, miners are also nodes or they couldn't participate on the bitcoin network. Then, the mining nodes broadcast that block to every node (peer) of the network. 
 
-Each node will check if that block is valid on rules of that node enforced by the software running on it. 
+Each node will check if that block is valid on rules of that node. This rules are enforced by the software running on that node. 
 
 If it's valid the node broadcast that block to the rest of the network. 
 
