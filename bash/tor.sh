@@ -1,4 +1,15 @@
 #!/bin/bash
+#
+#  You can add this to your cron with
+#  
+#  $ crontab -e
+#
+#  And add this two lines
+# 
+#    # Run tor.sh  every 45 minutes
+#    */45 * * * * export DISPLAY=:0.0 && /home/YOUR_USERNAME/tor.sh
+# 
+#
 
 PROG_NAME=$(basename $0)
 
