@@ -50,7 +50,7 @@ https://en.bitcoin.it/wiki/Consensus
 https://en.bitcoin.it/wiki/Prohibited_changes
 
 We can say that bitcoin is a voting system totally decentralized and it's first application was a financial system. But similar systems based on the same principles can be used for voting, taking decisions, government and so much more.
-This is the revolution of bitcoin as decentralized and incorruptible voting system. And we are still grasping it's power.
+This is the revolution of bitcoin as decentralized and incorruptible voting system. And we are still grasping it's potential.
 Bitcoin is a young technology and it's needs to grow, scale and embrace every challenge on it's path.
 
 In our days we ear everyone talking about bitcoin and the blockchain revolution. 
