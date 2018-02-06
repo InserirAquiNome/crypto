@@ -67,7 +67,7 @@ When they are more than one they create their own network, sharing their own res
 
 The bitcoin network have rules but don't have rulers. The rules are enforced by software running on nodes and this nodes are controlled by anyone that are willing to do it. They just need to download the software, check their integrity and authenticity.
 
-And because the hardware required doesn't need to be powerful, anyone can run their own node. A cheap old computer can do it like a dual core with 4GB of ram on even a small RPi3 can run a full node. 
+And because the hardware required doesn't need to be powerful, anyone can run their own node. A cheap old computer can do it, like a dual core with 4GB of ram on even a small RPi3 can run a full node. 
 
 To change the rules everyone controlling the nodes need to change the software running on it.
 
@@ -80,7 +80,9 @@ Bitcoin is a young technology and it's needs to grow, scale and embrace every ch
 
 In our days we ear everyone talking about bitcoin and the blockchain revolution. 
 Governments and banks say that the true revolution is the blockchain. In other words their blockchain and a voting system centralized here only a few can say what is valid or not.
-And if you believe them, you will not understand what is the bitcoin and what it matters so much and why is beautiful.
+And if you believe them, you will not understand what is the bitcoin revolution. 
+
+And what it matters so much and why is powerful and beautiful.
 
 ## Building Armory
 
