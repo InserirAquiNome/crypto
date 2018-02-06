@@ -65,7 +65,9 @@ In this way nodes that broadcast blocks with different rules are quickly isolate
 
 When they are more than one they create their own network, sharing their own resources and enforcing their own rules and creating a new coin.
 
-The bitcoin network have rules but don't have rulers. The rules are enforced by software running on nodes and this nodes are controlled by anyone that are willing to do it. And because the hardware required doesn't need to be powerful, anyone can run their own node. A cheap old computer can do it like a dual core with 4GB of ram on even a small RPi3 can run a full node. 
+The bitcoin network have rules but don't have rulers. The rules are enforced by software running on nodes and this nodes are controlled by anyone that are willing to do it. They just need to download the software, check their integrity and authenticity.
+
+And because the hardware required doesn't need to be powerful, anyone can run their own node. A cheap old computer can do it like a dual core with 4GB of ram on even a small RPi3 can run a full node. 
 
 To change the rules everyone controlling the nodes need to change the software running on it.
 
