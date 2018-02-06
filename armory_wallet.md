@@ -80,9 +80,7 @@ Bitcoin is a young technology and it's needs to grow, scale and embrace every ch
 
 In our days we ear everyone talking about bitcoin and the blockchain revolution. 
 Governments and banks say that the true revolution is the blockchain. In other words their blockchain and a voting system centralized here only a few can say what is valid or not.
-And if you believe them, you will not understand what is the bitcoin revolution. 
-
-And what it matters so much and why is powerful and beautiful.
+And if you believe them, you will not understand what is the bitcoin revolution. And what it matters so much and why is powerful and beautiful.
 
 ## Building Armory
 
