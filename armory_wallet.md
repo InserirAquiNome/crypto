@@ -82,9 +82,71 @@ And if you believe them, you will not understand what is the bitcoin and what it
 
 ## Building Armory
 
+Follow the guide available on the git repository of Armory https://github.com/goatpig/BitcoinArmory/blob/master/linuxbuild/Linux_build_notes.md
+
+Some notes about the process 
+
+1. Clone Armory git repository 
+
+   You can clone the repository using the master branch
+   
+   `$ git clone https://github.com/goatpig/BitcoinArmory.git`
+
+   Or you can choose which branch you want to clone
+
+   `$ git clone -b v0.96.3.992 --single-branch https://github.com/goatpig/BitcoinArmory.git`
+
+
+2. Verify source authenticity
+
+   ```bash
+   $ cd BitcoinArmory/
+   $ git tag -v v0.96.3.992
+   $ git checkout v0.96.3.992
+   ```
+
+3. Clone libfcgi git repository
+
+   ```bash
+   $ mkdir libfcgi
+   $ cd libfcgi
+   $ git clone https://github.com/goatpig/libfcgi.git
+   ```
+    
+4. Copy libfcgi to BitcoinArmory directory
+
+   ```bash
+   $ cp -av  libfcgi/. BitcoinArmory/cppForSwig/fcgi/
+   $ rm BitcoinArmory/.gitmodules
+
+   $ cd BitcoinArmory/
+   $ ./autogen.sh
+   $ ./configure
+   $ make
+   ```
+
+## Armory Wallets
+
+Armory is a very power full wallet when used properly.
+
+Paper Wallets
+
+Multi sign Wallets
+
+Lock boxes 
+
+...
+
 ## Air gaped machines 
 
+Ideas
+
 ## Alternatives
+
+bitkey
+
+TREZOR wallet
+
 
 ## Support my work
 
