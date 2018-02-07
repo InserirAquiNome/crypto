@@ -1,5 +1,6 @@
 # Bitcoin full node
 
+https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node1.jpg
 
 This is setup of a node running on a RPi3 hardware. I run other nodes but this is the first time on an ARM machine.
 
@@ -211,10 +212,28 @@ Wed  7 Feb 22:09:53 WET 2018
 
 How much time will take to sync the node??? 
 
-
 ## Conclusion and results 
 
-Not yet!
+Already pass some time but the blockchain is at the moment around 160GB and my node have to sync it allow
+
+```
+$ date
+Wed  7 Feb 23:28:15 WET 2018
+
+$ inxi 
+CPU~Quad core ARMv7 rev 4 (v7l) (-MCP-) speed~1200 MHz Kernel~4.9.32-v7-arm armv7l Up~2:24 Mem~280.6/923.4MB HDD~31.9GB(49.0% used) Procs~144 Client~Shell inxi~2.3.56  
+
+$ du -sh ~/storage/blocks/
+529M    /home/pi/storage/blocks/
+
+$ cat /etc/slackware-version 
+Slackware 14.2
+```
+
+https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.png
+
+It's note an expensive hardware. Only 35 usd hardware + power adapter + sdcard + USB memory stick.
+In meanwhile I am listening some music on it, just waiting to full sync my node.
 
 ## More information
 http://bitcoinist.com/6-reasons-run-bitcoin-full-node/
