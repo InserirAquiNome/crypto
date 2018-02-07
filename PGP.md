@@ -158,7 +158,7 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
    
    `$ ls -R /`
    
-   This will increase the hardware noise and hardware noise is on source of entropy on computers.
+   This will increase the hardware noise and hardware noise is one source of entropy on computers.
 
 3. Download the public key of the person/institution you want to verify. For
    bitcoin-client , their public key is available here:
