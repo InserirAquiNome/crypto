@@ -213,3 +213,16 @@ How much time will take to sync the node???
 
 
 ## Conclusion and results 
+
+Not yet!
+
+## More information
+http://bitcoinist.com/6-reasons-run-bitcoin-full-node/
+https://bitcoin.org/en/full-node
+https://medium.com/@lopp/securing-your-financial-sovereignty-3af6fe834603
+https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5
+
+
+## Support my work
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
