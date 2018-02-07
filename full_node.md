@@ -27,7 +27,7 @@ sha256sum: WARNING: 20 lines are improperly formatted
 
 ```
 
-Integrity is checked and now I will check it's authenticity, like I wrote on my [PGP.md] (https://github.com/InserirAquiNome/crypto/blob/master/PGP.md)
+Integrity is checked and now I will check it's authenticity, like I wrote on my [PGP.md](https://github.com/InserirAquiNome/crypto/blob/master/PGP.md)
 
 `$ gpg --gen-key`
 
