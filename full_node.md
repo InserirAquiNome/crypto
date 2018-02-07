@@ -39,8 +39,9 @@ And in [where](https://bitcoin.org/en/full-node#other-linux-distributions) get t
 `$ wget https://bitcoin.org/laanwj-releases.asc`
 
 
-```
 But the website says 
+
+```
 If you know how to use PGP, you should also click the Verify Release Signatures link on the download page to download a signed list of SHA256 file hashes. The 0.11 and later releases are signed by Wladimir J. van der Laan’s releases key with the fingerprint:
 
 01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
