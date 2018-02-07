@@ -133,7 +133,7 @@ sha256sum: WARNING: 20 lines are improperly formatted
 
 
 If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
-
+ 
 1. Install GnuPG on your linux distro.
 
 2. Create your private key with
@@ -141,6 +141,24 @@ If you already have GnuPG or another PGP client installed, skip steps 1 and 2.
    `$ gpg --gen-key`
   
    Accept all of the default options.
+   
+   Most likely will receive an warning like this
+   
+   ```bash
+   We need to generate a lot of random bytes. It is a good idea to perform
+   some other action (type on the keyboard, move the mouse, utilize the
+   disks) during the prime generation; this gives the random number
+   generator a better chance to gain enough entropy.
+
+   Not enough random bytes available.  Please do some other work to give
+   the OS a chance to collect more entropy! (Need 91 more bytes)
+
+   ```
+   If the process stops because there is not enough entropy, just do this
+   
+   `$ ls -R /`
+   
+   This will increase the hardware noise and hardware noise is on source of entropy on computers.
 
 3. Download the public key of the person/institution you want to verify. For
    bitcoin-client , their public key is available here:
