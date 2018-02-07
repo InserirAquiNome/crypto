@@ -32,7 +32,7 @@ Integrity is checked and now I will check it's authenticity, like I wrote on my 
 `$ gpg --gen-key`
 
 
-And in where https://bitcoin.org/en/full-node#other-linux-distributions get the public key I want to verify. 
+And in [where](https://bitcoin.org/en/full-node#other-linux-distributions) get the public key I want to verify. 
 
 `$ wget https://bitcoin.org/laanwj-releases.asc`
 
