@@ -1,6 +1,6 @@
 # Bitcoin full node
 
-https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node1.jpg
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node1.jpg "Logo Title Text 1")
 
 This is setup of a node running on a RPi3 hardware. I run other nodes but this is the first time on an ARM machine.
 
@@ -230,7 +230,7 @@ $ cat /etc/slackware-version
 Slackware 14.2
 ```
 
-https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.png
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.png "Logo Title Text 1")
 
 It's note an expensive hardware. Only 35 usd hardware + power adapter + sdcard + USB memory stick.
 In meanwhile I am listening some music on it, just waiting to full sync my node.
