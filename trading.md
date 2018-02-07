@@ -41,6 +41,8 @@ And that's why we run full bitcoin nodes, because we verify everything...
 
 Have fun!
 
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/trading4.png "Logo Title Text 1")
+
 
 ## Support my work
 
