@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node1.jpg "Logo Title Text 1")
 
-This is a setup of a node running on a RPi3 hardware. I run other nodes but this is the first time on an ARM machine.
+This is a setup of a bitcoin full nmnode running on a RPi3 hardware. I run other nodes but this is the first time on an ARM machine.
 
 My RPi3 run without X I use it through SSH.
 
