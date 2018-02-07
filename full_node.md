@@ -4,7 +4,9 @@
 
 This is a setup of a bitcoin full node running on a RPi3 hardware. I run other nodes but this is my first bitcoin full node on an ARM machine.
 
-My RPi3 run without X I use it through SSH.
+My RPi3 run without X.
+
+I use it through SSH.
 
 ## Download the client
 
