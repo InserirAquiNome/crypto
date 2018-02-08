@@ -237,7 +237,9 @@ I think will also configure tor on it!
 
 I will leave some link about that.
 
-**Update** It passed almost 24 hours since the last time posted my node progress syncing the full blockchain.
+**Update** 
+
+It passed almost 24 hours since the last time posted my node progress syncing the full blockchain.
 
 ```
 $ date
@@ -271,7 +273,40 @@ But I am receiving a full blockchain that is pruned after 600M. It started from 
 
 I could be doing this in a different way. I already have a full blockchain on my personal computer. I could just copy that blockchain to the RPi3 and I think doing that would be faster. But I prefer to test this like if this was my only hardware available for my full node. And for that I will sync the all blockchain.
 
+**Update**
 
+I changed somethings on my .bashrc to get better stats.
+
+```
+function BTC_status () {
+
+  source ~/.bashrc
+
+  process="bitcoind"
+  pidof -s "$process" > /dev/null 2>&1
+  status=$?
+
+  if [[ "$status" -eq 0 ]]; then
+    printf "\n"
+    echo "$process is running"
+    printf "\n"
+    uname -a
+    printf "\n"
+    date
+    printf "\n"
+    uptime
+    printf "\n"
+    /home/pi/programming/Raspberry_RPi3/scripts/bitcoinsync.sh
+    /home/pi/tor.sh
+    du -sh /home/pi/storage/blocks/
+    du -sh /home/pi/storage/chainstate/
+  else
+    echo "$process is NOT running"
+  fi
+
+}
+
+```
 
 ## Tor setup
 
@@ -288,6 +323,7 @@ https://bitcoin.org/en/full-node
 https://medium.com/@lopp/securing-your-financial-sovereignty-3af6fe834603
 
 https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5
+
 
 ## Thanks
 
