@@ -141,12 +141,13 @@ $ ln -s ~/storage/blocks/
 $ ln -s ~/storage/chainstate/
 ```
 
-I have a script called *bitcoinsync.sh* that I will download to my RPi3
+I have a script called *bitcoinsync.sh* and another called *tor.sh* that I will download to my RPi3
 
 ```
 $ cd ~/programming/Raspberry_RPi3/scripts/
 $ wget https://raw.githubusercontent.com/InserirAquiNome/crypto/master/bash/bitcoinsync.sh
-$ chmod +x bitcoinsync.sh
+$ wget https://raw.githubusercontent.com/InserirAquiNome/crypto/master/bash/tor.sh
+$ chmod +x bitcoinsync.sh tor.sh
 ```
 
 And now I will add some alias to my .bashrc
