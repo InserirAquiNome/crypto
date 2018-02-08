@@ -88,9 +88,23 @@ But if you are a miner that is different thing and for that you need more powerf
 
 Some people claim that miners or mining nodes, because everyone on the network is a node, should say what are the rules and change them at their will. And that's not true because in a P2P network every node is equal and everyone share their resources.
 
-But because miners are using lot of energy to mine bitcoin they are reward for that. Actually in the bitcoin network,  miners apply security computing work. 
+But because miners are using lot of energy to mine bitcoin they are reward for that. Actually in the bitcoin network,  miners apply security doing computational work. 
 
-An example of this works is 
+An example how this works is looking to a lock like this one:
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node4.png "Logo Title Text 1")
+
+Everyone with a bike should know this kind of looks!
+
+This looks open with a combination but for someone that doesn't knows the combination the only way to open this is trying every combination. And this what mining nodes do.
+
+Then the other nodes on the network check if that combination really opens the lock and they don't very fast because when you know the combination it's to open the look.
+
+Because the hard work that miners do, every time they do this job that it's similar to open a look, they receive bitcoin. That's called the block reward and that's the way that the bitcoin is generated on the network. But this block reward is reduced with time, so the bitcoin supply is limited to 21M.
+
+Besides this block reward, miners also receive the fees of every transaction on the block that was mined. And in this way, when every bitcoin was already mined there is still incentive for miners spend energy applying security on the network doing computational work aka POW (Proof of Work).
+
+In this way the bitcoin network is sustainable in the future and the devs working on the satoshi client or bitcoin core client, are doing an amazing job adding new features to bitcoin making it better every time. 
 
 ## Hardware - RPi3
 
