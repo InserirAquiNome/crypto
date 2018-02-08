@@ -87,7 +87,7 @@ Some people run the client as root or create a new user just for that. I will ru
 
 `$ vim ~/.bash_profile`
 
-And this at the end
+And add this at the end
 
 ```
 #PATH to bitcoin client
