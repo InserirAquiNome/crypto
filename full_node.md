@@ -77,6 +77,9 @@ Run your own full bitcoin node
 
 https://bitcoin.org/en/full-node
 
+
+## Setup of full bitcoin node 
+
 ## Hardware - RPi3
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node1.jpg "Logo Title Text 1")
