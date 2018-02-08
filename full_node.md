@@ -96,13 +96,15 @@ An example how this works is looking to a lock like this one:
 
 Everyone with a bike should know this kind of looks!
 
-This looks open with a combination but for someone that doesn't knows the combination the only way to open this is trying every combination. And this what mining nodes do.
+This looks open with a combination but for someone that doesn't knows the combination the only way to open it is trying every combination. And this what mining nodes do.
 
 Then the other nodes on the network check if that combination really opens the lock and they don't very fast because when you know the combination it's to open the look.
 
 Because the hard work that miners do, every time they do this job that it's similar to open a look, they receive bitcoin. That's called the block reward and that's the way that the bitcoin is generated on the network. But this block reward is reduced with time, so the bitcoin supply is limited to 21M.
 
 Besides this block reward, miners also receive the fees of every transaction on the block that was mined. And in this way, when every bitcoin was already mined there is still incentive for miners spend energy applying security on the network doing computational work aka POW (Proof of Work).
+
+And doesn't matter if you can do this job faster with more computational power because PoW was difficulty adjustment. This means that every time that there is more miners or more powerful hardware on the network the job goes harder. And the opposite also applies, less hash rate (capacity to do PoW) means less difficulty.
 
 In this way the bitcoin network is sustainable in the future and the devs working on the satoshi client or bitcoin core client, are doing an amazing job adding new features to bitcoin making it better every time. 
 
