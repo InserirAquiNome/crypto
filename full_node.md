@@ -269,7 +269,7 @@ It's not fast because I am using only one core, like you can see on bitcoin.conf
 
 But I am receiving a full blockchain that is pruned after 600M. It started from the beginning of the blockchain and goes until the current block. Now I am at 57% of blockchain and I think that this blocks are still not full. So it will not put a lot of load on the computer for now. Maybe around 75% I will see some increase on my system load. Let's see at happens until then.
 
-I could be doing this in a different way. I already have a full blockchain on my personal computer. I could just copy that blockchain to the RPi3 I think it would be faster. But I prefer to test this like if this was my only hardware available for my full node. And for that I will sync the all blockchain.
+I could be doing this in a different way. I already have a full blockchain on my personal computer. I could just copy that blockchain to the RPi3 and I think doing that would be faster. But I prefer to test this like if this was my only hardware available for my full node. And for that I will sync the all blockchain.
 
 
 
