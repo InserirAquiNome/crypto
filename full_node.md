@@ -235,7 +235,7 @@ Slackware 14.2
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.png "Logo Title Text 1")
 
-It's note an expensive hardware. Only a 35 usd hardware + power adapter + sdcard + USB memory stick.
+It's note an expensive hardware. Only a $35 hardware + power adapter + sdcard + USB memory stick.
 In meanwhile I am listening some music on it, just waiting to full sync my node.
 
 ## More information
