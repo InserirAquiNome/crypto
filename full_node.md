@@ -331,7 +331,7 @@ Number of blocks 295950
  will not be shown, you would have to be root to see it all.)
 
 Your Tor IP is:
-   Current IP Address: 45.62.249.195
+   Current IP Address: NOT.MY.TOR.ADDRESS
       Congratulations. This browser is configured to use Tor.
       Congratulations. This browser is configured to use Tor.
 Number of Tor connections: 22
