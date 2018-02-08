@@ -86,7 +86,7 @@ You can run a full bitcoin node in almost hardware out there, like Satoshi says 
 
 But if you are a miner that is different thing and for that you need more powerful hardware. 
 
-Some people claim that miners or mining nodes, because everyone on the network is a node, should say what are the rules and change them at their will. And that's not true because in a P2P network every node is equal and everyone share their resources.
+Some people claim that miners or mining nodes, because everyone on the network is a node, should say what are the rules and change them at their will. And that's not true because in a P2P network every node is equal and everyone share their resources that they put on the network.
 
 But because miners are using lot of energy to mine bitcoin they are reward for that. Actually in the bitcoin network,  miners apply security doing computational work. 
 
