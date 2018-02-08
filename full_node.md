@@ -228,13 +228,47 @@ Number of blocks 233847
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.png "Logo Title Text 1")
 
-It's not an expensive hardware. Only a $35 hardware + power adapter + sdcard + USB memory stick. And there it is, everything we need to guarantee our financial sovereignty!
+It's not an expensive hardware. Only a $35 hardware + power adapter + sdcard + USB memory stick. And there it is, everything we need to guarantee your financial sovereignty!
 
 In meanwhile I am listening some music on it, just waiting to full sync my node.
 
 I think will also configure tor on it!
 
 I will leave some link about that.
+
+It passed almost 24 hours
+
+```
+$ date
+Thu  8 Feb 18:34:31 WET 2018
+
+$ BTC_status
+OK!!! bitcoind is running
+
+Number of blocks 290825
+217449 blocks behind
+57.21 % Done 
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+
+Your Tor IP is:
+   Current IP Address: NOT.MY.TOR.ADDRESS
+      Congratulations. This browser is configured to use Tor.
+      Congratulations. This browser is configured to use Tor.
+Number of Tor connections: 19
+676M    /home/pi/storage/blocks/
+
+$ uptime
+ 18:35:30 up 21:32,  2 users,  load average: 3.41, 2.76, 2.82
+
+```
+
+It's not fast because I am using only one core, like you can see on bitcoin.conf. But at least the system load is low.
+
+But I am receiving a full blockchain that is pruned after 600M. It started from the beginning of the blockchain and goes until the current block. Now I am at 57% of blockchain and I think that this blocks are still not full. So it will not push a lot of this computer for now. Maybe around 75% I will see some increase on my system load. Let's see at happens until then.
+
+
 
 ## Tor setup
 
