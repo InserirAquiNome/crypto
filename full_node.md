@@ -114,7 +114,7 @@ Create the ~/.bitcoin directory
 
 `$ mkdir ~/.bitcoin`
 
-And now I need to create a bitcoin.conf file inside that directory. I already have one from my full nodes so will upload the final version on git repo and in here I will say what I changed.
+And now I need to create a bitcoin.conf file inside that directory. I already have one from my other full nodes so will upload the final version on git repo and in here I will say what I changed.
 
 I will use only one core of my RPi3 cpu
 
