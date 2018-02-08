@@ -217,6 +217,13 @@ $ du -sh ~/storage/blocks/
 
 $ cat /etc/slackware-version 
 Slackware 14.2
+
+$ BTC_status
+OK!!! bitcoind is running
+
+Number of blocks 233847
+274346 blocks behind
+46.01 % Done
 ```
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.png "Logo Title Text 1")
@@ -226,8 +233,14 @@ In meanwhile I am listening some music on it, just waiting to full sync my node.
 
 I think will also configure tor on it!
 
+I will leave some link about that.
+
+
 ## Tor setup
 
+I followed this guide
+
+https://en.bitcoin.it/wiki/Setting_up_a_Tor_hidden_service
 
 
 ## More information
