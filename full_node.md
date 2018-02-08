@@ -73,6 +73,10 @@ And if you believe them, you will not understand what is the bitcoin revolution.
 
 **Bitcoin is probably the biggest revolution you will watch in your lifetime.** 
 
+Run your own full bitcoin node
+
+https://bitcoin.org/en/full-node
+
 ## Hardware - RPi3
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node1.jpg "Logo Title Text 1")
@@ -420,17 +424,6 @@ I followed this guide
 
 https://en.bitcoin.it/wiki/Setting_up_a_Tor_hidden_service
 
-
-## More information
-http://bitcoinist.com/6-reasons-run-bitcoin-full-node/
-
-https://bitcoin.org/en/full-node
-
-https://medium.com/@lopp/securing-your-financial-sovereignty-3af6fe834603
-
-https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5
-
-
 ## Thanks
 
 Many thanks to all the men and women working on the development of bitcoin. Thanks for improving bitcoin with your work and thanks for beside all the improvement that we have and will have in this project in the future, everyone can run it in their own homes with inexpensive hardware.
@@ -440,6 +433,7 @@ People need to learn the value of having a network like this that runs on every 
 If the bitcoin network remains decentralized like today, it will never die. Because for that they need to shutdown node by node and make sure that node anyone of those nodes comes back online.
 
 Plz! Run a full bitcoin node and experience bitcoin and try to see beyond the price. I guarantee that will help you to face corrections and pullbacks because then you will know it will go up again.
+
 
 ## Support my work
 
