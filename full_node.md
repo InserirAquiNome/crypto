@@ -22,7 +22,6 @@ On https://bitcoin.org/en/download or https://bitcoin.org/bin/
 $ sha256sum --ignore-missing -c SHA256SUMS.asc 
 bitcoin-0.15.1-aarch64-linux-gnu.tar.gz: OK
 sha256sum: WARNING: 20 lines are improperly formatted
-
 ```
 
 Integrity is checked and now I will check it's authenticity, like I wrote on my [PGP.md](https://github.com/InserirAquiNome/crypto/blob/master/PGP.md)
@@ -47,7 +46,6 @@ Let check that
 $ gpg --with-fingerprint laanwj-releases.asc 
 pub  4096R/36C2E964 2015-06-24 Wladimir J. van der Laan (Bitcoin Core binary release signing key) <laanwj@gmail.com>
       Key fingerprint = 01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
-
 ```
 
 It's correct!
@@ -60,7 +58,6 @@ gpg: Total number processed: 1
 gpg:               imported: 1  (RSA: 1)
 gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
 gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
-
 ```
 ```
 $ gpg --list-keys
@@ -78,7 +75,6 @@ gpg: depth: 0  valid:   1  signed:   1  trust: 0-, 0q, 0n, 0m, 0f, 1u
 gpg: depth: 1  valid:   1  signed:   0  trust: 1-, 0q, 0n, 0m, 0f, 0u
 gpg: next trustdb check due at 2019-02-14
 gpg: Good signature from "Wladimir J. van der Laan (Bitcoin Core binary release signing key) <laanwj@gmail.com>"
- 
  ```
 
 ## Extracting the file
@@ -116,7 +112,6 @@ bitcoind -par=1 -daemon
 
 # Bitcoin Core GUI
 bitcoin-qt -par=1
-
 ```
 
 I will not store the full blockchain on my node and for that I will prune the old blocks. The only storage size I will use is 600 M of disk space.
@@ -133,7 +128,7 @@ prune=600
 uacomment=This-is-my-node-and-I-choose-what-is-bitcoin
 ```
 
-## Final steps
+## Misc 
 
 I will not store the blockchain on the RPi sdcard, because this will read and write a lot of times on my sd card and can damage it. I will use an USB memory stick to store the blocks.
 
@@ -206,7 +201,7 @@ Wed  7 Feb 22:09:53 WET 2018
 
 How much time will take to sync the node??? 
 
-## Conclusion and results 
+## Syncing the node 
 
 Already pass some time but the blockchain is at the moment around 160GB and my node have to sync it all.
 
@@ -230,6 +225,10 @@ It's note an expensive hardware. Only a $35 hardware + power adapter + sdcard + 
 In meanwhile I am listening some music on it, just waiting to full sync my node.
 
 I think will also configure tor on it!
+
+## Tor setup
+
+
 
 ## More information
 http://bitcoinist.com/6-reasons-run-bitcoin-full-node/
