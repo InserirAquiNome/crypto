@@ -227,7 +227,7 @@ Number of blocks 233847
 46.01 % Done
 ```
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.png "Logo Title Text 1**)
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.png "Logo Title Text 1)
 
 It's not an expensive hardware. Only a $35 hardware + power adapter + sdcard + USB memory stick. And there it is, everything we need to guarantee your financial sovereignty!
 
