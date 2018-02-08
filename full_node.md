@@ -12,15 +12,11 @@ I use it through SSH.
 
 On https://bitcoin.org/en/download or https://bitcoin.org/bin/
 
-
-
 `$ wget https://bitcoin.org/bin/bitcoin-core-0.15.1/bitcoin-0.15.1-arm-linux-gnueabihf.tar.gz`
 
 `$ wget https://bitcoin.org/bin/bitcoin-core-0.15.1/SHA256SUMS.asc`
 
-
 ## Check the client integrity and authenticity
-
 
 ```bash
 $ sha256sum --ignore-missing -c SHA256SUMS.asc 
@@ -33,11 +29,9 @@ Integrity is checked and now I will check it's authenticity, like I wrote on my 
 
 `$ gpg --gen-key`
 
-
 And in [where](https://bitcoin.org/en/full-node#other-linux-distributions) get the public key I want to verify. 
 
 `$ wget https://bitcoin.org/laanwj-releases.asc`
-
 
 But the website says 
 
@@ -68,7 +62,6 @@ gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
 gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
 
 ```
-
 ```
 $ gpg --list-keys
 $ gpg --sign-key 36C2E964
@@ -95,7 +88,6 @@ Extract the file
 `$ tar zpvfx bitcoin-0.15.1-aarch64-linux-gnu.tar.gz`
 
 Some people run the client as root or create a new user just for that. I will run it with my regular user.
-
 
 `$ vim ~/.bash_profile`
 
@@ -140,7 +132,6 @@ prune=600
 # Node comment
 uacomment=This-is-my-node-and-I-choose-what-is-bitcoin
 ```
-
 
 ## Final steps
 
@@ -237,6 +228,8 @@ Slackware 14.2
 
 It's note an expensive hardware. Only a $35 hardware + power adapter + sdcard + USB memory stick.
 In meanwhile I am listening some music on it, just waiting to full sync my node.
+
+I think will also configure tor on it!
 
 ## More information
 http://bitcoinist.com/6-reasons-run-bitcoin-full-node/
