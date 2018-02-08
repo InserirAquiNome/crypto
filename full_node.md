@@ -108,7 +108,7 @@ And doesn't matter if you can do this job faster with more computational power b
 
 In this way the bitcoin network is sustainable in the future and the devs working on the satoshi client or bitcoin core client, are doing an amazing job adding new features to bitcoin making it better every time. 
 
-## Hardware - RPi3
+## Hardware - An $35 computer, an RPi3
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node1.jpg "Logo Title Text 1")
 
