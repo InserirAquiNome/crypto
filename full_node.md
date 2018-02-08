@@ -228,13 +228,13 @@ Number of blocks 233847
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.png "Logo Title Text 1")
 
-It's note an expensive hardware. Only a $35 hardware + power adapter + sdcard + USB memory stick.
+It's not an expensive hardware. Only a $35 hardware + power adapter + sdcard + USB memory stick. And there it is, everything we need to guarantee our financial sovereignty!
+
 In meanwhile I am listening some music on it, just waiting to full sync my node.
 
 I think will also configure tor on it!
 
 I will leave some link about that.
-
 
 ## Tor setup
 
