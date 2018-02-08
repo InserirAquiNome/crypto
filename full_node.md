@@ -92,7 +92,7 @@ But because miners are using lot of energy to mine bitcoin they are reward for t
 
 An example how this works is looking to a lock like this one:
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node4.png "Logo Title Text 1")
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node4.jpg "Logo Title Text 1")
 
 Everyone with a bike should know this kind of looks!
 
