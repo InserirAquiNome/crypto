@@ -217,7 +217,7 @@ How much time will take to sync the node???
 
 ## Conclusion and results 
 
-Already pass some time but the blockchain is at the moment around 160GB and my node have to sync it allow
+Already pass some time but the blockchain is at the moment around 160GB and my node have to sync it all.
 
 ```
 $ date
