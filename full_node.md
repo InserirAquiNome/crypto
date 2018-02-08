@@ -297,7 +297,7 @@ People need to learn the value of having a network like this that runs on every 
 
 If the bitcoin network remains decentralized like today, it will never die. Because for that they need to shutdown node by node and make sure that node anyone of those nodes comes back online.
 
-Plz! Run a full bitcoin node and experience bitcoin and try to see beyond the price. I guarantee that will help you to face corrections and pullbacks because then you will know I will go up again.
+Plz! Run a full bitcoin node and experience bitcoin and try to see beyond the price. I guarantee that will help you to face corrections and pullbacks because then you will know it will go up again.
 
 ## Support my work
 
