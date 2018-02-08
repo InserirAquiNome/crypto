@@ -78,7 +78,8 @@ Run your own full bitcoin node
 https://bitcoin.org/en/full-node
 
 
-## Setup of full bitcoin node 
+Setup of full bitcoin node 
+==
 
 ## Hardware - RPi3
 
