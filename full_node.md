@@ -308,6 +308,37 @@ function BTC_status () {
 
 ```
 
+The output of this change it this
+
+```
+$ BTC_status
+
+bitcoind is running
+
+Linux RaspberryRPi3 4.9.32-v7-arm #1 SMP Sat Jun 17 13:52:41 BST 2017 armv7l BCM2835 GNU/Linux
+
+Thu  8 Feb 22:07:13 WET 2018
+
+ 22:07:13 up 1 day,  1:03,  2 users,  load average: 3.19, 2.56, 2.22
+
+OK!!! bitcoind is running
+
+Number of blocks 295950
+212343 blocks behind
+58.22 % Done 
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+
+Your Tor IP is:
+   Current IP Address: 45.62.249.195
+      Congratulations. This browser is configured to use Tor.
+      Congratulations. This browser is configured to use Tor.
+Number of Tor connections: 22
+635M    /home/pi/storage/blocks/
+540M    /home/pi/storage/chainstate/
+```
+
 ## Tor setup
 
 I followed this guide
