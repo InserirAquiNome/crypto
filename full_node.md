@@ -96,9 +96,9 @@ An example how this works is looking to a lock like this one:
 
 Everyone with a bike should know this kind of looks!
 
-This look open with a combination but for someone that doesn't knows the combination the only way to open it is trying every combination. And this what mining nodes do.
+This looks open with a combination but for someone that doesn't knows the combination the only way to open it is trying every combination. And this what mining nodes do. They do brute force until they find the combination.
 
-Then the other nodes on the network check if that combination really opens the lock and they don't very fast because when you know the combination it's to open the look.
+Then the other nodes on the network check if that combination really opens the lock and they do it very fast because when you know the combination it's to open the look.
 
 Because the hard work that miners do, every time they do this job that it's similar to open a look, they receive bitcoin. That's called the block reward and that's the way that the bitcoin is generated on the network. But this block reward is reduced with time, so the bitcoin supply is limited to 21M.
 
