@@ -127,7 +127,7 @@ bitcoin-qt -par=1
 
 ```
 
-I will not the full blockchain on my node and for that I will prune the old blocks. The only storage size I will use is 600 M of space.
+I will not store the full blockchain on my node and for that I will prune the old blocks. The only storage size I will use is 600 M of space.
 
 ```
 # Reduce storage requirements by pruning (deleting) old blocks. This mode is incompatible with -txindex and -rescan. 
