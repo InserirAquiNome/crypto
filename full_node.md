@@ -144,7 +144,7 @@ uacomment=This-is-my-node-and-I-choose-what-is-bitcoin
 
 ## Final steps
 
-I will not store the blockchain on the RPi sdcard, because this will read and write a lot of times on my sd card and can damage it. I will use USB memory stick to store the blocks.
+I will not store the blockchain on the RPi sdcard, because this will read and write a lot of times on my sd card and can damage it. I will use an USB memory stick to store the blocks.
 
 ```
 $ cd ~/storage/
