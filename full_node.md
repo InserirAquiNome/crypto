@@ -96,7 +96,7 @@ An example how this works is looking to a lock like this one:
 
 Everyone with a bike should know this kind of looks!
 
-This looks open with a combination but for someone that doesn't knows the combination the only way to open it is trying every combination. And this what mining nodes do.
+This look open with a combination but for someone that doesn't knows the combination the only way to open it is trying every combination. And this what mining nodes do.
 
 Then the other nodes on the network check if that combination really opens the lock and they don't very fast because when you know the combination it's to open the look.
 
