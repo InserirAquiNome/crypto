@@ -122,7 +122,7 @@ I will not store the full blockchain on my node and for that I will prune the ol
 # (default: 0 = disable pruning blocks, >550 = target size in MiB to use for block files)
 prune=600
 ```
-
+This is my node comment.
 ```
 # Node comment
 uacomment=This-is-my-node-and-I-choose-what-is-bitcoin
