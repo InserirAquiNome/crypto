@@ -254,7 +254,7 @@ https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-
 
 ## Thanks
 
-Many thanks to all the men and women working on the development of bitcoin. Thanks for improving bitcoin with your work and thanks for beside all the improvement that we have and will have in this project, everyone can run it in their own homes with inexpensive hardware.
+Many thanks to all the men and women working on the development of bitcoin. Thanks for improving bitcoin with your work and thanks for beside all the improvement that we have and will have in this project in the future, everyone can run it in their own homes with inexpensive hardware.
 
 People need to learn the value of having a network like this that runs on every hardware that anyone can afford. 
 
