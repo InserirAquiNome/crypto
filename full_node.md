@@ -73,13 +73,24 @@ And if you believe them, you will not understand what is the bitcoin revolution.
 
 **Bitcoin is probably the biggest revolution you will watch in your lifetime.** 
 
-Run your own full bitcoin node
+Run your own full bitcoin node!
+
+## Setting a full bitcoin node 
+
+This a few guides out there 
 
 https://bitcoin.org/en/full-node
 
 
-Setup of full bitcoin node 
-==
+You can run a full bitcoin node in almost hardware out there, like satoshi says on the white paper "*The network itself requires a minimal structure*".
+
+But if you are a miner that is different thing and for that you need more powerful hardware. 
+
+Some people claim that miners or mining nodes, because everyone on the network is a node, should say what are the rules and change them at their will. And that's not true because in a P2P network every node is equal and everyone share their resources.
+
+But because miners are using lot of energy to mine bitcoin they are reward for that. Actually in the bitcoin network,  miners apply security computing work. 
+
+An example of this works is 
 
 ## Hardware - RPi3
 
