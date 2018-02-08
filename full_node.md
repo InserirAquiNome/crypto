@@ -82,7 +82,7 @@ This a few guides out there
 https://bitcoin.org/en/full-node
 
 
-You can run a full bitcoin node in almost hardware out there, like satoshi says on the white paper "*The network itself requires a minimal structure*".
+You can run a full bitcoin node in almost hardware out there, like Satoshi says in the white paper "*The network itself requires a minimal structure*".
 
 But if you are a miner that is different thing and for that you need more powerful hardware. 
 
