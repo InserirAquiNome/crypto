@@ -114,9 +114,10 @@ In this way the bitcoin network is sustainable in the future and the devs workin
 
 This is a setup of a bitcoin full node running on a RPi3 hardware. I run other nodes but this is my first bitcoin full node on an ARM machine.
 
-My RPi3 run a Linux OS, without X.
-
-I use it through SSH.
+My RPi3 run a Linux OS, without X. This even make the cost of running this node lower. I don't need a software license because Linux is Free Open Source Software (FOSS).
+ And bitcoin is also FOSS.
+ 
+And I access my node through SSH.
 
 ## Software - Download the client
 
