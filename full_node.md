@@ -120,7 +120,10 @@ I use it through SSH.
 
 ## Software - Download the client
 
-On https://bitcoin.org/en/download or https://bitcoin.org/bin/
+I will use the Sathoshi client also known as reference client or bitcoin core.
+
+
+So on https://bitcoin.org/en/download or https://bitcoin.org/bin/
 
 `$ wget https://bitcoin.org/bin/bitcoin-core-0.15.1/bitcoin-0.15.1-arm-linux-gnueabihf.tar.gz`
 
