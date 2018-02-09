@@ -14,6 +14,7 @@
 PROG_NAME=$(basename $0)
 
 TOR_IP=$(torsocks elinks -dump checkip.dyndns.org)
+# TOR_IP=$(torsocks lynx -dump checkip.dyndns.org) # Or using lynx
 TOR_STATUS=$(torsocks wget -qO- https://check.torproject.org/ | grep -i congratulations)
 TOR_CONNECTIONS=$(netstat -punta | grep 9050 | wc -l)
 

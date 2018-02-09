@@ -117,7 +117,9 @@ This is a setup of a bitcoin full node running on a RPi3 hardware. I run other n
 My RPi3 run a Linux OS, without X. This even make the cost of running this node lower, because I won't need a monitor. I don't need a software license because Linux is Free Open Source Software (FOSS).
  And bitcoin is also FOSS.
  
-And I access my node through SSH, so I don't even need a mouse or keyboard. It's only the RPi3, it's power supply, micro sd card and an 8GB USB memory stick.
+And I access my node through SSH, so I don't even need a mouse or keyboard. It's only the RPi3, it's power supply, micro sd card and an 8GB USB memory stick. 
+
+The final cost of this setup is less than 100 usd with cables and the plastic box to put the RPi3.
 
 ## Software - Download the client
 
