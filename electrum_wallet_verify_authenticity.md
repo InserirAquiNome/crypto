@@ -4,9 +4,13 @@
 
 Electrum wallet is a bitcoin wallet. There is also a fork of the electrum wallet that can be used as a litecoin wallet.
 
-This the bitcoin wallet https://electrum.org
+This the bitcoin wallet 
 
-And this is a fork from the above that works on litecoin https://electrum-ltc.org/
+https://electrum.org
+
+And this is a fork from the above that works on litecoin 
+
+https://electrum-ltc.org/
 
 **note** Electrum can be used as an hot wallet or as cold storage wallet. On cold storage your private keys stay offline so you will need a way to sign the transactions on a offline machine. You can use bitkey for that or create your own linux distro that runs on a storage device that is only connect with the machine offline. e.g: USB memory stick, external hard drive and etc...
 
