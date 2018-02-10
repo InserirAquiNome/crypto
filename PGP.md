@@ -245,6 +245,8 @@ https://bitzuma.com/posts/how-to-verify-an-electrum-download-on-windows/
 
 https://bitcointalk.org/index.php?topic=1836004.msg18341475#msg18341475
 
+https://gist.github.com/turingbirds/3df43f1920a98010667a
+
 
 ## Support my work
 

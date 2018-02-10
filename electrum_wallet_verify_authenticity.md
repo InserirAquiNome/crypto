@@ -11,6 +11,7 @@ And this is a fork from the above that works on litecoin https://electrum-ltc.or
 **note** Electrum can be used as an hot wallet or as cold storage wallet. On cold storage your private keys stay offline so you will need a way to sign the transactions on a offline machine. You can use bitkey for that or create your own linux distro that runs on a storage device that is only connect with the machine offline. e.g: USB memory stick, external hard drive and etc...
 
 Links
+
 https://en.bitcoin.it/wiki/Category:Security
 
 https://en.bitcoin.it/wiki/Securing_your_wallet
@@ -22,9 +23,9 @@ https://en.bitcoin.it/wiki/BitKey
 
 ## Downloading 
 
-$ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz
+   $ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz
 
-$ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz.asc
+   $ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz.asc
 
 
 This will download the wallet and signature. 
