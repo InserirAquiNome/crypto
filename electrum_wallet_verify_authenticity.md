@@ -23,9 +23,12 @@ https://en.bitcoin.it/wiki/BitKey
 
 ## Downloading 
 
-   $ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz
+```
+$ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz
 
-   $ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz.asc
+$ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz.asc
+
+```
 
 
 This will download the wallet and signature. 
