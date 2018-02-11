@@ -204,7 +204,7 @@ The guides that I create are only for Linux OS.
 
 Windows OS is too unstable and too insecure to use in crypto. In Windows you can only use hardware wallets with cold storage.
 
-But if you are private keys are online it doesn't matter if you are in Windows, Linux, MacOS, BSD or any other OS. It's always a chance of anyone grab you private keys from the internet. 
+But if you have your private keys online, it doesn't matter if you are in Windows, Linux, MacOS, BSD or any other OS. It's always a chance of anyone grab you private keys from the internet. 
 
 But if you are using a cold storage solution in a hardware wallet like TREZOR even if someone steal your TREZOR, you are safe. Just read the following links how to improve your safety in a TREZOR wallet
 
