@@ -78,7 +78,7 @@ gpg: Total number processed: 1
 gpg:               imported: 1  (RSA: 1)
 ```
 
-Like you can see I found it. I but will check the finger print from the file I downloaded.
+Like you can see I found it on the key-server. I but will check the finger print from the file I downloaded.
 
 ```
 $ gpg --verify Electrum-3.0.6.tar.gz.asc 
