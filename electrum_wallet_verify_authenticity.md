@@ -202,7 +202,7 @@ And with electrum option **-D** that works in bitcoin version and also on the li
 
 The guides that I create are only for Linux OS.
 
-Windows OS is too unstable and to insecure to use any kind of crypto. In Windows you can only use hardware wallets with cold storage.
+Windows OS is too unstable and too insecure to use in crypto. In Windows you can only use hardware wallets with cold storage.
 
 But if you are private keys are online it doesn't matter if you are in Windows, Linux, MacOS, BSD or any other OS. It's always a chance of anyone grab you private keys from the internet. 
 
