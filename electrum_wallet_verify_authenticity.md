@@ -240,6 +240,18 @@ The private keys always remain on the encrypted offline machine!
 
 **Google is useful only for getting info!!!**
 
+But this only useful for online attacks and physical attacks on your devices like drives and hardware wallets. But an physical is more likely to be an $5 wrench attack that someone trying to decrepit your drives or hack your hardware wallets by physical access.
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum3.png "Logo Title Text 1")
+
+In crypto you need no only take care of your online exposure but also your every day security.
+
+Take same personal defense classes, buy a dog or even buy and learn to use fire weapons.
+
+But do everything inside the law, everyone was the right to defend themselves but being arrested by having illegal fire arms is stupid. 
+
+Be safe!!!
+
 
 ## Support my work
 
