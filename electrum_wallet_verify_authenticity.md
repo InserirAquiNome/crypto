@@ -245,7 +245,7 @@ But this is only useful for online attacks and physical attacks on your devices 
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum3.png "Logo Title Text 1")
 
-In crypto you need no only take care of your online exposure but also your every day security.
+In crypto you need not only take care of your online exposure but also your every day security.
 
 Take same personal defense classes, buy a dog or even buy and learn to use fire weapons.
 
