@@ -1,5 +1,7 @@
 # Electrum wallet - Authenticity check
 
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum1.png "Logo Title Text 1")
+
 ## Intro 
 
 Electrum wallet is a bitcoin wallet. There is also a fork of the electrum wallet that can be used as a litecoin wallet.
