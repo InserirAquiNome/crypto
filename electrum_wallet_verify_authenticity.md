@@ -198,6 +198,7 @@ You can see that the dependencies are the same that the original one. So when yo
 
 And with electrum option **-D** that works in bitcoin version and also on the litecoin version, you can run the wallets you want. The only thing that matter is that when you run electrum you point it to a directory with a profile of bitcoin electrum. And the same with electrum-ltc, you need to point it to directory of litecoin electrum.
 
+
 ## Support my work
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
