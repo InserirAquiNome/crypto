@@ -116,7 +116,7 @@ uid                  Thomas Voegtlin <thomasv1@gmx.de>
 sub   4096R/2021CD84 2011-06-15
 ```
 
-And like you can see the fingerprints are the same. So will sign it. 
+And like you can see the fingerprints are the same. So I will sign it. 
 
 `$ gpg --sign-key 7F9470E6`
 
