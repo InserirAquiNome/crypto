@@ -241,7 +241,7 @@ The private keys always remain on the encrypted offline machine!
 
 **Google is useful only for getting info!!!**
 
-But this only useful for online attacks and physical attacks on your devices like drives and hardware wallets. But a physical attack is more likely to be an $5 wrench attack that someone trying to decrepit your drives or hack your hardware wallets by physical access.
+But this is only useful for online attacks and physical attacks on your devices like drives and hardware wallets. But a physical attack is more likely to be an $5 wrench attack that someone trying to decrepit your drives or hack your hardware wallets by physical access.
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum3.png "Logo Title Text 1")
 
