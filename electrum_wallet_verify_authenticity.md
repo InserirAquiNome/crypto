@@ -235,7 +235,7 @@ In the online machine you only store watch only wallets that only have public ke
 The private keys always remain on the encrypted offline machine!
 
 
-**Beware of phishing sites! Always check if the address on the browser is correct, always get it from different sources and when you I are sure that is correct bookmark it and always go to the website from the bookmarks.**
+**Beware of phishing sites! Always check if the address on the browser is correct, always get it from different sources and when you I are sure that is correct, bookmark it and always go to the website from the bookmarks.**
 
 **Never trust on google search results for wallets, exchanges and etc... Where you need to enter passphrases or get any software.**
 
