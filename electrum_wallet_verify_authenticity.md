@@ -249,7 +249,7 @@ In crypto you need no only take care of your online exposure but also your every
 
 Take same personal defense classes, buy a dog or even buy and learn to use fire weapons.
 
-But do everything inside the law, everyone was the right to defend themselves but being arrested by having illegal fire arms is stupid. 
+But do everything inside the law, everyone was the right to defend themselves but being arrested by holding illegal fire arms is stupid. 
 
 Be safe!!!
 
