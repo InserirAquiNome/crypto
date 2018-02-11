@@ -221,7 +221,7 @@ https://twitter.com/TREZOR
 https://trezor.io/
 
 
-If you are using any cold storage solution in software like Armory, bitkey or even your own Linux OS installation for different wallets, you should always encrypt everything. 
+If you are using any cold storage solution in software like Armory, Bitkey or even your own Linux OS installation for different wallets, you should always encrypt everything. 
 
 Your drives should be encrypted I use this distro and I encrypt all my system. In my computer only the /boot is not encrypted.
 
