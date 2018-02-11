@@ -140,7 +140,7 @@ It's authentic.
 
 ## Install
 
-In git repo of the electrum wallet shows the dependencies 
+In git repo of the electrum wallet shows the dependencies: 
 
 https://github.com/spesmilo/electrum
 
