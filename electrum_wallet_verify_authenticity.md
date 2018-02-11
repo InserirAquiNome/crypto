@@ -152,6 +152,21 @@ And I them add it at the end of file *.bash_profile*
 
 I checked that the file *.bash_profile* doesn't have any empty line at the end.
  
+Now I do 
+
+`
+$ source ~/.bash_profile
+`
+
+To add that path to my PATH.
+
+And can run the wallet with the command *electrum*
+
+There is a couple a things I do when run the eletrum wallet. I like to use different profiles so I create on directory for each one. Like this
+
+`$ mkdir ~/.electrum_usd`
+
+`$ mkdir ~/.electrum_eur`
 
 ## Support my work
 
