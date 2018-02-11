@@ -198,6 +198,49 @@ You can see that the dependencies are the same that the original one. So when yo
 
 And with electrum option **-D** that works in bitcoin version and also on the litecoin version, you can run the wallets you want. The only thing that matter is that when you run electrum you point it to a directory with a profile of bitcoin electrum. And the same with electrum-ltc, you need to point it to directory of litecoin electrum.
 
+## Thoughts
+
+All the guides that I create are only for Linux OS.
+
+Windows OS is too unstable and to insecure to use any kind of crypto. In Windows you can only use hardware wallets with cold storage.
+
+But if you are private keys are online it doesn't matter if you are in Windows, Linux, MacOS, BSD or any other OS. It's always a chance of anyone grab you private keys from the internet. 
+
+But if you are using a cold storage solution in a hardware wallet like TREZOR even if someone steal your TREZOR, you are safe. Just read the following links how to improve your safety in a TREZOR wallet
+
+https://doc.satoshilabs.com/trezor-user/securitybestpractices.html#using-passphrase-encrypted-seeds
+
+https://blog.trezor.io/seed-pin-passphrase-e15d14a0b546
+
+https://blog.trezor.io/hide-your-trezor-wallets-with-multiple-passphrases-f2e0834026eb
+
+https://blog.trezor.io/
+
+https://twitter.com/TREZOR
+
+https://trezor.io/
+
+
+If you are using any cold storage solution in software like Armory, bitkey or even your own Linux OS installation for different wallets, you should always encrypt everything. 
+
+Your drives should be encrypted I use this distro and I encrypt all my system. In my computer only the /boot is not encrypted.
+
+http://ftp.slackware.com/pub/slackware/slackware-14.1/README_CRYPT.TXT
+
+[In this blog I found the section *Broken configuration*, very useful](https://blog.darknedgy.net/technology/2014/07/27/1/)
+
+In the online machine you only store watch only wallets that only have inside public keys. 
+
+The private keys always remain on the encrypted offline machine!
+
+**Note**
+
+Beware of phishing sites! Always check if the address on the browser is correct, always get it from different sources and when you I are sure that is correct bookmark it and always go to the website from the bookmarks.
+
+Never trust on google search results for wallets, exchanges and etc... Where you need to enter passphrases or get any software.
+
+Google is useful only for getting info!!!
+
 
 ## Support my work
 
