@@ -162,11 +162,19 @@ To add that path to my PATH.
 
 And can run the wallet with the command *electrum*
 
-There is a couple a things I do when run the eletrum wallet. I like to use different profiles so I create on directory for each one. Like this
+There is a couple a things I do when run the eletrum wallet. I like to use different profiles so I create on directory for each one. Like this,
 
 `$ mkdir ~/.electrum_usd`
 
 `$ mkdir ~/.electrum_eur`
+
+To run each profile I will use the electrum option **-D** You can see more typing *electrum --help*
+
+`$ electrum -D $HOME/.electrum_usd/`
+
+## Electrum - LTC wallet
+
+
 
 ## Support my work
 
