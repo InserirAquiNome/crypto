@@ -196,7 +196,7 @@ https://github.com/pooler/electrum-ltc/
 
 You can see that the dependencies are the same that the original one. So when you install the electrum wallet, you can run also the ltc version of it. 
 
-And with electrum option **-D** that works in bitcoin version and also on the litecoin version, you can run the wallets you want. The only thing that matter is that when you run elelectrum you point it to a directory with a profile of bitcoin electrum. And the same with electrum-ltc. 
+And with electrum option **-D** that works in bitcoin version and also on the litecoin version, you can run the wallets you want. The only thing that matter is that when you run electrum you point it to a directory with a profile of bitcoin electrum. And the same with electrum-ltc.
 
 ## Support my work
 
