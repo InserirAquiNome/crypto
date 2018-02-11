@@ -78,7 +78,7 @@ gpg: Total number processed: 1
 gpg:               imported: 1  (RSA: 1)
 ```
 
-Like you can see I found it on the key-server. I but will check the finger print from the file I downloaded.
+Like you can see I found it on the key-server. I but will check the finger print from the key I downloaded in electrum website.
 
 ```
 $ gpg --verify Electrum-3.0.6.tar.gz.asc 
@@ -154,7 +154,7 @@ Now I will add the path to this directory to my PATH.
 
 `$ pwd`
 
-And I them add it at the end of file *.bash_profile*
+And I add it to the end of file *.bash_profile*
 
 `$ vim ~/.bash_profile`
 
@@ -168,7 +168,7 @@ $ source ~/.bash_profile
 
 To add that path to my PATH.
 
-And can run the wallet with the command *electrum*
+And I can run the wallet with the command *electrum*
 
 There is a couple a things I do when run the eletrum wallet. I like to use different profiles so I create on directory for each one. Like this,
 
@@ -241,11 +241,11 @@ The private keys always remain on the encrypted offline machine!
 
 **Google is useful only for getting info!!!**
 
-But this only useful for online attacks and physical attacks on your devices like drives and hardware wallets. But a physical attack is more likely to be an $5 wrench attack that someone trying to decrepit your drives or hack your hardware wallets by physical access.
+But this is only useful for online attacks and physical attacks on your devices like drives and hardware wallets. But a physical attack is more likely to be an $5 wrench attack that someone trying to decrepit your drives or hack your hardware wallets by physical access.
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum3.png "Logo Title Text 1")
 
-In crypto you need no only take care of your online exposure but also your every day security.
+In crypto you need not only take care of your online exposure but also your every day security.
 
 Take same personal defense classes, buy a dog or even buy and learn to use fire weapons.
 
