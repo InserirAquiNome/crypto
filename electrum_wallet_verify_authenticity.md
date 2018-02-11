@@ -13,8 +13,7 @@ And this is a fork from the above that works on litecoin
 https://electrum-ltc.org/
 
 ### NOTE
-
-Electrum can be used as an hot wallet or as cold storage wallet. On cold storage your private keys stay offline so you will need a way to sign the transactions on a offline machine. You can use bitkey for that or create your own linux distro that runs on a storage device that is only connect with the machine offline. e.g: USB memory stick, external hard drive and etc...
+**Electrum can be used as an hot wallet or as cold storage wallet. On cold storage your private keys stay offline so you will need a way to sign the transactions on a offline machine. You can use bitkey for that or create your own linux distro that runs on a storage device that is only connect with the machine offline. e.g: USB memory stick, external hard drive and etc...**
 
 Links
 
@@ -26,14 +25,12 @@ https://en.bitcoin.it/wiki/Cold_storage
 
 https://en.bitcoin.it/wiki/BitKey
 
-
 ## Downloading 
 
 ```
 $ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz
 
 $ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz.asc
-
 ```
 
 
@@ -72,7 +69,6 @@ gpg: depth: 1  valid:   5  signed:   0  trust: 5-, 0q, 0n, 0m, 0f, 0u
 gpg: next trustdb check due at 2018-06-09
 gpg: Total number processed: 1
 gpg:               imported: 1  (RSA: 1)
-
 ```
 
 Like you can see I found it. I but will check the finger print from the file I downloaded.
@@ -134,7 +130,6 @@ gpg:                 aka "Thomas Voegtlin <thomasv1@gmx.de>"
 ```
 
 It's authentic.
-
 
 ## Install
 
