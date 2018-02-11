@@ -168,7 +168,7 @@ $ source ~/.bash_profile
 
 To add that path to my PATH.
 
-And can run the wallet with the command *electrum*
+And I can run the wallet with the command *electrum*
 
 There is a couple a things I do when run the eletrum wallet. I like to use different profiles so I create on directory for each one. Like this,
 
