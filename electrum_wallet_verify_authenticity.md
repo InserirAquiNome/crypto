@@ -1,10 +1,10 @@
 # Electrum wallet - Authenticity check
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum1.png "Logo Title Text 1")
-
 ## Intro 
 
 Electrum wallet is a bitcoin wallet. There is also a fork of the electrum wallet that can be used as a litecoin wallet.
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum1.png "Logo Title Text 1")
 
 This the bitcoin wallet 
 
@@ -14,7 +14,12 @@ And this is a fork from the above that works on litecoin
 
 https://electrum-ltc.org/
 
-**Electrum can be used as an hot wallet or as cold storage wallet. On cold storage your private keys stay offline so you will need a way to sign the transactions on a offline machine. You can use bitkey for that or create your own linux distro that runs on a storage device that is only connect with the machine offline. e.g: USB memory stick, external hard drive and etc...**
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum2.png "Logo Title Text 1")
+
+**Electrum can be used as an hot wallet or as cold storage wallet. On cold storage your private keys stay offline so you will need a way to sign the transactions on a offline machine. You can use bitkey for that or create your own linux distro that runs on a storage device that is only connect with the machine offline. e.g: USB memory stick, external hard drive and etc...
+
+The problem is like you can see in the picture above is that when you create a wallet online your seed is created online. And also the wallet itself with private keys inside stays online. In cold storage solution you create this seed on electrum wallet on an offline machine that is never connected to the internet. And you put on the online machine a watch only wallet. An watch only wallet doesn't has any private keys inside, only pub keys.
+**
 
 Links
 
@@ -23,6 +28,8 @@ https://en.bitcoin.it/wiki/Category:Security
 https://en.bitcoin.it/wiki/Securing_your_wallet
 
 https://en.bitcoin.it/wiki/Cold_storage
+
+https://en.bitcoin.it/wiki/Deterministic_wallet
 
 https://en.bitcoin.it/wiki/BitKey
 
