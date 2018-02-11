@@ -6,11 +6,11 @@ Electrum wallet is a bitcoin wallet. There is also a fork of the electrum wallet
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum1.png "Logo Title Text 1")
 
-This the bitcoin wallet 
+This the bitcoin wallet: 
 
 https://electrum.org
 
-And this is a fork from the above that works on litecoin 
+And this is a fork from the above that works on litecoin:
 
 https://electrum-ltc.org/
 
@@ -49,11 +49,11 @@ But now I need to check if this software is the real software created by his aut
 
 In my git repo there is an article created by me about [PGP](https://github.com/InserirAquiNome/crypto/blob/master/PGP.md)
 
-And there is also a couple cheat sheets on my git repo about PGP
+And there is also a couple cheat sheets on my git repo about PGP:
 
 https://github.com/InserirAquiNome/articles/tree/master/cheatsheets
 
-I need the key from the author. And from the website that I provided and that is also no the Electrum website
+I need the key from the author. And from the website that I provided and that is also no the Electrum website:
 
 https://pgp.mit.edu/pks/lookup?op=vindex&search=0x2BD5824B7F9470E6
 
@@ -94,7 +94,7 @@ Primary key fingerprint: 6694 D8DE 7BE8 EE56 31BE  D950 2BD5 824B 7F94 70E6
 
 In the last line there is the fingerprint.
 
-Now I will download the key from a key-server
+Now I will download the key from the key-server.
 
 ```
 $ gpg --recv-keys 7F9470E6
