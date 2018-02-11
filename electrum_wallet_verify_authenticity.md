@@ -174,6 +174,19 @@ To run each profile I will use the electrum option **-D** You can see more typin
 
 ## Electrum - LTC wallet
 
+The fork of the electrum wallet that works as an litecoin wallet can be found in here
+
+https://electrum-ltc.org/
+
+The authenticity verification and install process is identical as the original one. And in the website there is a few tips like this
+
+https://electrum-ltc.org/verifying-signatures.html
+
+In the git repo 
+
+https://github.com/pooler/electrum-ltc/
+
+You can see that the dependencies are the same that the original one. So when you install the electrum wallet, you can run also the ltc version of it. 
 
 
 ## Support my work
