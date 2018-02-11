@@ -200,7 +200,7 @@ And with electrum option **-D** that works in bitcoin version and also on the li
 
 ## Thoughts
 
-All the guides that I create are only for Linux OS.
+The guides that I create are only for Linux OS.
 
 Windows OS is too unstable and to insecure to use any kind of crypto. In Windows you can only use hardware wallets with cold storage.
 
