@@ -78,7 +78,7 @@ gpg: Total number processed: 1
 gpg:               imported: 1  (RSA: 1)
 ```
 
-Like you can see I found it on the key-server. I but will check the finger print from the file I downloaded.
+Like you can see I found it on the key-server. I but will check the finger print from the key I downloaded in electrum website.
 
 ```
 $ gpg --verify Electrum-3.0.6.tar.gz.asc 
@@ -154,7 +154,7 @@ Now I will add the path to this directory to my PATH.
 
 `$ pwd`
 
-And I them add it at the end of file *.bash_profile*
+And I add it to the end of file *.bash_profile*
 
 `$ vim ~/.bash_profile`
 
