@@ -223,13 +223,14 @@ https://trezor.io/
 
 If you are using any cold storage solution in software like Armory, Bitkey or even your own Linux OS installation for different wallets, you should always encrypt everything. 
 
-Your drives should be encrypted I use this distro and I encrypt all my system. In my computer only the /boot is not encrypted.
+Your drives should be encrypted I use this distro and I encrypt all my system. In my computer only the /boot is not encrypted
 
 http://ftp.slackware.com/pub/slackware/slackware-14.1/README_CRYPT.TXT
 
 [In this blog I found the section *Broken configuration*, very useful](https://blog.darknedgy.net/technology/2014/07/27/1/)
 
-In the online machine you only store watch only wallets that only have inside public keys. 
+In the online machine you only store watch only wallets that only have public keys inside. 
+
 
 The private keys always remain on the encrypted offline machine!
 
