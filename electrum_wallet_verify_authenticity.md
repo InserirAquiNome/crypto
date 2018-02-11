@@ -132,11 +132,27 @@ It's authentic.
 
 ## Install
 
+In git repo of the electrum wallet shows the dependencies 
 
+https://github.com/spesmilo/electrum
 
+I already installed them.
 
+I only did this
+
+`$ tar zpvfx Electrum-3.0.6.tar.gz`
+
+Now I will add the path to this directory to my PATH.
+
+`$ pwd`
+
+And I them add it at the end of file *.bash_profile*
+
+`$ vim ~/.bash_profile`
+
+I checked that the file *.bash_profile* doesn't have any empty line at the end.
+ 
 
 ## Support my work
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
-
