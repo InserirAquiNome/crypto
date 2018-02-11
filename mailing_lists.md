@@ -41,7 +41,9 @@ You can use different clients like:
     ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/clawsmail2.png "Logo Title Text 1")
     
     
-   * And many others. Choose the one you like the most.
+   * And many others. 
+   
+     Choose the one you like the most.
 
 
 ## Some mailing lists
