@@ -227,19 +227,18 @@ Your drives should be encrypted I use this distro and I encrypt all my system. I
 
 http://ftp.slackware.com/pub/slackware/slackware-14.1/README_CRYPT.TXT
 
-[In this blog I found the section *Broken configuration*, very useful](https://blog.darknedgy.net/technology/2014/07/27/1/)
+[In this blog I found the section *Broken configuration*, very useful](https://blog.darknedgy.net/technology/2014/07/27/1/**
 
 In the online machine you only store watch only wallets that only have inside public keys. 
 
 The private keys always remain on the encrypted offline machine!
 
-**Note**
 
-Beware of phishing sites! Always check if the address on the browser is correct, always get it from different sources and when you I are sure that is correct bookmark it and always go to the website from the bookmarks.
+**Beware of phishing sites! Always check if the address on the browser is correct, always get it from different sources and when you I are sure that is correct bookmark it and always go to the website from the bookmarks.**
 
-Never trust on google search results for wallets, exchanges and etc... Where you need to enter passphrases or get any software.
+**Never trust on google search results for wallets, exchanges and etc... Where you need to enter passphrases or get any software.**
 
-Google is useful only for getting info!!!
+**Google is useful only for getting info!!!**
 
 
 ## Support my work
