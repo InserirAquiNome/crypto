@@ -18,7 +18,7 @@ https://electrum-ltc.org/
 
 **Electrum can be used as an hot wallet or as cold storage wallet. On cold storage your private keys stay offline so you will need a way to sign the transactions on a offline machine. You can use bitkey for that or create your own linux distro that runs on a storage device that is only connect with the machine offline, e.g: USB memory stick, external hard drive and etc...
 
-The problem is like you can see in the picture above is that when you create a wallet online your seed is created online. And also the wallet itself with private keys inside stays online. In cold storage solution you create this seed on electrum wallet on an offline machine that is never connected to the internet. And you put on the online machine a watch only wallet. An watch only wallet doesn't has any private keys inside, only pub keys.
+The problem is like you can see in the picture above is that when you create a wallet online your seed is created online. And also the wallet itself with the private keys inside stays online. In cold storage solution you create this seed on electrum wallet on an offline machine that is never connected to the internet. And you put on the online machine a watch only wallet. An watch only wallet doesn't has any private keys inside, only pub keys.
 **
 
 Links
