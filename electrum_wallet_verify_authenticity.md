@@ -104,7 +104,7 @@ gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
 
-And check the fingerprint of the download key with the one I downloaded from the wallet website.
+And compare the fingerprint of the download key from the key-server, with the one I downloaded from the wallet website.
 
 ```
 $ gpg --fingerprint 7F9470E6
