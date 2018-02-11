@@ -269,11 +269,11 @@ $ chmod +x bitcoinsync.sh tor.sh
 And now I will add some alias to my .bashrc
 
 ```
-alias BTC_start="source ~/.bashrc ; bitcoind -daemon -disablewallet"
+alias BTC_start="source ~/.bash_profile ; bitcoind -daemon -disablewallet"
 
-alias BTC_stop="source ~/.bashrc ; bitcoin-cli stop"
+alias BTC_stop="source ~/.bash_profile ; bitcoin-cli stop"
 
-alias BTC_status="source ~/.bashrc ; /home/pi/programming/Raspberry_RPi3/scripts/bitcoinsync.sh ; /home/pi/tor.sh ; du -sh /home/pi/storage/blocks/"
+alias BTC_status="source ~/.bash_profile ; /home/pi/programming/Raspberry_RPi3/scripts/bitcoinsync.sh ; /home/pi/tor.sh ; du -sh /home/pi/storage/blocks/"
 ```
 
 And start the node
