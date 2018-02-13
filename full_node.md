@@ -353,7 +353,7 @@ I think will also configure tor on it!
 
 I will leave some link about that.
 
-**Update** 
+**Update - 8 Feb 2018** 
 
 It passed almost 24 hours since the last time posted my node progress syncing the full blockchain.
 
@@ -389,7 +389,7 @@ But I am receiving a full blockchain that is pruned after 600M. It started from 
 
 I could be doing this in a different way. I already have a full blockchain on my personal computer. I could just copy that blockchain to the RPi3 and I think doing that would be faster. But I prefer to test this like if this was my only hardware available for my full node. And for that I will sync the all blockchain.
 
-**Update**
+**Update - 8 Feb 2018**
 
 I changed somethings on my .bashrc to get better stats.
 
@@ -454,6 +454,51 @@ Number of Tor connections: 22
 635M    /home/pi/storage/blocks/
 540M    /home/pi/storage/chainstate/
 ```
+
+**Update - 13 Feb 2018**
+
+I came a cross with some difficulties. The USB memory stick that I'm using for store the blockchain has another data inside and also it's an old USB memory stick that I had laying around. And because of that my node was always stopping. 
+
+But now I am using another USB memory stick only for the blockchain.
+
+My /etc/fstab
+```
+...
+UUID=523ce6cf-a026-467b-822e-3c7cd0e8f94e        /storage1         ext4        defaults         0   0
+...
+```
+
+```
+$ BTC_status
+
+bitcoind is running
+
+Linux RaspberryRPi3 4.9.32-v7-arm #1 SMP Sat Jun 17 13:52:41 BST 2017 armv7l BCM2835 GNU/Linux
+
+Tue 13 Feb 18:21:35 WET 2018
+
+ 18:21:35 up 1 day,  2:26,  5 users,  load average: 2.58, 2.82, 2.86
+
+OK!!! bitcoind is running
+
+Number of blocks 353543
+155484 blocks behind
+69.45 % Done 
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+
+Your Tor IP is:
+   Current IP Address: NOT.MY.TOR.ADDRESS
+      Congratulations. This browser is configured to use Tor.
+      Congratulations. This browser is configured to use Tor.
+Number of Tor connections: 3
+584M    /home/pi/storage1/blocks/
+982M    /home/pi/storage1/chainstate/
+
+```
+
+And now is already running for a while!
 
 ## Tor setup
 
