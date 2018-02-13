@@ -102,7 +102,7 @@ Then the other nodes on the network check if that combination really opens the l
 
 Because the hard work that miners do, every time they do this job that it's similar to open a look, they receive bitcoin. That's called the block reward and that's the way that the bitcoin is generated on the network. But this block reward is reduced with time, so the bitcoin supply is limited to 21M.
 
-Besides this block reward, miners also receive the fees of every transaction on the block that was mined. And in this way, when every bitcoin was already mined there is still incentive for miners spend energy applying security on the network doing computational work aka POW (Proof of Work).
+Besides this block reward, miners also receive the fees of every transaction on the block that was mined. And in this way, when every bitcoin was already mined there is still incentive for miners spend energy applying security on the network doing computational work aka PoW (Proof of Work).
 
 And doesn't matter if you can do this job faster with more computational power because PoW was difficulty adjustment. This means that every time that there is more miners or more powerful hardware on the network the job goes harder. And the opposite also applies, less hash rate (capacity to do PoW) means less difficulty.
 
