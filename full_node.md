@@ -30,7 +30,8 @@ https://bitcoin.org/bin/
 
 **Always check the integrity and authenticity of any software downloaded from the internet**
 
-Besides the reference client there is alternatives like knots and bitcoinj. All this clients came to consensus on the bitcoin network agreeing what are the rules of the network, or in other words this clients vote on the network on what is bitcoin. 
+Besides the reference client there is alternatives clients like knots, bitcoinj and others. All this clients came to consensus on the bitcoin network agreeing what are the rules of the network, or in other words this clients vote on the network on what is bitcoin. **There is some scammers in the crypto space claiming that bitcoin core is the only client, and that's a lie. Always check everything before put your money in one project!!!** 
+
 
 More about this:
 
@@ -81,7 +82,6 @@ This a few guides out there
 
 https://bitcoin.org/en/full-node
 
-
 You can run a full bitcoin node in almost hardware out there, like Satoshi says in the white paper "*The network itself requires a minimal structure*".
 
 But if you are a miner that is different thing and for that you need more powerful hardware. 
@@ -124,7 +124,6 @@ The final cost of this setup is less than 100 usd with cables and the plastic bo
 ## Software - Download the client
 
 I will use the Sathoshi client also known as reference client or bitcoin core.
-
 
 So on https://bitcoin.org/en/download or https://bitcoin.org/bin/
 
