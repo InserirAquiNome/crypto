@@ -78,7 +78,7 @@ Run your own full bitcoin node!
 
 ## Setting a full bitcoin node 
 
-This a few guides out there 
+This is one of the few guides out there 
 
 https://bitcoin.org/en/full-node
 
