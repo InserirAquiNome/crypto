@@ -506,6 +506,33 @@ I followed this guide
 
 https://en.bitcoin.it/wiki/Setting_up_a_Tor_hidden_service
 
+## Next step...
+
+I am also thinking on putting a node on an RPi zero W. 
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node5.jpg "Logo Title Text 1")
+
+https://www.raspberrypi.org/products/raspberry-pi-zero-w/
+
+An RPi zero W is a small [SoC](https://en.wikipedia.org/wiki/System_on_a_chip) computer of half of size of an Raspberry Pi 1 model A.
+
+Tech specs:
+
+ * 802.11 b/g/n wireless LAN
+ * Bluetooth 4.1
+ * Bluetooth Low Energy (BLE)
+ * 1GHz, single-core CPU
+ * 512MB RAM
+ * Mini HDMI and USB On-The-Go ports
+ * Micro USB power
+ * HAT-compatible 40-pin header
+ * Composite video and reset headers
+ * CSI camera connector
+
+Size:
+
+65mm × 30mm × 5mm
+
 ## Thanks
 
 Many thanks to all the men and women working on the development of bitcoin. Thanks for improving bitcoin with your work and thanks for beside all the improvement that we have and will have in this project in the future, everyone can run it in their own homes with inexpensive hardware.
