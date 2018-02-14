@@ -532,6 +532,12 @@ Size:
 
 65mm × 30mm × 5mm
 
+## Notes
+
+In this article I made reference to [bitcoin](https://bitcoin.org/bitcoin.pdf) whitepaper created by Satoshi. But the whitepaper of bitcoin is not a gospel and bitcoin is a religion, and also that's why it's important you run a full node. Because sometime along the way we may need to change something that is not or is against some idea in the whitepaper. The only way that you and only can support that change in running a full node!
+
+Always remember that bitcoin is a voting system and it's first application was finance. You vote with your node on your computer, phone, tablet, etc... and even with a[SoC](https://en.wikipedia.org/wiki/System_on_a_chip) computer.
+
 ## Thanks
 
 Many thanks to all the men and women working on the development of bitcoin. Thanks for improving bitcoin with your work and thanks for beside all the improvement that we have and will have in this project in the future, everyone can run it in their own homes with inexpensive hardware.
