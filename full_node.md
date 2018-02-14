@@ -513,7 +513,7 @@ I am also thinking on putting a node on an RPi zero W.
 
 https://www.raspberrypi.org/products/raspberry-pi-zero-w/
 
-An RPi zero W is a small [SoC](https://en.wikipedia.org/wiki/System_on_a_chip) computer of half of size of an Raspberry Pi 1 model A.
+An RPi zero W is a small [SoC](https://en.wikipedia.org/wiki/System_on_a_chip) computer of half of size of an RPi model A+.
 
 Tech specs:
 
