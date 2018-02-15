@@ -14,9 +14,9 @@ Please follow this guide and read everything. I am not responsible for any lost 
 
 This setup will need two USB memory sticks. One with size > 16GB and other of any size you want.
 
-  * USB memory stick > 16GB
-  * USB memory stick of any size
-  * One computer e.g: laptop or desktop
+  * USB memory stick > 16GB, and in this tutorial I will call it the OS USB.
+  * USB memory stick of any size, and in this tutorial I call it the transfer USB.
+  * One computer e.g: laptop or desktop.
   
 
 ## Setup
@@ -42,7 +42,7 @@ In the guide there is a few options to create your live linux distro and for tha
 
 Notice that everything is provided on the [guide](https://docs.slackware.com/slackware:liveslak)
 
-### USB memory stick > 16GB
+### OS USB
 
 To transfer the ISO to the USB stick,  it's need  the iso2usb.sh script that it's already downloaded. This script was a few options
 
@@ -77,7 +77,7 @@ I choose this options
 
 This transfer the to *slackware64-live-xfce-current.iso*  to the storage device */dev/sdf* and create an [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) encrypted /home using 30% of the space of the storage device. And also will create a LUKS encrypted file here are stored the changes made to the OS.
 
-### The other USB memory stick
+### transfer USB
 
 Connect to USB memory stick to your online machine and see where it is.
 
@@ -234,7 +234,7 @@ Copy the *0050-multilib-current-x86_64.sxz* to it and disconnect the computer fr
 
 ## Offline Setup
 
-Now with the machine with the internet cable disconnected you can put the USB memory stick > 16GB and boot.
+Now with the machine with the internet cable disconnected you can put the OS USB and boot.
 
 This is how I run my offline machine
 
@@ -311,7 +311,7 @@ Copy the *0050-multilib-current-x86_64.sxz*
 
 ### Multilib
 
-
+In the files download and the 
 
 
 ## Support my work
