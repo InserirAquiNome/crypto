@@ -249,31 +249,7 @@ Slackware Live Edition knows two user accounts: “root” and “live”. They 
 ...
 ```
 
-Now it's needed to create new users and change the root password.
-
-To change the root password.
-
-```
-$ su
-
-# passwd 
-
-# exit
-```
-
-To create a new one called *riva*
-
-```
-$ su
-
-# useradd -m -s /bin/bash -G audio,cdrom,flopply,plugdev,power,video riva
-```
-
-Setup the user *riva* password
-
-`# passwd riva`
-
-And now let's [blacklist]() every network adapters
+Now let's [blacklist]() every network adapters
 
 ```
 # lspci
@@ -318,7 +294,7 @@ Only after I did
 ```
 And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
 
-Reboot the machine and login with the new user, in my case it's *riva*!
+Reboot the machine!
 
 
 ## Support my work
