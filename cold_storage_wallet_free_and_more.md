@@ -315,7 +315,6 @@ Only after I did
 # modprobe -r ath9k
 
 # ifconfig -a 
-
 ```
 
 And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
