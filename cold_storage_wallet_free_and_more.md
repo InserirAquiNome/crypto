@@ -231,8 +231,8 @@ Disconnect the computer from the internet unplugging the cable and shutdown.
 
 Now with the machine with the internet cable disconnected you can put the USB memory stick > 16GB and boot.
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/coldstorage1.jpg "Logo Title Text 1")
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/coldstorage2.jpg "Logo Title Text 1")
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cold_storage1.jpg "Logo Title Text 1")
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cold_storage2.jpg "Logo Title Text 1")
 
 
 Like you can see in the guide I provided
