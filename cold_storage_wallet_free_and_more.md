@@ -231,9 +231,15 @@ Disconnect the computer from the internet unplugging the cable and shutdown.
 
 Now with the machine with the internet cable disconnected you can put the USB memory stick > 16GB and boot.
 
+This is how I run my offline machine
+
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cold_storage1.jpg "Logo Title Text 1")
+
+I use [rEFInd](http://www.rodsbooks.com/refind/) boot manager the icon selected bellow represents my USB memory stick > 16GB.
+
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cold_storage2.jpg "Logo Title Text 1")
 
+When you boot the live distro you can change some options like the keyboard layout.
 
 Like you can see in the guide I provided
 
@@ -242,6 +248,77 @@ Like you can see in the guide I provided
 Slackware Live Edition knows two user accounts: “root” and “live”. They have passwords, and by default these are… you guessed: “root” and “live”. Also by default, the ISOs will boot into runlevel 4, i.e. you will get a graphical login. The bootloader allows you to pick a non-US language and/or keyboard layout and (on boot of an UEFI system) a custom timezone. 
 ...
 ```
+
+Now it's needed to create new users and change the root password.
+
+To change the root password.
+
+```
+$ su
+
+# passwd 
+
+# exit
+```
+
+To create a new one called *riva*
+
+```
+$ su
+
+# useradd -m -s /bin/bash -G audio,cdrom,flopply,plugdev,power,video riva
+```
+
+Setup the user *riva* password
+
+`# passwd riva`
+
+And now let's [blacklist]() every network adapters
+
+```
+# lspci
+
+...
+0e:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 06)
+```
+
+To find what kernel module belongs to this device
+
+```
+# find /sys | grep drivers.*0e:00
+/sys/bus/pci/drivers/r8169/0000:0e:00.0
+```
+
+To unload and blacklist this kernel module.
+
+```
+# lsmod | grep r8169
+
+# modprobe -r r8169
+
+# vim /etc/modprobe.d/blacklist.conf 
+```
+
+Add this line 
+
+`blacklist r8169`
+
+My ethernet controller is blacklisted but my laptop also was an wifi network adapter. Type *ifconfig -a* to see them.
+
+Using the some method I blacklisted the wifi network adapter kernel module. But before removing and blacklist it I check if I didn't mess up finding the kernel module.
+
+`# lsmod | grep ath9k`
+
+Only after I did 
+
+```
+# modprobe -r ath9k
+
+# ifconfig -a 
+
+```
+
+And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
 
 
 ## Support my work
