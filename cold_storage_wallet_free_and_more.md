@@ -316,7 +316,6 @@ Only after I did
 
 # ifconfig -a 
 ```
-
 And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
 
 Reboot the machine and login with the new user, in my case it's *riva*!
