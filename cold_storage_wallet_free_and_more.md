@@ -320,6 +320,8 @@ Only after I did
 
 And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
 
+Reboot the machine and login with the new user, in my case it's *riva*!
+
 
 ## Support my work
 
