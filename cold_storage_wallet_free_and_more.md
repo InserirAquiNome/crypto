@@ -229,3 +229,15 @@ Disconnect the computer from the internet unplugging the cable and shutdown.
 
 ## Offline Setup
 
+Now with the machine with the internet cable disconnected you can put the USB memory stick > 16GB and boot.
+
+
+
+Like you can see in the guide I provided
+
+```
+...
+Slackware Live Edition knows two user accounts: “root” and “live”. They have passwords, and by default these are… you guessed: “root” and “live”. Also by default, the ISOs will boot into runlevel 4, i.e. you will get a graphical login. The bootloader allows you to pick a non-US language and/or keyboard layout and (on boot of an UEFI system) a custom timezone. 
+...
+```
+
