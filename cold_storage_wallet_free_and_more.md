@@ -224,7 +224,7 @@ And now I need to format it.
 mkfs.fat 3.0.28 (2015-05-16)
 ```
 
-Disconnect the computer from the internet unplugging the cable and shutdown.
+Copy the *0050-multilib-current-x86_64.sxz* to it and disconnect the computer from the internet unplugging the cable and shutdown.
 
 
 ## Offline Setup
