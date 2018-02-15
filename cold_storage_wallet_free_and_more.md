@@ -31,7 +31,12 @@ In [here](http://slackware.uk/people/alien-slacklive/) you choose the ISO you an
 
 And download also files from the bonus folder
 
-`$ wget http://slackware.uk/people/alien-slacklive/bonus/0050-multilib-current-x86_64.sxz`
+```
+$ wget http://slackware.uk/people/alien-slacklive/bonus/0050-multilib-current-x86_64.sxz
+$ wget http://slackware.uk/people/alien-slacklive/bonus/0050-multilib-current-x86_64.sxz.asc
+$ wget http://slackware.uk/people/alien-slacklive/bonus/0050-multilib-current-x86_64.sxz.md5
+```
+
 
 In the guide there is a few options to create your live linux distro and for that I will need this [script](http://www.slackware.com/~alien/liveslak/iso2usb.sh).
 
@@ -249,6 +254,8 @@ Slackware Live Edition knows two user accounts: “root” and “live”. They 
 ...
 ```
 
+### Network 
+
 Now let's [blacklist]() every network adapters
 
 ```
@@ -294,7 +301,17 @@ Only after I did
 ```
 And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
 
-Reboot the machine!
+Reboot the machine and login again!
+
+Create a folder called multilib
+
+`mkdir multilib`
+
+Copy the *0050-multilib-current-x86_64.sxz* 
+
+### Multilib
+
+
 
 
 ## Support my work
