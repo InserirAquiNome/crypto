@@ -12,67 +12,12 @@ https://en.bitcoin.it/wiki/Cold_storage
 
 Please follow this guide and read everything. I am not responsible for any lost of funds.
 
-This setup will need two USB memory sticks. One with size > 16GB and other of any size you want.
+This setup will need 
 
-  * USB memory stick > 16GB, and in this tutorial I will call it the OS USB.
   * USB memory stick of any size, and in this tutorial I call it the transfer USB.
-  * One computer e.g: laptop or desktop.
+  * Offline machine: an one computer old computer e.g: laptop or desktop; or a Raspberry Pi 3.
 
 ## Setup
-
-First and connected to the internet you will need to setup an live linux distro.
-
-https://docs.slackware.com/slackware:liveslak
-
-In [here](http://slackware.uk/people/alien-slacklive/) you choose the ISO you and
-
-`$ wget http://slackware.uk/people/alien-slacklive/1.1.9.6/slackware64-live-xfce-current.iso`
-
-And download also files from the bonus folder
-
-```
-$ wget http://slackware.uk/people/alien-slacklive/bonus/0050-multilib-current-x86_64.sxz
-$ wget http://slackware.uk/people/alien-slacklive/bonus/0050-multilib-current-x86_64.sxz.asc
-$ wget http://slackware.uk/people/alien-slacklive/bonus/0050-multilib-current-x86_64.sxz.md5
-```
-
-In the guide there is a few options to create your live linux distro and for that I will need this [script](http://www.slackware.com/~alien/liveslak/iso2usb.sh).
-
-Notice that everything is provided on the [guide](https://docs.slackware.com/slackware:liveslak)
-
-### OS USB
-
-To transfer the ISO to the USB stick,  it's need  the iso2usb.sh script that it's already downloaded. This script was a few options
-
-```
- -c|--crypt size|perc       Add a LUKS encrypted /home ; parameter is the
-                             requested size of the container in kB, MB, GB,
-                             or as a percentage of free space.
-                             Examples: '-c 125M', '-c 1.3G', '-c 20%'.
-  -d|--devices               List removable devices on this computer.
-  -f|--force                 Ignore most warnings (except the back-out).
-  -h|--help                  This help.
-  -i|--infile <filename>     Full path to the ISO image file.
-  -o|--outdev <filename>     The device name of your USB drive.
-  -p|--persistence <name>    Custom name of the 'persistence' directory/file.
-  -r|--refresh               Refresh the USB stick with the ISO content.
-                             No formatting, do not touch user content.
-  -s|--scan                  Scan for insertion of new USB device instead of
-                             providing a devicename (using option '-o').
-  -u|--unattended            Do not ask any questions.
-  -v|--verbose               Show verbose messages.
-  -w|--wait<number>          Add <number> seconds wait time to initialize USB.
-  -C|--cryptpersistfile size|perc
-                             Use a LUKS-encrypted 'persistence' file instead
-                             of a directory (for use on FAT filesystem).
-  -P|--persistfile           Use an unencrypted 'persistence' file instead
-                             of a directory (for use on FAT filesystem).
-```
-I choose those options
-
-`$ ./iso2usb.sh -i slackware64-live-xfce-current.iso -o /dev/sdf -c 30% -C 60%`
-
-This transfer the to *slackware64-live-xfce-current.iso*  to the storage device */dev/sdf* and create an [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) encrypted /home using 30% of the space of the storage device. And also will create a LUKS encrypted file here are stored the changes made to the OS.
 
 ### transfer USB
 
@@ -359,7 +304,7 @@ https://github.com/InserirAquiNome/crypto/blob/master/PGP.md
 
 https://github.com/InserirAquiNome/crypto/blob/master/electrum_wallet_verify_authenticity.md
 
-It's possible to verify the integrity and authenticity online, offline or both. If want to make sure of everything it's better do both.
+Verify the integrity and authenticity.
 
  * Online 
    
@@ -396,8 +341,18 @@ It's possible to verify the integrity and authenticity online, offline or both. 
    pub  2048R/695506FD 2013-01-15 Animazing <animazing@gmail.com>
    sub  2048R/F607BDEC 2013-01-15
    ``` 
-   
-   They are the same!!!
+
+   ```
+   $ gpg --list-keys --fingerprint 7F9470E6
+   pub   4096R/7F9470E6 2011-06-15
+         Key fingerprint = 6694 D8DE 7BE8 EE56 31BE  D950 2BD5 824B 7F94 70E6
+   uid                  Thomas Voegtlin (https://electrum.org) <thomasv@electrum.org>
+   uid                  ThomasV <thomasv1@gmx.de>
+   uid                  Thomas Voegtlin <thomasv1@gmx.de>
+   sub   4096R/2021CD84 2011-06-15
+   ```
+
+   They have the same unique ID and also now the fingerprint. It's recommend to print this fingerprint to compare with offline machine.
  
    To electrum-ltc in git repo https://github.com/pooler/electrum-ltc/ check the folder *pubkeys*
  
@@ -422,11 +377,36 @@ It's possible to verify the integrity and authenticity online, offline or both. 
    gpg: Total number processed: 1
    gpg:              unchanged: 1
    ```
+
+   ```
+   $ gpg --list-keys --fingerprint F1BE8FEA
+   pub   2048R/F1BE8FEA 2013-07-21
+         Key fingerprint = CAE1 092A D355 3FFD 21C0  5DE3 6FC4 C9F7 F1BE 8FEA
+   uid                  pooler <pooler@litecoinpool.org>
+   sub   2048R/A31415A6 2013-07-21
+   ```
+   
+   I also recommend to print this fingerprint.
  
    Copy all this files to transfer USB.
  
  * Offline machine 
 
+  `$ gpg --gen-key`
+  
+  `$ gpg --import ThomasV.asc `
+  
+  `$ gpg --fingerprint 7F9470E6`
+  
+   And now compare it to fingerprint that was printed on the online machine. If both match then sign it.
+   
+   `$ gpg --sign-key 7F9470E6`
+   
+   Now it's possible to verify the file authenticity.
+   
+   `$ gpg --verify Electrum-3.0.6.tar.gz.asc`
+  
+  Do the same for Electrum-ltc.
 
 
 ## Support my work
