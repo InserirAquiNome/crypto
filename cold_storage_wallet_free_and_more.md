@@ -16,7 +16,7 @@ Please follow this guide and read everything. I am not responsible for any lost 
 
 This setup will need 
 
-  * USB memory stick of any size, and in this tutorial I call it the transfer USB.
+  * USB memory stick of at least 4GB, and in this tutorial I call it the transfer USB.
   * Offline machine: an one computer old computer e.g: laptop or desktop; or a Raspberry Pi 3.
 
 In my case a will use this machine
