@@ -107,7 +107,7 @@ After the first reboot and login as root. Do this to create a new user
 ```
 *riva* is the name that I choose for my user. And now create a password for it
 
-`#passwd riva`
+`# passwd riva`
 
 To start the system with X11 enabled do this
 
