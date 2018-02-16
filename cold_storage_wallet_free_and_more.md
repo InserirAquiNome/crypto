@@ -242,7 +242,7 @@ Slackware Live Edition knows two user accounts: “root” and “live”. They 
 
 ### Network 
 
-Now let's [blacklist]() every network adapters
+Now let's [blacklist](https://pragtob.wordpress.com/2012/09/14/permanently-deactivating-a-network-adapter-in-linux/) every network adapters
 
 ```
 # lspci
