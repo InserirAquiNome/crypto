@@ -35,16 +35,23 @@ And I will use an USB memory stick 4GB instead of a DVD. Because this machine do
 
 https://www.slackwiki.com/Install_Slackware_Using_A_USB_Flash_Drive
 
-After downloaded the ISO for i386 of my hardware
+After downloaded the ISO for i386 because my hardware is i386, I need to transfer to ISO to the USB memory stick that I will use as install medium.
 
 ```
 # dd if=slackware-14.2-install-dvd.iso of=/dev/sdf
 # sync
 ```
+
+I will follow this guide and combining LUKS and LVM and will create an encrypted system, where only the /boot is not encrypted. Everything else is encrypted eg: /home, swap and etc...
+
 http://ftp.slackware.com/pub/slackware/slackware-14.1/README_CRYPT.TXT
+
+
+In this guide the *Broken configuration* sections is very useful. 
 
 https://blog.darknedgy.net/technology/2014/07/27/1/
 
+All the setup and installation will be made with the machine offline! This machine will never be connected to the internet. The only thing going through the offline machine and the online machine is an USB memory stick formatted with vfat file system. This is USB memory stick on this tutorial is referred as transfer USB.
 
 ## Misc
 
