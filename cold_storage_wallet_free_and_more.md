@@ -361,6 +361,73 @@ https://github.com/InserirAquiNome/crypto/blob/master/electrum_wallet_verify_aut
 
 It's possible to verify the integrity and authenticity online, offline or both. If want to make sure of everything it's better do both.
 
+ * Online 
+   
+   In the git repo of electrum 
+   
+   https://github.com/spesmilo/electrum
+  
+   Go to the *pubkeys* folder and download the key from ThomasV
+   
+   `$ wget https://raw.githubusercontent.com/spesmilo/electrum/master/pubkeys/ThomasV.asc`
+   
+   Now lets see the unique ID from this key on the [keyserver](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x2BD5824B7F9470E6)
+  
+   ```
+   $ gpg --search-keys 7F9470E6 
+   gpg: searching for "7F9470E6" from hkp server keys.gnupg.net
+   (1)     ThomasV <thomasv1@gmx.de>
+           Thomas Voegtlin <thomasv1@gmx.de>
+           Thomas Voegtlin (https://electrum.org) <thomasv@electrum.org>
+           4096 bit RSA key 7F9470E6, created: 2011-06-15
+   Keys 1-1 of 1 for "7F9470E6".  Enter number(s), N)ext, or Q)uit > 1
+   gpg: requesting key 7F9470E6 from hkp server keys.gnupg.net
+   gpg: key 7F9470E6: "Thomas Voegtlin (https://electrum.org) <thomasv@electrum.org>" not changed
+   gpg: Total number processed: 1
+   gpg:              unchanged: 1
+   ```
+  
+   And see the unique ID from the key downloaded from the git repo.
+   
+  ```
+  $ gpg ThomasV.asc           
+  pub  4096R/7F9470E6 2011-06-15 ThomasV <thomasv1@gmx.de>
+  sub  4096R/2021CD84 2011-06-15
+  pub  2048R/695506FD 2013-01-15 Animazing <animazing@gmail.com>
+  sub  2048R/F607BDEC 2013-01-15
+  ``` 
+   
+ They are the same!!!
+ 
+ To electrum-ltc in git repo https://github.com/pooler/electrum-ltc/ check the folder *pubkeys*
+ 
+ `$ wget https://raw.githubusercontent.com/pooler/electrum-ltc/master/pubkeys/pooler.asc` 
+ 
+ 
+ ```
+ $ gpg pooler.asc 
+ pub  2048R/F1BE8FEA 2013-07-21 pooler <pooler@litecoinpool.org> 
+ sub  2048R/A31415A6 2013-07-21
+ ``` 
+ [keyserver](http://pgp.mit.edu/pks/lookup?op=vindex&search=0x6FC4C9F7F1BE8FEA)
+ 
+ ```
+ $ gpg --search-keys F1BE8FEA 
+ gpg: searching for "F1BE8FEA" from hkp server keys.gnupg.net
+ (1)     pooler <pooler@litecoinpool.org>
+          2048 bit RSA key F1BE8FEA, created: 2013-07-21
+ Keys 1-1 of 1 for "F1BE8FEA".  Enter number(s), N)ext, or Q)uit > 1
+ gpg: requesting key F1BE8FEA from hkp server keys.gnupg.net
+ gpg: key F1BE8FEA: "pooler <pooler@litecoinpool.org>" not changed
+ gpg: Total number processed: 1
+ gpg:              unchanged: 1
+ ```
+ 
+ Copy all this files to transfer USB.
+ 
+ * Offline machine 
+
+
 
 ## Support my work
 
