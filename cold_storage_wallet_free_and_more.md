@@ -378,8 +378,25 @@ You will download both the source and the build script, Slackbuild.
 
 Put all this packages on transfer USB and transfer it to the offline machine.
 
-Install all the files in *packages* folder using *installpkg *.txz *tgz* 
+On the offline machine you copy the folder *packages* to the *Downloads* folder. And now you will build every dependency.
 
+First you need to extract the build script
+
+```
+$ tar zpvfx libxkbcommon.tar.gz
+$ rm libxkbcommon.tar.gz
+```
+Copy the source inside the folder that was created 
+
+`$ mv libxkbcommon-0.7.1.tar.xz   libxkbcommon`
+
+```
+$ cd libxkbcommon 
+$ chmod +x libxkbcommon.Slackbuild
+$ su
+# ./libxkbcommon.Slackbuild
+```
+And do this for every dependencies and do it in the order provided on the list above because some of this dependencies depend on each other.
 
 ### Electrum and Electrum-ltc - SPV Wallets
 
