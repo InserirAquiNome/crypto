@@ -343,7 +343,19 @@ Install all the files in *packages* folder using *installpkg *.txz *tgz*
 
 ### Download electrum and electrum-ltc
 
+In the transfer USB create a folder called wallets.
 
+```
+$ mkdir wallets
+$ cd wallets
+$ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz 
+$ wget https://download.electrum.org/3.0.6/Electrum-3.0.6.tar.gz.asc
+$ wget https://electrum-ltc.org/download/Electrum-LTC-3.0.6.2.tar.gz
+$ wget https://electrum-ltc.org/download/Electrum-LTC-3.0.6.2.tar.gz.DIGESTS.txt
+$ wget https://electrum-ltc.org/download/Electrum-LTC-3.0.6.2.tar.gz.asc
+```
+
+And now you need the keys also on the transfer USB
 
 ## Support my work
 
