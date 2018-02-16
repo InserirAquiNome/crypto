@@ -25,7 +25,7 @@ In my case a will use this machine
 
 ## Setup - Offline machine
 
-### Slackware Linux OS install
+### Slackware Linux OS install and setup
 
 I will install Slackware Linux OS
 
