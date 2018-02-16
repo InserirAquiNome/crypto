@@ -336,7 +336,7 @@ mkfs.fat 3.0.28 (2015-05-16)
 
 ### Dependencies
 
-And now you need to download the following dependencies
+For Electrum and Electrum-ltc wallets to run there is some dependencies that are required.
 
   * libxkbcommon
   * libwacom
@@ -346,8 +346,18 @@ And now you need to download the following dependencies
   * python3
   * python3-sip
   * python3-PyQt5 
-  
-From [here](http://www.slackware.com/~alien/slackbuilds/) and [here](https://slackware.pkgs.org/14.2/slackonly-x86_64/).
+ 
+This dependencies will be download on a online machine and not this one that you finished the setup. The offline machine can't ever be online.
+
+You will download the dependencies on a online machine, put them on the transfer USB and connect it to offline machine.
+
+The only way to transfer files between the online and offline machine is with the transfer USB and make sure that you format the transfer USB often.
+```
+# mkfs.vfat /dev/sdf1
+mkfs.fat 3.0.28 (2015-05-16)
+```
+
+From
 
 ```
 $ mkdir packages 
