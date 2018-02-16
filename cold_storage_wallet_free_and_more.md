@@ -17,7 +17,32 @@ This setup will need
   * USB memory stick of any size, and in this tutorial I call it the transfer USB.
   * Offline machine: an one computer old computer e.g: laptop or desktop; or a Raspberry Pi 3.
 
-## Setup
+In my case a will use this machine
+
+## Setup - Offline machine
+
+I will install Slackware Linux OS
+
+http://www.slackware.com/
+
+http://www.slackware.com/getslack/
+
+And I will use an USB memory stick 4GB instead of a DVD. Because this machine doesn't have any DVD/CD ROM.
+
+https://www.slackwiki.com/Install_Slackware_Using_A_USB_Flash_Drive
+
+After downloaded the ISO for i386 of my hardware
+
+```
+# dd if=slackware-14.2-install-dvd.iso of=/dev/sdf
+# sync
+```
+http://ftp.slackware.com/pub/slackware/slackware-14.1/README_CRYPT.TXT
+
+https://blog.darknedgy.net/technology/2014/07/27/1/
+
+
+## Misc
 
 ### transfer USB
 
