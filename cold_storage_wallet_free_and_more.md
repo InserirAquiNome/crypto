@@ -51,7 +51,7 @@ In this guide the *Broken configuration* sections is very useful.
 
 https://blog.darknedgy.net/technology/2014/07/27/1/
 
-All the setup and installation will be made with the machine offline! This machine will never be connected to the internet. The only thing going through the offline machine and the online machine is an USB memory stick formatted with vfat file system. This is USB memory stick on this tutorial is referred as transfer USB.
+All the setup and installation will be made with the machine offline! This machine will never be connected to the internet. The only thing going through the offline machine and the online machine is an USB memory stick formatted with vfat file system. This USB memory stick on this tutorial is referred as transfer USB.
 
 ## Misc
 
