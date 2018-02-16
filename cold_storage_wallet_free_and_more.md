@@ -25,6 +25,8 @@ In my case a will use this machine
 
 ## Setup - Offline machine
 
+### Slackware Linux OS install
+
 I will install Slackware Linux OS
 
 http://www.slackware.com/
@@ -52,6 +54,87 @@ In this guide the *Broken configuration* sections is very useful.
 https://blog.darknedgy.net/technology/2014/07/27/1/
 
 All the setup and installation will be made with the machine offline! This machine will never be connected to the internet. The only thing going through the offline machine and the online machine is an USB memory stick formatted with vfat file system. This USB memory stick on this tutorial is referred as transfer USB.
+
+### Network 
+
+Now let's [blacklist](https://pragtob.wordpress.com/2012/09/14/permanently-deactivating-a-network-adapter-in-linux/) every network adapters
+
+```
+# lspci
+
+...
+0e:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 06)
+```
+
+To find what kernel module belongs to this device
+
+```
+# find /sys | grep drivers.*0e:00
+/sys/bus/pci/drivers/r8169/0000:0e:00.0
+```
+
+To unload and blacklist this kernel module.
+
+```
+# lsmod | grep r8169
+
+# modprobe -r r8169
+
+# vim /etc/modprobe.d/blacklist.conf 
+```
+Add this line 
+
+`blacklist r8169`
+
+My ethernet controller is blacklisted but my laptop also was an wifi network adapter. Type *ifconfig -a* to see them.
+
+Using the some method I blacklisted the wifi network adapter kernel module. But before removing and blacklist it I check if I didn't mess up finding the kernel module.
+
+`# lsmod | grep ath9k`
+
+Only after I did 
+
+```
+# modprobe -r ath9k
+
+# ifconfig -a 
+```
+And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
+
+Reboot the machine and login again!
+
+### Dependencies
+
+And now you need to download the following dependencies
+
+  * libxkbcommon
+  * libwacom
+  * libinput 
+  * qt5
+  * qt5-webkit
+  * python3
+  * python3-sip
+  * python3-PyQt5 
+  
+From [here](http://www.slackware.com/~alien/slackbuilds/) and [here](https://slackware.pkgs.org/14.2/slackonly-x86_64/).
+
+```
+$ mkdir packages 
+$ cd packages
+$ wget http://www.slackware.com/~alien/slackbuilds/libxkbcommon/pkg64/current/libxkbcommon-0.8.0-x86_64-1alien.txz
+$ wget http://www.slackware.com/~alien/slackbuilds/libwacom/pkg64/14.2/libwacom-0.22-x86_64-1alien.txz
+$ wget http://www.slackware.com/~alien/slackbuilds/libinput/pkg64/14.2/libinput-1.5.4-x86_64-1alien.txz
+$ wget http://www.slackware.com/~alien/slackbuilds/qt5/pkg64/current/qt5-5.9.4-x86_64-1alien.txz
+$ wget http://www.slackware.com/~alien/slackbuilds/qt5-webkit/pkg64/current/qt5-webkit-5.9.1-x86_64-2alien.txz
+$ wget https://mirrors.slackware.com/slackware/slackware64-current/slackware64/a/patch-2.7.6-x86_64-1.txz
+$ wget https://packages.slackonly.com/pub/packages/14.2-x86_64/python/python3/python3-3.6.4-x86_64-1_slonly.txz
+$ wget https://packages.slackonly.com/pub/packages/14.1-x86_64/python/python3-sip/python3-sip-4.17-x86_64-1_slack.txz
+$ wget https://packages.slackonly.com/pub/packages/14.2-x86_64/libraries/python3-PyQt5/python3-PyQt5-5.9.2-x86_64-1_slonly.txz
+```
+Put all this packages on transfer USB and transfer it to the offline machine.
+
+Install all the files in *packages* folder using *installpkg *.txz *tgz* 
+
 
 ## Misc
 
@@ -198,90 +281,9 @@ And now I need to format it.
 mkfs.fat 3.0.28 (2015-05-16)
 ```
 
-## Offline Setup
+## Wallets
 
-### Network 
-
-Now let's [blacklist](https://pragtob.wordpress.com/2012/09/14/permanently-deactivating-a-network-adapter-in-linux/) every network adapters
-
-```
-# lspci
-
-...
-0e:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 06)
-```
-
-To find what kernel module belongs to this device
-
-```
-# find /sys | grep drivers.*0e:00
-/sys/bus/pci/drivers/r8169/0000:0e:00.0
-```
-
-To unload and blacklist this kernel module.
-
-```
-# lsmod | grep r8169
-
-# modprobe -r r8169
-
-# vim /etc/modprobe.d/blacklist.conf 
-```
-Add this line 
-
-`blacklist r8169`
-
-My ethernet controller is blacklisted but my laptop also was an wifi network adapter. Type *ifconfig -a* to see them.
-
-Using the some method I blacklisted the wifi network adapter kernel module. But before removing and blacklist it I check if I didn't mess up finding the kernel module.
-
-`# lsmod | grep ath9k`
-
-Only after I did 
-
-```
-# modprobe -r ath9k
-
-# ifconfig -a 
-```
-And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
-
-Reboot the machine and login again!
-
-
-### Dependencies
-
-And now you need to download the following dependencies
-
-  * libxkbcommon
-  * libwacom
-  * libinput 
-  * qt5
-  * qt5-webkit
-  * python3
-  * python3-sip
-  * python3-PyQt5 
-  
-From [here](http://www.slackware.com/~alien/slackbuilds/) and [here](https://slackware.pkgs.org/14.2/slackonly-x86_64/).
-
-```
-$ mkdir packages 
-$ cd packages
-$ wget http://www.slackware.com/~alien/slackbuilds/libxkbcommon/pkg64/current/libxkbcommon-0.8.0-x86_64-1alien.txz
-$ wget http://www.slackware.com/~alien/slackbuilds/libwacom/pkg64/14.2/libwacom-0.22-x86_64-1alien.txz
-$ wget http://www.slackware.com/~alien/slackbuilds/libinput/pkg64/14.2/libinput-1.5.4-x86_64-1alien.txz
-$ wget http://www.slackware.com/~alien/slackbuilds/qt5/pkg64/current/qt5-5.9.4-x86_64-1alien.txz
-$ wget http://www.slackware.com/~alien/slackbuilds/qt5-webkit/pkg64/current/qt5-webkit-5.9.1-x86_64-2alien.txz
-$ wget https://mirrors.slackware.com/slackware/slackware64-current/slackware64/a/patch-2.7.6-x86_64-1.txz
-$ wget https://packages.slackonly.com/pub/packages/14.2-x86_64/python/python3/python3-3.6.4-x86_64-1_slonly.txz
-$ wget https://packages.slackonly.com/pub/packages/14.1-x86_64/python/python3-sip/python3-sip-4.17-x86_64-1_slack.txz
-$ wget https://packages.slackonly.com/pub/packages/14.2-x86_64/libraries/python3-PyQt5/python3-PyQt5-5.9.2-x86_64-1_slonly.txz
-```
-Put all this packages on transfer USB and transfer it to the offline machine.
-
-Install all the files in *packages* folder using *installpkg *.txz *tgz* 
-
-### Download electrum and electrum-ltc
+### Electrum and Electrum-ltc - SPV Wallets
 
 In the transfer USB create a folder called wallets.
 
