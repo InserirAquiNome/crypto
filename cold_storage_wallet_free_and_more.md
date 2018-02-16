@@ -19,6 +19,8 @@ This setup will need
 
 In my case a will use this machine
 
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cold_storage1.jpg "Logo Title Text 1")
+
 ## Setup - Offline machine
 
 I will install Slackware Linux OS
