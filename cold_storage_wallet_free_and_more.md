@@ -1,6 +1,6 @@
 # Cold storage
 
-In other articles I already talked about cold storage wallets. Cold storage wallets are the only safe solution that is safe in crypto because your private keys remain offline and the only way to sign transactions is with private keys.
+In other articles I already talked about cold storage wallets. Cold storage wallets are the only safe solution in crypto. Because your private keys remain offline and the only way to sign transactions is with private keys.
 
 And because there is a physical separation from the internet - disconnect eth cable and wifi networks. No one can grab your private keys from the internet. So you eliminate online threats. 
 
