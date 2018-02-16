@@ -165,26 +165,6 @@ Copy the *0050-multilib-current-x86_64.sxz* to it and disconnect the computer fr
 
 ## Offline Setup
 
-Now with the machine with the internet cable disconnected you can put the OS USB and boot.
-
-This is how I run my offline machine
-
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cold_storage1.jpg "Logo Title Text 1")
-
-I use [rEFInd](http://www.rodsbooks.com/refind/) boot manager the icon selected bellow represents my USB memory stick > 16GB.
-
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cold_storage2.jpg "Logo Title Text 1")
-
-When you boot the live distro you can change some options like the keyboard layout.
-
-Like you can see in the guide I provided
-
-```
-...
-Slackware Live Edition knows two user accounts: “root” and “live”. They have passwords, and by default these are… you guessed: “root” and “live”. Also by default, the ISOs will boot into runlevel 4, i.e. you will get a graphical login. The bootloader allows you to pick a non-US language and/or keyboard layout and (on boot of an UEFI system) a custom timezone. 
-...
-```
-
 ### Network 
 
 Now let's [blacklist](https://pragtob.wordpress.com/2012/09/14/permanently-deactivating-a-network-adapter-in-linux/) every network adapters
@@ -233,24 +213,6 @@ And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
 
 Reboot the machine and login again!
 
-### Multilib
-
-Create a folder called multilib
-
-`mkdir multilib`
-
-Copy the *0050-multilib-current-x86_64.sxz*,*0050-multilib-current-x86_64.sxz.asc* *0050-multilib-current-x86_64.sxz.md5* to that directory and check the integrity of the file.
-
-`$ md5sum -c 0050-multilib-current-x86_64.sxz.md5`
-
-And do
-
-```
-$ cd multilib 
-$ unsquashfs -d tmp/ 0050-multilib-current-x86_64.sxz
-$ cp -av tmp/. /
-
-```
 
 ### Dependencies
 
