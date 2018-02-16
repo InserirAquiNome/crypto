@@ -55,7 +55,55 @@ https://blog.darknedgy.net/technology/2014/07/27/1/
 
 All the setup and installation will be made with the machine offline! This machine will never be connected to the internet. The only thing going through the offline machine and the online machine is an USB memory stick formatted with vfat file system. This USB memory stick on this tutorial is referred as transfer USB.
 
+The guide provided is very straight forward, so it will not be hard to install the OS. 
+
+But there is a couple a things a did different from the guide.
+
+```
+...
+
+* In the chroot, you create an initrd image with LVM and CRYPT support -
+or else your Slackware computer will not be able to proceed past the initial
+stage of booting the kernel.  The initial ramdisk (initrd) contains a small
+filesystem with the tools needed to unlock the root filesystem, so that
+the kernel can start the init program.  In the example command line below
+which creates the 'initrd.gz' image I assume that you formatted the root
+filesystem as 'ext3', and will be running the Slackware 14.0 default SMP
+kernel '3.2.29-smp' :
+
+  # mkinitrd -c -k 3.2.29-smp -m ext3 -f ext3 -r /dev/cryptvg/root -C /dev/sdx2 -L
+...
+```
+
+This part where tells how to create the *initrd.gz* I do it in this way
+
+`# /usr/share/mkinitrd/mkinitrd_command_generator.sh`
+
+This will generate a command and options to generate the *initrd.gz*. But because you need to type everything and you are in terminal it's easier to this.
+
+`# /usr/share/mkinitrd/mkinitrd_command_generator.sh > lilo.sh`
+
+Now edit *lilo.sh* and change the first line to this 
+
+`#!/bin/bash`
+
+You can edit the file using vim
+
+`# vim lilo.sh`
+
+And make it executable and run it.
+
+```
+# chmod +x lilo.sh
+# ./lilo.sh
+```
+
+Follow the rest of the guide!
+
+### Create one user and change boot 
+
 ### Network 
+
 
 Now let's [blacklist](https://pragtob.wordpress.com/2012/09/14/permanently-deactivating-a-network-adapter-in-linux/) every network adapters
 
