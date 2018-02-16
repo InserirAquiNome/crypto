@@ -320,9 +320,7 @@ And now you need to download the following dependencies
   * python3-sip
   * python3-PyQt5 
   
-From [here](http://www.slackware.com/~alien/slackbuilds/)
-
-And [here](https://slackware.pkgs.org/14.2/slackonly-x86_64/)
+From [here](http://www.slackware.com/~alien/slackbuilds/) and [here](https://slackware.pkgs.org/14.2/slackonly-x86_64/).
 
 ```
 $ mkdir packages 
