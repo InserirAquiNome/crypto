@@ -99,7 +99,7 @@ And make it executable and run it.
 ```
 Follow the rest of the guide!
 
-### Create one user and change boot 
+### Create one user and enable X11 on boot
 
 After the first reboot and login as root. Do this to create a new user
 ```
