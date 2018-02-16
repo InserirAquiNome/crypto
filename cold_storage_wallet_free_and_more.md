@@ -135,7 +135,9 @@ This will use the Portuguese keyboard layout. Change it to fit your requirements
 
 ### Network 
 
-Now let's [blacklist](https://pragtob.wordpress.com/2012/09/14/permanently-deactivating-a-network-adapter-in-linux/) every network adapters
+Now let's [blacklist](https://pragtob.wordpress.com/2012/09/14/permanently-deactivating-a-network-adapter-in-linux/** every network adapters
+
+Do *ifconfig -a* to see your network interface. You will need to blacklist them all in such way then when you do *ifconfig -a* you will only see the *lo* loopback network interface.
 
 ```
 # lspci
@@ -164,7 +166,7 @@ Add this line
 
 `blacklist r8169`
 
-My ethernet controller is blacklisted but my laptop also was an wifi network adapter. Type *ifconfig -a* to see them.
+My ethernet controller is blacklisted but my laptop also was an wifi network adapter. Type *ifconfig -a* to see what network interface are still configured.
 
 Using the some method I blacklisted the wifi network adapter kernel module. But before removing and blacklist it I check if I didn't mess up finding the kernel module.
 
@@ -178,6 +180,12 @@ Only after I did
 # ifconfig -a 
 ```
 And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
+
+Do again
+
+`# ifconfig -a`
+
+To make sure that only the *lo* network interface is setup.
 
 Reboot the machine and login again!
 
