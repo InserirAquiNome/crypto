@@ -353,7 +353,14 @@ $ wget https://electrum-ltc.org/download/Electrum-LTC-3.0.6.2.tar.gz.DIGESTS.txt
 $ wget https://electrum-ltc.org/download/Electrum-LTC-3.0.6.2.tar.gz.asc
 ```
 
-And now you need the keys also on the transfer USB
+Now I need to check the integrity and authenticity of this wallets. I already made a few articles about PGP
+
+https://github.com/InserirAquiNome/crypto/blob/master/PGP.md
+
+https://github.com/InserirAquiNome/crypto/blob/master/electrum_wallet_verify_authenticity.md
+
+It's possible to verify the integrity and authenticity online, offline or both. If want to make sure of everything it's better do both.
+
 
 ## Support my work
 
