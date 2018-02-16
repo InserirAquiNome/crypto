@@ -338,7 +338,7 @@ mkfs.fat 3.0.28 (2015-05-16)
 
 For Electrum and Electrum-ltc wallets to run there is some dependencies that are required.
 
-  * libxkbcommon
+  * libxkbcommony
   * libwacom
   * libinput 
   * qt5
@@ -357,21 +357,25 @@ The only way to transfer files between the online and offline machine is with th
 mkfs.fat 3.0.28 (2015-05-16)
 ```
 
-From
+From here, https://slackbuilds.org/ you will download all the dependencies above a put them inside a folder called *packages* inside the USB transfer.
+
+Every one of this dependencies was an source and a build script. 
+
+In the first dependency *libxkbcommony* on the site https://slackbuilds.org/ you can see this
 
 ```
-$ mkdir packages 
-$ cd packages
-$ wget http://www.slackware.com/~alien/slackbuilds/libxkbcommon/pkg64/current/libxkbcommon-0.8.0-x86_64-1alien.txz
-$ wget http://www.slackware.com/~alien/slackbuilds/libwacom/pkg64/14.2/libwacom-0.22-x86_64-1alien.txz
-$ wget http://www.slackware.com/~alien/slackbuilds/libinput/pkg64/14.2/libinput-1.5.4-x86_64-1alien.txz
-$ wget http://www.slackware.com/~alien/slackbuilds/qt5/pkg64/current/qt5-5.9.4-x86_64-1alien.txz
-$ wget http://www.slackware.com/~alien/slackbuilds/qt5-webkit/pkg64/current/qt5-webkit-5.9.1-x86_64-2alien.txz
-$ wget https://mirrors.slackware.com/slackware/slackware64-current/slackware64/a/patch-2.7.6-x86_64-1.txz
-$ wget https://packages.slackonly.com/pub/packages/14.2-x86_64/python/python3/python3-3.6.4-x86_64-1_slonly.txz
-$ wget https://packages.slackonly.com/pub/packages/14.1-x86_64/python/python3-sip/python3-sip-4.17-x86_64-1_slack.txz
-$ wget https://packages.slackonly.com/pub/packages/14.2-x86_64/libraries/python3-PyQt5/python3-PyQt5-5.9.2-x86_64-1_slonly.txz
+Homepage:
+https://xkbcommon.org/
+Source Downloads:
+libxkbcommon-0.7.1.tar.xz (947ba609cb0239b9462127d5cf8908ee)
+
+Download SlackBuild:
+libxkbcommon.tar.gz
+libxkbcommon.tar.gz.asc (FAQ)
+
 ```
+You will download both the source and the build script, Slackbuild.
+
 Put all this packages on transfer USB and transfer it to the offline machine.
 
 Install all the files in *packages* folder using *installpkg *.txz *tgz* 
