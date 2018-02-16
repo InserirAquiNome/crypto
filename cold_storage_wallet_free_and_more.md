@@ -17,7 +17,6 @@ This setup will need two USB memory sticks. One with size > 16GB and other of an
   * USB memory stick > 16GB, and in this tutorial I will call it the OS USB.
   * USB memory stick of any size, and in this tutorial I call it the transfer USB.
   * One computer e.g: laptop or desktop.
-  
 
 ## Setup
 
@@ -36,7 +35,6 @@ $ wget http://slackware.uk/people/alien-slacklive/bonus/0050-multilib-current-x8
 $ wget http://slackware.uk/people/alien-slacklive/bonus/0050-multilib-current-x86_64.sxz.asc
 $ wget http://slackware.uk/people/alien-slacklive/bonus/0050-multilib-current-x86_64.sxz.md5
 ```
-
 
 In the guide there is a few options to create your live linux distro and for that I will need this [script](http://www.slackware.com/~alien/liveslak/iso2usb.sh).
 
@@ -70,8 +68,7 @@ To transfer the ISO to the USB stick,  it's need  the iso2usb.sh script that it'
   -P|--persistfile           Use an unencrypted 'persistence' file instead
                              of a directory (for use on FAT filesystem).
 ```
-
-I choose this options
+I choose those options
 
 `$ ./iso2usb.sh -i slackware64-live-xfce-current.iso -o /dev/sdf -c 30% -C 60%`
 
@@ -84,7 +81,6 @@ Connect to USB memory stick to your online machine and see where it is.
 `# fdisk -l`
 
 This is my output 
-
 ```
 Disk /dev/sdf: 3.7 GiB, 3909091328 bytes, 7634944 sectors
 Units: sectors of 1 * 512 = 512 bytes
@@ -97,7 +93,6 @@ Device     Boot Start     End Sectors  Size Id Type
 /dev/sdf1        2048 7634943 7632896  3.7G  b W95 FAT32
 
 ```
-
 I am using a 4GB USB memory stick and it's on */dev/sdf* and it has a vfat partition on */dev/sdf1**
 
 **This USB memory sticks was always to be on vfat format because in linux in vfat file system, there is no executable files. And this way you can prevent key loggers and other spying software from running**
@@ -117,10 +112,7 @@ Disk /dev/sdf: 3.7 GiB, 3909091328 bytes, 7634944 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-```
 
-
-```
 # fdisk /dev/sdf
 
 Welcome to fdisk (util-linux 2.27.1).
@@ -204,9 +196,7 @@ The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
-
-And now I check if I really created 
-
+And now I check if I really created it.
 ```
 # fdisk -l
 
@@ -221,16 +211,12 @@ Disk identifier: 0x198c942d
 Device     Boot Start     End Sectors  Size Id Type
 /dev/sdf1        2048 7634943 7632896  3.7G  b W95 FAT32
 ```
-
 And now I need to format it.
-
 ```
 # mkfs.vfat /dev/sdf1
 mkfs.fat 3.0.28 (2015-05-16)
 ```
-
 Copy the *0050-multilib-current-x86_64.sxz* to it and disconnect the computer from the internet unplugging the cable and shutdown.
-
 
 ## Offline Setup
 
@@ -281,7 +267,6 @@ To unload and blacklist this kernel module.
 
 # vim /etc/modprobe.d/blacklist.conf 
 ```
-
 Add this line 
 
 `blacklist r8169`
@@ -303,15 +288,61 @@ And add the line *blacklist ath9k* on */etc/modprobe.d/blacklist.conf*
 
 Reboot the machine and login again!
 
+### Multilib
+
 Create a folder called multilib
 
 `mkdir multilib`
 
-Copy the *0050-multilib-current-x86_64.sxz* 
+Copy the *0050-multilib-current-x86_64.sxz*,*0050-multilib-current-x86_64.sxz.asc* *0050-multilib-current-x86_64.sxz.md5* to that directory and check the integrity of the file.
 
-### Multilib
+`$ md5sum -c 0050-multilib-current-x86_64.sxz.md5`
 
-In the files download and the 
+And do
+
+```
+$ cd multilib 
+$ unsquashfs -d tmp/ 0050-multilib-current-x86_64.sxz
+$ cp -av tmp/. /
+
+```
+
+### Dependencies
+
+And now you need to download the following dependencies
+
+  * libxkbcommon
+  * libwacom
+  * libinput 
+  * qt5
+  * qt5-webkit
+  * python3
+  * python3-sip
+  * python3-PyQt5 
+  
+From [here](http://www.slackware.com/~alien/slackbuilds/)
+
+And [here](https://slackware.pkgs.org/14.2/slackonly-x86_64/)
+
+```
+$ mkdir packages 
+$ cd packages
+$ wget http://www.slackware.com/~alien/slackbuilds/libxkbcommon/pkg64/current/libxkbcommon-0.8.0-x86_64-1alien.txz
+$ wget http://www.slackware.com/~alien/slackbuilds/libwacom/pkg64/14.2/libwacom-0.22-x86_64-1alien.txz
+$ wget http://www.slackware.com/~alien/slackbuilds/libinput/pkg64/14.2/libinput-1.5.4-x86_64-1alien.txz
+$ wget http://www.slackware.com/~alien/slackbuilds/qt5/pkg64/current/qt5-5.9.4-x86_64-1alien.txz
+$ wget http://www.slackware.com/~alien/slackbuilds/qt5-webkit/pkg64/current/qt5-webkit-5.9.1-x86_64-2alien.txz
+$ wget https://mirrors.slackware.com/slackware/slackware64-current/slackware64/a/patch-2.7.6-x86_64-1.txz
+$ wget https://packages.slackonly.com/pub/packages/14.2-x86_64/python/python3/python3-3.6.4-x86_64-1_slonly.txz
+$ wget https://packages.slackonly.com/pub/packages/14.1-x86_64/python/python3-sip/python3-sip-4.17-x86_64-1_slack.txz
+$ wget https://packages.slackonly.com/pub/packages/14.2-x86_64/libraries/python3-PyQt5/python3-PyQt5-5.9.2-x86_64-1_slonly.txz
+```
+Put all this packages on transfer USB and transfer it to the offline machine.
+
+Install all the files in *packages* folder using *installpkg *.txz *tgz* 
+
+### Download electrum and electrum-ltc
+
 
 
 ## Support my work
