@@ -106,21 +106,24 @@ After the first reboot and login as root. Do this to create a new user
 # useradd -m -s /bin/bash -G audio,cdrom,floppy,plugdev,power,video riva
 ```
 *riva* is the name that I choose for my user. And now create a password for it
+
 `#passwd riva`
 
 To start the system with X11 enabled do this
-`# vim /etc/inittab`
-And change the run level from 3 to 4 like this
 
+`# vim /etc/inittab`
+
+And change the run level from 3 to 4 like this
 ```
 ...
 # Default runlevel. (Do not set to 0 or 6)
 id:4:initdefault:
 ...
-
 ```
-To be able on the session manager to use your keyboard layou
+To be able on the session manager to use your keyboard layout
+
 `# cp -av /usr/share/X11/xorg.conf.d/90-keyboard-layout.conf /etc/X11/xorg.conf.d`
+
 And edit it
 
 ```
