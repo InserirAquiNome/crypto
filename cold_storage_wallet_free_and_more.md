@@ -338,7 +338,7 @@ mkfs.fat 3.0.28 (2015-05-16)
 
 For Electrum and Electrum-ltc wallets to run there is some dependencies that are required.
 
-  * libxkbcommony
+  * libxkbcommon
   * libwacom
   * libinput 
   * qt5
