@@ -120,7 +120,7 @@ And change the run level from 3 to 4 like this
 id:4:initdefault:
 ...
 ```
-To be able on the session manager to use your keyboard layout
+To be able on the session manager to use your country keyboard layout
 
 `# cp -av /usr/share/X11/xorg.conf.d/90-keyboard-layout.conf /etc/X11/xorg.conf.d`
 
