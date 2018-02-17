@@ -357,7 +357,7 @@ The only way to transfer files between the online and offline machine is with th
 mkfs.fat 3.0.28 (2015-05-16)
 ```
 
-From here, https://slackbuilds.org/ you will download all the dependencies above a put them inside a folder called *packages* inside the transfer USB.
+From here, https://slackbuilds.org/ you will download all the dependencies above. And put them inside a folder called *packages* inside the transfer USB.
 
 Every one of this dependencies was an source and a build script. 
 
