@@ -135,7 +135,7 @@ This will use the Portuguese keyboard layout. Change it to fit your requirements
 
 ### Network 
 
-Now let's [blacklist](https://pragtob.wordpress.com/2012/09/14/permanently-deactivating-a-network-adapter-in-linux/** every network adapters
+Now let's [blacklist](https://pragtob.wordpress.com/2012/09/14/permanently-deactivating-a-network-adapter-in-linux/) every network adapters
 
 Do *ifconfig -a* to see your network interface. You will need to blacklist them all in such way then when you do *ifconfig -a* you will only see the *lo* loopback network interface.
 
