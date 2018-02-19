@@ -3,7 +3,9 @@
 # bash script que verifica se o node esta sincronizado ou quantos blocks faltam.
 #
 
-bitcoindSynced() {
+export PATH=$PATH:$HOME/BITCOIN/bitcoin-0.15.1/bin/
+
+bitcoindSynce(d) {
 
   process=bitcoind
   pidof -s "$process" > /dev/null 2>&1
@@ -53,7 +55,5 @@ bitcoindSynced() {
   printf ""$perc" %% Done \n\n"
 
 } 2>/dev/null
-
-source ~/.bashrc
 
 bitcoindSynced
