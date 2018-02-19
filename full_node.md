@@ -502,6 +502,7 @@ The node synced until 75% then it crashed. And think the problem is using the US
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.jpg "Logo Title Text 1")
 
+
 ## Tor setup
 
 I followed this guide
