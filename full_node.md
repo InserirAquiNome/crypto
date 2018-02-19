@@ -496,6 +496,12 @@ Number of Tor connections: 3
 
 And now is already running for a while!
 
+**Update - 19 Feb 2018**
+
+The node synced until 75% then it crashed. And think the problem is using the USB memory stick to store the blockchain. I have an 2,5'' HDD hard drive laying around so I will use it. The HDD hard drive is inside a case similar to this one
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.jpg "Logo Title Text 1")
+
 ## Tor setup
 
 I followed this guide
