@@ -55,6 +55,14 @@ Mastering Bitcoin The definitive technical guide to Bitcoin and Open Blockchains
 
 The Internet of Money Vol 1 & 2, A collection of Andreas' talks explaining why bitcoin and open blockchains matter, for a general audience: https://TheInternetOfMoney.info
 
+### PGP
+
+```
+pub   4096R/5079D156 2018-02-20
+      Key fingerprint = 30FC E66F FC02 D5CE 4947  69ED B042 5FAA 5079 D156
+uid                  InserirAquiNome <ten.thousands.fists@gmail.com>
+sub   4096R/18018313 2018-02-20
+```
 
 ## Support my work
 
