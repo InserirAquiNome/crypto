@@ -2,7 +2,7 @@
 
 ## Intro
 
-I like a lot of wathcing [block digest] videos. 
+I like a lot of watching [block digest](https://www.youtube.com/channel/UCb53lXz2IzEFT5JNHSbdvPg) videos. 
 
 And this [episode](https://youtu.be/iSQidaREBLM?t=49m38s) they talk about UE 
 
