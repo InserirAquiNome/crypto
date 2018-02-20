@@ -15,8 +15,9 @@ https://davidgerard.co.uk/blockchain/2018/02/16/a-bad-eu-motion-coming-up-for-vo
 
 ### How PGP works?
 
+## Bitcoin 
 
-
+## Bitcoin blockchain
 
 
 # My cat
