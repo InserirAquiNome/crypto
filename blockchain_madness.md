@@ -1,4 +1,4 @@
-# Blockchain as database! What!? Blockchain is not database?
+# Blockchain as database
 
 ## Intro
 
