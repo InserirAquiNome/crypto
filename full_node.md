@@ -1,5 +1,7 @@
 # Bitcoin full node
 
+*Disclaimer*: I am not an expert in crypto! Sometimes I just say stuff.
+
 ## Introduction 
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node3.png "Logo Title Text 1")
