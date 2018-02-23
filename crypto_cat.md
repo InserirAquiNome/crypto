@@ -155,7 +155,7 @@ gpg: BAD signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 
 But in this hosting service
 
-` wget https://images2.imgbox.com/3d/24/z4PoDdri_o.jpg -O cat.jpg`
+`$ wget https://images2.imgbox.com/3d/24/z4PoDdri_o.jpg -O cat.jpg`
 
 ```
 $ gpg --verify cat.jpg.asc                                       
