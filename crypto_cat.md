@@ -141,7 +141,7 @@ gpg: Signature made Fri 23 Feb 2018 04:52:26 WET using RSA key ID 5079D156
 gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 ```
 
-In this way on only need to send two files: the picture of my cat and a txt file where is the file signature the prove its authenticity; and the SHA256 checksum that prove its integrity.
+In this way I only need to send two files: the picture of my cat and a txt file where is the file signature the prove its authenticity; and the SHA256 checksum that prove its integrity.
 
 No I can sent both files by email or send only the txt file by email and host the picture on any image hosting service. If the hosting service don't change the picture, my friend can check also that it match exactly with the picture that I toke. 
 Now there is a problem with some image hosting services, some of them change the images that are hosted.
