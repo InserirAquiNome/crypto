@@ -47,7 +47,7 @@ gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 
 ## Making a fake
 
-I will change on pixel on the image and create a new version.
+I will change one pixel on the image and create a new version.
 
 `$ cp -av cat_fake.jpg cat.jpg`
 
