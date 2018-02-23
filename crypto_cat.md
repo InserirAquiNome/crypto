@@ -164,7 +164,9 @@ gpg: Signature made Fri 23 Feb 2018 04:52:26 WET using RSA key ID 5079D156
 gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 ```
 
-It wasn't changed. Just in case the best solution is compress the picture and the txt of the signature and host them somewhere.
+It wasn't changed. 
+
+Just in case the best solution is compress both the picture and the txt of the signature and host it somewhere.
 
 ## Support my work
 
