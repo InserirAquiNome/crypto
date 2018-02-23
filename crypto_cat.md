@@ -215,6 +215,37 @@ The arguments are broken down as follows:
      
      -e specifies the type of encryption. Steghide supports a multitude of encryption schemes, and if this argument is omitted by default, Steghide will use 128-bit AES encryption. If you prefer not use encryption, simply type -e none.
 
+Again I will use the picture of my cat.
+
+`$ cp -av cat_orig.jpg cat_steg.jpg`
+
+`$ steghide embed -ef secret.txt -cf cat_steg.jpg -e none -Z`
+
+secret.txt
+```
+Soft kitty
+Warm kitty
+Little ball of fur
+
+Happy kitty
+Sleepy kitty
+Purr purr purr
+```
+`steghide extract -sf stegoFile -xf outputFile`
+
+`$ steghide extract -sf cat_steg.jpg -xf my_secret.txt`
+
+```
+$ cat my_secret.txt 
+Soft kitty
+Warm kitty
+Little ball of fur
+
+Happy kitty
+Sleepy kitty
+Purr purr purr
+```
+
 
 ## Support my work
 
