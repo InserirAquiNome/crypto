@@ -13,7 +13,7 @@ The pub key, like the name says is public. So the public key can be online and s
 
 PGP can be used to encrypt messages but also for sign messages. You can sign a message with your private key and prove that the message belongs to you.
 
-This is very useful for example if your bank sends you an email and want to sign it so that you know that was really your bank that send it. Because the bank sign is public you can check the authenticity of the email.
+This is very useful for example if your bank sends you an email and want to sign it so that you know that was really your bank that send it. Because the bank public key is public you can check the authenticity of the email.
 
 In this way you can check the authenticity of files with PGP.
 
