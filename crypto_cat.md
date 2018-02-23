@@ -236,7 +236,7 @@ Happy kitty
 Sleepy kitty
 Purr purr purr
 ```
-Putting both images side by side I can see any difference between them. The original one is on the left and the with the secret is on the right.
+Putting both images side by side I can see any difference between them. The original one is on the left and the one with the secret is on the right.
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cat_orig_steg.jpg "Logo Title Text 1")
 
