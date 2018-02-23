@@ -196,8 +196,7 @@ For this reason, there are a plethora of other steganography techniques out ther
 
 ## Using it
 
-Keeping in mind that certain digital steganography techniques are better than others, generally, it's best to avoid the LSB technique and go for something a bit more sophisticated. In fact, designing your own steganography algorithm isn't terribly difficult if you already have good coding and math foundations. But to get a feel for how steganography works, LSB, which [steghide](http://steghide.sourceforge.net/download.php)
- uses, will do just fine here.
+For sure certain digital steganography techniques are better than others, generally, it's best to avoid the LSB technique and go for something a bit more sophisticated. Or even designing your own steganography algorithm if you have good coding and math foundations. But to show how steganography works, I will use [steghide](http://steghide.sourceforge.net/download.php), that uses LSB.
 
 Usage 
 
