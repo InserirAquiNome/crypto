@@ -144,7 +144,7 @@ In this way on only need to send two files: the picture of my cat and a txt file
 No I can sent both files by email or send only the txt file by email and host the picture on any image hosting service. If the hosting service don't change the picture, my friend can check also that it match exactly with the picture that I toke. 
 Now there is a problem with some image hosting services, some of them change the images that are hosted.
 
-`$ wget https://i.imgur.com/bOoZss4.jpg -O cat.jpg`
+`$ wget https://i.imgur.com/OwVPWI5.jpg -O cat.jpg`
 
 ```
 $ gpg --verify cat.jpg.asc 
