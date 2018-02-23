@@ -16,7 +16,9 @@ This is very useful for example if your bank sends you an email and want to sign
 
 In this way you can check the authenticity of files with PGP.
 
-[More](https://www.gnupg.org/documentation/manpage.html)
+PGP is available for Linux, MacOS and also Windows and you can find this software searching by *gnupg*.
+
+[More](https://www.gnupg.org/documentation/index.html)
 
 ## Signing a file
 
