@@ -143,7 +143,7 @@ gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 
 In this way I only need to send two files: the picture of my cat and a txt file where is the file signature the prove its authenticity; and the SHA256 checksum that prove its integrity.
 
-No I can sent both files by email or send only the txt file by email and host the picture on any image hosting service. If the hosting service don't change the picture, my friend can check if matches exactly with the picture that I toke. 
+No I can sent both files by email or send only the txt file by email and host the picture on any image hosting service. If the hosting service don't change the picture, my friend can check if it match exactly with the picture that I toke. 
 Now there is a problem with some image hosting services, some of them change the images that are hosted.
 
 `$ wget https://i.imgur.com/OwVPWI5.jpg -O cat.jpg`
