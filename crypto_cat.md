@@ -185,6 +185,9 @@ Whereas cryptography is the practice of protecting the contents of a message alo
 
 Steganography includes the concealment of information within computer files. In digital steganography, electronic communications may include steganographic coding inside of a transport layer, such as a document file, image file, program or protocol. Media files are ideal for steganographic transmission because of their large size. For example, a sender might start with an innocuous image file and adjust the color of every hundredth pixel to correspond to a letter in the alphabet. The change is so subtle that someone who is not specifically looking for it is unlikely to notice the change.
 
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cat_1.jpg "Logo Title Text 1")
+
 There are several different techniques for concealing data inside of normal files. One of the most widely used and perhaps simplest to understand is the least significant bit technique, known commonly as LSB.
 
 This technique changes the last few bits in a byte to encode a message, which is especially useful in something like an image, where the red, green, and blue values of each pixel are represented by eight bits (one byte) ranging from 0 to 255 in decimal or 00000000 to 11111111 in binary.
@@ -231,6 +234,9 @@ Happy kitty
 Sleepy kitty
 Purr purr purr
 ```
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cat_orig_steg.jpg "Logo Title Text 1")
+
 `steghide extract -sf stegoFile -xf outputFile`
 
 `$ steghide extract -sf cat_steg.jpg -xf my_secret.txt`
