@@ -261,6 +261,62 @@ Sleepy kitty
 Purr purr purr
 ```
 
+I will add all SHA256 checksum to the file cat.jpg.asc
+
+`$ sha256sum *.jpg >> cat.jpg.asc`
+
+```
+$ cat  cat.jpg.asc 
+-----BEGIN PGP SIGNATURE-----
+
+iQIcBAABAgAGBQJaj54KAAoJELBCX6pQedFWxacP/RXE5Sj85G5gR5wCoZ4bF17W
+6qg1Q9Q3pPGMlk2TRiQG/t/40FQxche7e2j/8XIsOqBGU7cGM7KhjHJnZmEhp/0p
+W0PesdTCJftyK+/owaWVW4in4C0KcA1mQHXmYm5dd/d3+SiAmM969yRxMQojmq3u
+HZNijnxcu5csJz1r7jn5lotraKDxGYfxhizHvwbPGbdBTVr5+pxyejKgVebvB0YA
+iuB6oaKdU5eelBMkT/oyXo3lMva+RT6SCYyGW/zod9Gpjv5ZdtG43LLxIAGFm68Q
+2PIcu+SvjJdSluL5NT8UfSt+19YtvXVGvYpTQ8AxrW1E62H5pVdtEj4LGhmsnVEF
+eAI4oJ+vfvxmWCsuhRKJXxVhIqikQfB6tOR6mSs9gYUuICnbrzs8jlDswb0rkkDh
+yz6nAK5WKkB+dr/+macJirtJfU39CkB5SuOygq+ulqubeUamvWdekJEuh6Dw1vZu
+HyzmueRZbjcjhpVqYFKgUkc4Mk23sZEjZmX08HuZPLrhqn0eNsFQ3IkJJLzY/s0R
++et5ZiDScp2bLkatjjmB4Jy8T84q0MKtThI/K134cA5K8CP6MvEYgRyfQsCYr6MY
+97rcqMUmRoRU2Tv7SnjayCs7Lmu+bR/vp7wRXnouO4pAdFEP+tksVwQqk7VHpeEZ
+fMkgDaZ98y6TzRg7j50t
+=zlMt
+-----END PGP SIGNATURE-----
+76639b1b7918c863e899377acd482e995435337834f305c46d4ff781005734dd  cat.jpg
+756ea827fed88ef6d4d9ffb1d5179c5fc490d061329a0b9a02fe14948adda8d5  cat_fake.jpg
+14e9fdc6e18b278a4c8fdf1cc4a46cfdf599e0a676dc88647650096da926b617  cat_fake_zoom.jpg
+76639b1b7918c863e899377acd482e995435337834f305c46d4ff781005734dd  cat_orig.jpg
+805278298cdb6f6b79f8bc1f255bf58c765bbf17aa1f191ccf2fe97c9a4899f4  cat_orig_steg.jpg
+b80b88f66b8c0d7b24a17389598ca2f3c5605c5f494d4151b986509635d1e95f  cat_steg.jpg
+
+```
+
+Of course that the file *cat.jpg* and *cat_orig.jpg* have the same checksum because they are identical.
+
+And finally I will check the integrity of all *jpg* files and also verify if my *cat.jpg* is still the one that I signed.
+
+```
+$ gpg --verify cat.jpg.asc
+gpg: assuming signed data in `cat.jpg'
+gpg: Signature made Fri 23 Feb 2018 04:52:26 WET using RSA key ID 5079D156
+gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
+```
+Signature matches.
+
+```
+$ sha256sum -c --ignore-missing cat.jpg.asc
+cat.jpg: OK
+cat_fake.jpg: OK
+cat_fake_zoom.jpg: OK
+cat_orig.jpg: OK
+cat_orig_steg.jpg: OK
+cat_steg.jpg: OK
+sha256sum: WARNING: 16 lines are improperly formatted
+```
+
+And also the SHA256 checksum also matches.
+
 ## Support my work
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
