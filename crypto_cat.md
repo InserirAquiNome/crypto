@@ -1,5 +1,7 @@
 # PGP 
 
+## Intro
+
 PGP is very useful. 
 
 PGP stands for *Pretty Good Privacy* and can be used to send a message to a recipient, using his public key, that he only can read with his private key.
