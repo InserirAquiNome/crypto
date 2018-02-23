@@ -317,7 +317,7 @@ sha256sum: WARNING: 16 lines are improperly formatted
 
 And also the SHA256 checksum also matches.
 
-This is a link for all the files used on this article. You can check by yourself the integrity and authenticity of the *cat.jpg*  with my public PGP key. And also you can read the *secret.txt* that it's hidden on *cat_steg.jpg* with the password *cat*.
+This is a [link](https://github.com/InserirAquiNome/crypto/blob/master/crypto_cat_files.zip) for all the files used on this article. You can check by yourself the integrity and authenticity of the *cat.jpg*  with my public PGP key. And also you can read the *secret.txt* that it's hidden on *cat_steg.jpg* with the password *cat*.
 
 
 ## Support my work
