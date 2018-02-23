@@ -184,6 +184,8 @@ Whereas cryptography is the practice of protecting the contents of a message alo
 
 Steganography includes the concealment of information within computer files. In digital steganography, electronic communications may include steganographic coding inside of a transport layer, such as a document file, image file, program or protocol. Media files are ideal for steganographic transmission because of their large size. For example, a sender might start with an innocuous image file and adjust the color of every hundredth pixel to correspond to a letter in the alphabet. The change is so subtle that someone who is not specifically looking for it is unlikely to notice the change.
 
+[*source*](https://en.wikipedia.org/wiki/Steganography)
+
 ## Using it
 
 In linux I will use [steghide](http://steghide.sourceforge.net/download.php)
@@ -195,14 +197,16 @@ Usage
 The arguments are broken down as follows:
 
      -ef specifies the path of the file that you want to hide. You can embed any kind of file inside of the cover file, including Python scripts or shell files.
+     
      -cf is the file that the data is embedded into. This is restricted to BMP, JPEG, WAV, and AU files.
+     
      -sf is an optional argument that specifies the output file. If this is omitted, the original cover file will be overwritten by your new steganographic file.
+     
      -z specifies the compression level, between 1 and 9. If you prefer not to compress your file, use the argument -Z instead.
+     
      -e specifies the type of encryption. Steghide supports a multitude of encryption schemes, and if this argument is omitted by default, Steghide will use 128-bit AES encryption. If you prefer not use encryption, simply type -e none.
 
 
-
-[*source*](https://en.wikipedia.org/wiki/Steganography)
 ## Support my work
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
