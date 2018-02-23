@@ -10,7 +10,7 @@ PGP consists in two keys, the private key and the public key. The relationship b
 
 The pub key, like the name says is public. So the public key can be online and should be online. The only way to access your private key is with your password.
 
-PGP can be used to encrypt messages but also for sign messages. You can sign a message with your private key and prove that message belongs to you.
+PGP can be used to encrypt messages but also for sign messages. You can sign a message with your private key and prove that the message belongs to you.
 
 This is very useful for example if your bank sends you an email and want to sign it so that you know that was really your bank that send it. Because the bank sign is public you can check the authenticity of the email.
 
