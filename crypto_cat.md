@@ -81,7 +81,7 @@ This is the one that I signed.
 
 ## Signing a file using an ASCII armored output.
 
-I want to sign my cat photo in such a way that the output is an ASCII output. 
+I want to sign my cat picture in such a way that the output is an ASCII output. 
 
 `$ gpg -u 5079D156 --armor --output cat.jpg.asc --detach-sign cat.jpg`
 
@@ -105,7 +105,7 @@ fMkgDaZ98y6TzRg7j50t
 -----END PGP SIGNATURE-----
 ```
 
-And it can be used to check the authenticity of my cat photo.
+And it can be used to check the authenticity of my cat picture.
 
 ```
 $ gpg --verify cat.jpg.asc  
@@ -118,11 +118,11 @@ gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>
 
 Sometimes sending files over the internet can get some errors on them. This is a huge problem when the files are software, for example.
 
-I will create SHA256 checksum of the photo before I send it. And store that checksum in a txt file that I will send also with the photo.
+I will create SHA256 checksum of the picture before I send it. And store that checksum in a txt file that I will send also with the picture.
 
 `$ sha256sum cat.jpg >> cat.jpg.asc`
 
-Before I send it I will check if the checksum is ok or in other words the photo integrity.
+Before I send it I will check if the checksum is ok or in other words the file integrity.
 
 ```
 $ sha256sum -c --ignore-missing cat.jpg.asc 
@@ -130,7 +130,7 @@ cat.jpg: OK
 sha256sum: WARNING: 16 lines are improperly formatted
 ```
 
-And this is the photo authenticity. 
+And this is the file authenticity. 
 
 ```
 $ gpg --verify cat.jpg.asc                  
@@ -139,9 +139,9 @@ gpg: Signature made Fri 23 Feb 2018 04:52:26 WET using RSA key ID 5079D156
 gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 ```
 
-In this way on only need to send two files: the photo of my cat and a txt file where is the file signature the prove its authenticity; and the SHA256 checksum that prove its integrity.
+In this way on only need to send two files: the picture of my cat and a txt file where is the file signature the prove its authenticity; and the SHA256 checksum that prove its integrity.
 
-No I can sent both files by email or send only the txt file by email and host the photo on any image hosting service. If the hosting service don't change the photo my friend can check also that it match exactly with the photo that I toke. 
+No I can sent both files by email or send only the txt file by email and host the picture on any image hosting service. If the hosting service don't change the picture, my friend can check also that it match exactly with the picture that I toke. 
 Now there is a problem with some image hosting services, some of them change the images that are hosted.
 
 `$ wget https://i.imgur.com/bOoZss4.jpg -O cat.jpg`
@@ -164,7 +164,7 @@ gpg: Signature made Fri 23 Feb 2018 04:52:26 WET using RSA key ID 5079D156
 gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 ```
 
-It wasn't changed. Just in case the best solution is compress the photo and the txt of the signature and host them somewhere.
+It wasn't changed. Just in case the best solution is compress the picture and the txt of the signature and host them somewhere.
 
 ## Support my work
 
