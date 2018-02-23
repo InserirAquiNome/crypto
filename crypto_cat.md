@@ -31,7 +31,7 @@ First I will sign the picture with my private key. And the only one that could d
 
 `gpg -u 5079D156 --output cat.jpg.sig --detach-sign cat.jpg`
 
-But my pub key is public and it's available online in a few places like [[1](https://twitter.com/ComAsasNosPes/status/966848020989038593) [2](https://github.com/InserirAquiNome/crypto/tree/master/pubkeys) [3](https://keyserver.mattrude.com/pks/lookup?search=ten.thousands.fists%40gmail.com&fingerprint=on&op=vindex)
+But my pub key is public and it's available online in a few places like [[1]](https://twitter.com/ComAsasNosPes/status/966848020989038593) [2](https://github.com/InserirAquiNome/crypto/tree/master/pubkeys) [3](https://keyserver.mattrude.com/pks/lookup?search=ten.thousands.fists%40gmail.com&fingerprint=on&op=vindex)
 
 So my friend can easily get my pub key.
 
