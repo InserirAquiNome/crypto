@@ -22,7 +22,7 @@ PGP is available for Linux, MacOS and also Windows and you can find this softwar
 
 ## Signing a file
 
-I have a picture of my cat that I what to send to a friend and he can prove that it's authentic.
+I have a picture of my cat that I what to send to a friend in way that he can prove that it's authentic.
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cat.jpg "Logo Title Text 1")
 
