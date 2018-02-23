@@ -1,5 +1,4 @@
 # PGP 
-
 ## Intro
 
 PGP is very useful. 
@@ -173,7 +172,6 @@ It wasn't changed.
 Just in case the best solution is compress both the picture and the txt file and host it somewhere.
 
 # Steganography 
-
 ## Intro
 
 Steganography (/ˌstɛɡəˈnɒɡrəfi/ (About this sound listen) STEG-ə-NOG-rə-fee) is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography combines the Greek words steganos (στεγανός), meaning "covered, concealed, or protected," and graphein (γράφειν) meaning "writing".
