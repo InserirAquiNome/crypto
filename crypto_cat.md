@@ -218,13 +218,15 @@ The arguments are broken down as follows:
      
      -e specifies the type of encryption. Steghide supports a multitude of encryption schemes, and if this argument is omitted by default, Steghide will use 128-bit AES encryption. If you prefer not use encryption, simply type -e none.
 
-Again I will use the picture of my cat.
+Again I will use the picture of my cat. I will create a copy to use.
 
 `$ cp -av cat_orig.jpg cat_steg.jpg`
 
+Now I will hide a secret message on it.
+
 `$ steghide embed -ef secret.txt -cf cat_steg.jpg -e none -Z`
 
-secret.txt
+This is my secret message, *secret.txt*
 ```
 Soft kitty
 Warm kitty
@@ -234,12 +236,19 @@ Happy kitty
 Sleepy kitty
 Purr purr purr
 ```
+Putting both images side by side I can see any difference between them. The original one is on the left and the with the secret is on the right.
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cat_orig_steg.jpg "Logo Title Text 1")
 
+To extract the secret 
+
 `steghide extract -sf stegoFile -xf outputFile`
 
+Now I will extract my secret message.
+
 `$ steghide extract -sf cat_steg.jpg -xf my_secret.txt`
+
+And this is it
 
 ```
 $ cat my_secret.txt 
@@ -251,7 +260,6 @@ Happy kitty
 Sleepy kitty
 Purr purr purr
 ```
-
 
 ## Support my work
 
