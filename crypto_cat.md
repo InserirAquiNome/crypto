@@ -1,22 +1,40 @@
 # PGP 
 
-Using PGP for authenticity check
+PGP is very useful. 
 
-https://www.gnupg.org/documentation/manpage.html
+PGP stands for *Pretty good privacy* and can be used to send a message to a recipient, using his public key, that he only can read with his private key.
+
+In other words it's possible to send an encrypted message to someone only knowing something that everyone else knows. But if that person can prove that the thing that everyone else knows is really his, he can decrypt the message.
+
+PGP consists in two keys, the private key and the public key. The relationship between a pub key and it's private key is a password.
+
+The pub key, like the name says is public. So the public key can be online and should be online. The only way to access your private key is with your password.
+
+PGP can be used to encrypt messages but also for sign messages. You can sign a message with your private key and prove that message belongs to you.
+
+This is very useful for example if your bank sends you an email and want to sign it so that you know that was really your bank that send it. Because the bank sign is public you can check the authenticity of the email.
+
+In this way you can check the authenticity of files with PGP.
+
+[More](https://www.gnupg.org/documentation/manpage.html)
 
 ## Signing a file
 
+I have a picture of my cat that I what to send to a friend and he can prove that it's authentic.
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cat.jpg "Logo Title Text 1")
+
+First I will sign the picture with my private key. And the only one that could do this it's me because I own the password.
+
 `gpg -u 5079D156 --output cat.jpg.sig --detach-sign cat.jpg`
 
-My pub pgp key
+But my pub key is public and it's available online in a few places like [1](https://twitter.com/ComAsasNosPes/status/966848020989038593) [2](https://github.com/InserirAquiNome/crypto/tree/master/pubkeys) [3](https://keyserver.mattrude.com/pks/lookup?search=ten.thousands.fists%40gmail.com&fingerprint=on&op=vindex)
 
-https://twitter.com/ComAsasNosPes/status/966848020989038593
-
-https://github.com/InserirAquiNome/crypto/tree/master/pubkeys
-
-https://keyserver.mattrude.com/pks/lookup?search=ten.thousands.fists%40gmail.com&fingerprint=on&op=vindex
+So my friend can easily get my pub key.
 
 ## Checking the file for authenticity
+
+Before I send it I will check it's authenticity myself.
 
 ```
 $ gpg --verify cat.jpg.sig                                    
@@ -27,9 +45,15 @@ gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 
 ## Making a fake
 
+I will change on pixel on the image and create a new version.
+
 `$ cp -av cat_fake.jpg cat.jpg`
 
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cat_fake.jpg "Logo Title Text 1")
 
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cat_fake_zoom.jpg "Logo Title Text 1")
+
+And know I will check the authenticity.
 
 ```
 $ gpg --verify cat.jpg.sig   
@@ -38,7 +62,13 @@ gpg: Signature made Fri 23 Feb 2018 04:46:19 WET using RSA key ID 5079D156
 gpg: BAD signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 ```
 
+Because this wasn't the file that I signed it's says that isn't authentic.
+
+I will restore the original one.
+
 `$ cp -av cat_orig.jpg cat.jpg`
+
+And check its authenticity.
 
 ```
 $ gpg --verify cat.jpg.sig   
@@ -47,10 +77,15 @@ gpg: Signature made Fri 23 Feb 2018 04:46:19 WET using RSA key ID 5079D156
 gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 ```
 
+This is the one that I signed.
+
 ## Signing a file using an ASCII armored output.
+
+I want to sign my cat photo in such a way that the output is an ASCII output. 
 
 `$ gpg -u 5079D156 --armor --output cat.jpg.asc --detach-sign cat.jpg`
 
+This is the content of file cat.jpg.asc
 ```
 -----BEGIN PGP SIGNATURE-----
 
@@ -70,6 +105,8 @@ fMkgDaZ98y6TzRg7j50t
 -----END PGP SIGNATURE-----
 ```
 
+And it can be used to check the authenticity of my cat photo.
+
 ```
 $ gpg --verify cat.jpg.asc  
 gpg: assuming signed data in `cat.jpg'
@@ -79,7 +116,13 @@ gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>
 
 ## What about the integrity?
 
+Sometimes sending files over the internet can get some errors on them. This is a huge problem when the files are software, for example.
+
+I will create SHA256 checksum of the photo before I send it. And store that checksum in a txt file that I will send also with the photo.
+
 `$ sha256sum cat.jpg >> cat.jpg.asc`
+
+Before I send it I will check if the checksum is ok or in other words the photo integrity.
 
 ```
 $ sha256sum -c --ignore-missing cat.jpg.asc 
@@ -87,10 +130,43 @@ cat.jpg: OK
 sha256sum: WARNING: 16 lines are improperly formatted
 ```
 
+And this is the photo authenticity. 
+
 ```
 $ gpg --verify cat.jpg.asc                  
 gpg: assuming signed data in `cat.jpg'
 gpg: Signature made Fri 23 Feb 2018 04:52:26 WET using RSA key ID 5079D156
 gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 ```
+
+In this way on only need to send two files: the photo of my cat and a txt file where is the file signature the prove its authenticity; and the SHA256 checksum that prove its integrity.
+
+No I can sent both files by email or send only the txt file by email and host the photo on any image hosting service. If the hosting service don't change the photo my friend can check also that it match exactly with the photo that I toke. 
+Now there is a problem with some image hosting services, some of them change the images that are hosted.
+
+`$ wget https://i.imgur.com/bOoZss4.jpg -O cat.jpg`
+
+```
+$ gpg --verify cat.jpg.asc 
+gpg: assuming signed data in `cat.jpg'
+gpg: Signature made Fri 23 Feb 2018 04:52:26 WET using RSA key ID 5079D156
+gpg: BAD signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
+```
+
+But in this hosting service
+
+` wget https://images2.imgbox.com/3d/24/z4PoDdri_o.jpg -O cat.jpg`
+
+```
+$ gpg --verify cat.jpg.asc                                       
+gpg: assuming signed data in `cat.jpg'
+gpg: Signature made Fri 23 Feb 2018 04:52:26 WET using RSA key ID 5079D156
+gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
+```
+
+It wasn't changed. Just in case the best solution is compress the photo and the txt of the signature and host them somewhere.
+
+## Support my work
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
 
