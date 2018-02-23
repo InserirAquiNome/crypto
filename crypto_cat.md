@@ -192,7 +192,7 @@ Changing the last two bits in a completely red pixel from 11111111 to 11111101 o
 
 The least significant bit technique works well for media files, where slightly changing byte values creates only slight imperceptible changes, but not so well for things like ASCII text, where a single bit out of place will completely change the character. That's not to mention the fact that data hidden using LSB steganography is also easy to detect if someone is looking for it.
 
-For this reason, there are a plethora of other steganography techniques out there, each with their own benefits and drawbacks. Another far less detectable one is called the discrete cosine transform coefficient technique (I know, it's a mouthful), which slightly changes the weights (coefficients) of the cosine waves that are used to reconstruct a JPEG image.
+For this reason, there are a plethora of other steganography techniques out there, each with their own benefits and drawbacks. Another far less detectable one is called the discrete cosine transform coefficient technique, which slightly changes the weights (coefficients) of the cosine waves that are used to reconstruct a JPEG image.
 
 ## Using it
 
