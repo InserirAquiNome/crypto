@@ -168,7 +168,7 @@ gpg: Good signature from "InserirAquiNome <ten.thousands.fists@gmail.com>"
 
 It wasn't changed. 
 
-Just in case the best solution is compress both the picture and the txt of the signature and host it somewhere.
+Just in case the best solution is compress both the picture and the txt file and host it somewhere.
 
 ## Support my work
 
