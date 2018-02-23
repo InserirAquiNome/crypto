@@ -36,7 +36,7 @@ So my friend can easily get my pub key.
 
 ## Checking the file for authenticity
 
-Before I send it I will check it's authenticity myself.
+Before I send it I will check the authenticity myself.
 
 ```
 $ gpg --verify cat.jpg.sig                                    
