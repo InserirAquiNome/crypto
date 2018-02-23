@@ -174,3 +174,5 @@ Just in case the best solution is compress both the picture and the txt file and
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
 
+[donate.png.asc](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png.asc)
+
