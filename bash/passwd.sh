@@ -12,14 +12,14 @@
 #
 #LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;' </dev/urandom | head -c 16 ; echo
 
-# The firt line will generate a random number between 16 an 32. This number will be the number os chars of the password
+# The first line will generate a random number between 16 an 32. This number will be the number os chars of the password
 # The second line generate a random pass using A-Za-z0-9!#$%&()*+,-./:;<=>?@[\] chars with the length of the random number created in the line above
 #
 #digits=$(( RANDOM % (32 - 16 + 1 ) + 16 ))
 #
 #LC_ALL=C tr -dc 'A-Za-z0-9!#$%&()*+,-./:;<=>?@[\]' </dev/urandom | head -c $digits ; echo
 
-# The firt line will generate a random number between 16 an 32. This number will be the number os chars of the password
+# The first line will generate a random number between 16 an 32. This number will be the number os chars of the password
 # The second line generate a random pass using A-Za-z0-9!"#$%()*+/:?@ chars with the length of the random number created in the line above
 #
 digits=$(( RANDOM % (32 - 16 + 1 ) + 16 ))
