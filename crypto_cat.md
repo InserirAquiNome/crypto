@@ -185,6 +185,7 @@ Whereas cryptography is the practice of protecting the contents of a message alo
 
 Steganography includes the concealment of information within computer files. In digital steganography, electronic communications may include steganographic coding inside of a transport layer, such as a document file, image file, program or protocol. Media files are ideal for steganographic transmission because of their large size. For example, a sender might start with an innocuous image file and adjust the color of every hundredth pixel to correspond to a letter in the alphabet. The change is so subtle that someone who is not specifically looking for it is unlikely to notice the change.
 
+[*source*](https://en.wikipedia.org/wiki/Steganography)
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/cat_1.jpg "Logo Title Text 1")
 
@@ -197,6 +198,8 @@ Changing the last two bits in a completely red pixel from 11111111 to 11111101 o
 The least significant bit technique works well for media files, where slightly changing byte values creates only slight imperceptible changes, but not so well for things like ASCII text, where a single bit out of place will completely change the character. That's not to mention the fact that data hidden using LSB steganography is also easy to detect if someone is looking for it.
 
 For this reason, there are a plethora of other steganography techniques out there, each with their own benefits and drawbacks. Another far less detectable one is called the discrete cosine transform coefficient technique, which slightly changes the weights (coefficients) of the cosine waves that are used to reconstruct a JPEG image.
+
+[*source*](https://null-byte.wonderhowto.com/how-to/steganography-hide-secret-data-inside-image-audio-file-seconds-0180936/)
 
 ## Using it
 
