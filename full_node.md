@@ -276,9 +276,40 @@ alias BTC_stop="source ~/.bash_profile ; bitcoin-cli stop"
 alias BTC_status="source ~/.bash_profile ; /home/pi/programming/Raspberry_RPi3/scripts/bitcoinsync.sh ; /home/pi/tor.sh ; du -sh /home/pi/storage/blocks/"
 ```
 
-Ann also add this function to my *~.bashrc*
+And also add this function to my *~.bashrc*
 
-And start the node
+```
+function BTC_status () {
+
+  source ~/.bashrc
+
+  process="bitcoind"
+  pidof -s "$process" > /dev/null 2>&1
+  status=$?
+
+  if [[ "$status" -eq 0 ]]; then
+    printf "\n"
+    echo "$process is running"
+    printf "\n"
+    uname -a
+    printf "\n"
+    date
+    printf "\n"
+    uptime
+    printf "\n"
+    /home/pi/programming/Raspberry_RPi3/scripts/bitcoinsync.sh
+    /home/pi/tor.sh
+    du -sh /home/pi/storage2/blocks/
+    du -sh /home/pi/storage2/chainstate/
+    printf "\nFull node running for days-hours:minutes:seconds\n$(ps -o etime= -p "$(pidof "$process")")\n\n"
+  else
+    echo "$process is NOT running"
+  fi
+
+}
+```
+
+Start the node
 
 ```
 $ BTC_start
