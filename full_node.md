@@ -338,7 +338,7 @@ $ BTC_start
 Bitcoin server starting
 ```
 
-when I started the node it was only 50 blocks behind. So it synced very fast.
+When I started the node it was only 50 blocks behind. So it synced very fast.
 
 Let's check if is everything ok!
 
