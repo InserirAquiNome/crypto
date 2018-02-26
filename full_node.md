@@ -397,7 +397,7 @@ Size:
 
 ## Notes
 
-In this article I made reference to [bitcoin](https://bitcoin.org/bitcoin.pdf) whitepaper created by Satoshi. But the whitepaper of bitcoin is not a gospel and bitcoin is not a religion, and also that's why it's important you run a full node. Because sometime along the way we may need to change something that is not or is against some idea in the whitepaper. The only way to do that is you and only can support that change in running a full node!
+In this article I made reference to [bitcoin](https://bitcoin.org/bitcoin.pdf) whitepaper created by Satoshi. But the whitepaper of bitcoin is not a gospel and bitcoin is not a religion, and also that's why it's important you run a full node. Because sometime along the way we may need to change something that is not or is against some idea in the whitepaper. The only way to do that is you and only can support that change, running your own full node!
 
 Always remember that bitcoin is a voting system and it's first application was finance. You vote with your node on your computer, phone, tablet, etc... and even with a [SoC](https://en.wikipedia.org/wiki/System_on_a_chip) computer.
 
