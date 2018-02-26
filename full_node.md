@@ -334,8 +334,8 @@ If you are thinking that downloading and verifying a full blockchain even in a x
 Bitcoin is trust less system! We don't trust anyone and we verify everything. And the ability of anyone verifying their own blockchain is the key of the success of bitcoin, the decentralization. A full P2P decentralized network that no one controls and that no one can shutdown.
 
 ```
-$ rsync -av ~/.bitcoin/blocks/ pi@:~/.bitcoin/blocks/
-$ rsync -av ~/.bitcoin/chainstate/ pi@~/.bitcoin/chainstate/
+$ rsync -av ~/.bitcoin/blocks/ pi@rpi3_local_address:~/.bitcoin/blocks/
+$ rsync -av ~/.bitcoin/chainstate/ pi@rpi3_local_address:~/.bitcoin/chainstate/
 ```
 
 Start the node
