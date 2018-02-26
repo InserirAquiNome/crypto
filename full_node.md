@@ -267,7 +267,7 @@ alias BTC_start="source ~/.bash_profile ; bitcoind -daemon -disablewallet"
 alias BTC_stop="source ~/.bash_profile ; bitcoin-cli stop"
 ```
 
-And also add this function to my *~.bashrc*
+And also add this function to my *~/.bashrc*
 
 ```
 function BTC_status () {
