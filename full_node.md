@@ -51,9 +51,7 @@ If it's valid the node broadcast that block to the rest of the network.
 
 If it's not valid the node will not broadcast that block on the network. And also will stop talking with the node which broadcasted the block in the first place. This cut of communication can be temporary or permanent.
 
-In this way nodes that broadcast blocks with different rules are quickly isolated from the network. 
-
-When they are more than one they create their own network, sharing their own resources and enforcing their own rules and creating a new coin.
+In this way nodes that broadcast blocks with different rules are quickly isolated from the network.  When the banned nodes are more than one and they broadcast blocks with the same rules, this nodes create their own network, sharing their own resources and enforcing their own rules and creating a new coin.
 
 The bitcoin network have rules but don't have rulers. The rules are enforced by software running on nodes and this nodes are controlled by anyone that are willing to do it. They just need to download the software, check their integrity and authenticity.
 
