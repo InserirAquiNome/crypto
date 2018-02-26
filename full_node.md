@@ -4,7 +4,7 @@
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node3.png "Logo Title Text 1")
 
-Most people holding bitcoin aren't running full nodes and which means they are trusting someone to provide the balance of their address. Only running a full node allows trust less interaction with bitcoin.
+Most people holding bitcoin aren't running full nodes, so they are trusting someone to provide the balance of their address. Only running a full node allows trust less interaction with bitcoin.
 
 Most bitcoin users are using wallets that are SPV wallets like TREZOR, electrum and etc... Trezor is completely trusted website. You CAN choose your own server, but its hard. 
 
