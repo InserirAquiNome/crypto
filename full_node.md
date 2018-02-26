@@ -309,13 +309,6 @@ function BTC_status () {
 }
 ```
 
-Start the node
-
-```
-$ BTC_start
-Bitcoin server starting
-```
-
 Let's check if is everything ok!
 
 It's not an expensive hardware. Only a $35 hardware + power adapter + sdcard + external hard drive. And there it is, everything we need to guarantee your financial sovereignty!
@@ -330,6 +323,63 @@ https://en.bitcoin.it/wiki/Setting_up_a_Tor_hidden_service
 
 ## Syncing the node
 
+I could download the full blockchain and validate everything on my RPi3. But the RPi3 is not a very powerful hardware so it would take a lot of time doing that. And even worse is that I am using only one core off my RPi3, because I need it for other stuff.
+
+I also run a full node on my x64 hardware and I have a local blockchain on that node already verified by me. **This is very important "a blockchain verified my me"** or in other words verified by my full node.
+
+So I can copy that blockchain to my RPi3 and just wait it to sync a few blocks that were mined while I was copying the files over my LAN network.
+
+If you are thinking that downloading and verifying a full blockchain even in a x64 hardware take to long for you. I am sorry but you have to that. You can't get a trusted source for a blockchain behind you own blockchain. If you already have one it's great because in that way you can copy to anther computers controlled by you and only you.
+
+Bitcoin is trust less system! We don't trust anyone and we verify everything. And the ability of anyone verifying their own blockchain is the key of the success of bitcoin, the decentralization. A full P2P decentralized network that no one controls and that no one can shutdown.
+
+```
+$ rsync -av ~/.bitcoin/blocks/ pi@192.168.1.34:~/.bitcoin/blocks/
+$ rsync -av ~/.bitcoin/chainstate/ pi@192.168.1.34:~/.bitcoin/chainstate/
+```
+
+Start the node
+
+```
+$ BTC_start
+Bitcoin server starting
+```
+
+when I started the node it was only 50 blocks behind. So it synced very fast.
+
+Let's check if is everything ok!
+
+```
+$ BTC_status
+
+bitcoind is running
+
+Linux RaspberryRPi3 4.9.32-v7-arm #1 SMP Sat Jun 17 13:52:41 BST 2017 armv7l BCM2835 GNU/Linux
+
+Mon 26 Feb 03:56:34 WET 2018
+
+ 03:56:34 up 2 days,  2:28,  5 users,  load average: 0.32, 0.29, 0.26
+
+OK!!! bitcoind is running
+
+Number of blocks 510946
+up to date
+100.0 % Done 
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+
+Your Tor IP is:
+   Current IP Address: NOT.MY.TOR.ADDRESS
+      Congratulations. This browser is configured to use Tor.
+      Congratulations. This browser is configured to use Tor.
+Number of Tor connections: 3
+170G    /home/pi/storage2/blocks/
+3.0G    /home/pi/storage2/chainstate/
+
+Full node running for days-hours:minutes:seconds
+   07:18:31
+```
 
 ## Next step...
 
