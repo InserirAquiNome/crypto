@@ -298,10 +298,6 @@ function BTC_status () {
 }
 ```
 
-Let's check if is everything ok!
-
-It's not an expensive hardware. Only a $35 hardware + power adapter + sdcard + external hard drive. And there it is, everything we need to guarantee your financial sovereignty!
-
 I will also configure tor on it!
 
 ## Tor setup
