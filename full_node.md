@@ -119,9 +119,11 @@ This is a setup of a bitcoin full node running on a RPi3 hardware. I run other n
 My RPi3 run a Linux OS, without X. This even make the cost of running this node lower, because I won't need a monitor. I don't need a software license because Linux is Free Open Source Software (FOSS).
  And bitcoin is also FOSS.
  
-And I access my node through SSH, so I don't even need a mouse or keyboard. It's only the RPi3, it's power supply, micro sd card and an 8GB USB memory stick. 
+And I access my node through SSH, so I don't even need a mouse or keyboard. It's only the RPi3, it's power supply, micro sd card and an 2,5'' external hard drive like this one
 
-The final cost of this setup is less than 100 usd with cables and the plastic box to put the RPi3.
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.jpg "Logo Title Text 1")
+
+The final cost of this setup is less than 200 usd with cables, the plastic box to put the RPi3 and the hard drive.
 
 ## Software - Download the client
 
@@ -231,15 +233,7 @@ bitcoind -par=1 -daemon
 bitcoin-qt -par=1
 ```
 
-I will not store the full blockchain on my node and for that I will prune the old blocks. The only storage size I will use is 600 M of disk space.
-
-```
-# Reduce storage requirements by pruning (deleting) old blocks. This mode is incompatible with -txindex and -rescan. 
-# Warning: Reverting this setting requires re-downloading the entire blockchain. 
-# (default: 0 = disable pruning blocks, >550 = target size in MiB to use for block files)
-prune=600
-```
-This is my node comment.
+This is my node comment
 ```
 # Node comment
 uacomment=This-is-my-node-and-I-choose-what-is-bitcoin
@@ -247,7 +241,7 @@ uacomment=This-is-my-node-and-I-choose-what-is-bitcoin
 
 ## Misc 
 
-I will not store the blockchain on the RPi sdcard, because this will read and write a lot of times on my sd card and can damage it. I will use an USB memory stick to store the blocks.
+I will not store the blockchain on the RPi sdcard, because this will read and write a lot of times on my sd card and can damage it. I will use an external hard drive to store the blocks.
 
 ```
 $ cd ~/storage/
@@ -267,7 +261,14 @@ $ wget https://raw.githubusercontent.com/InserirAquiNome/crypto/master/bash/tor.
 $ chmod +x bitcoinsync.sh tor.sh
 ```
 
-And now I will add some alias to my .bashrc
+I add this to my *~/.bash_profile*
+
+```
+#PATH to bitcoin client
+export PATH=$PATH:/home/pi/bitcoin-0.15.1/bin/
+```
+
+And now I will add some alias to my *~/.bashrc*
 
 ```
 alias BTC_start="source ~/.bash_profile ; bitcoind -daemon -disablewallet"
@@ -276,6 +277,8 @@ alias BTC_stop="source ~/.bash_profile ; bitcoin-cli stop"
 
 alias BTC_status="source ~/.bash_profile ; /home/pi/programming/Raspberry_RPi3/scripts/bitcoinsync.sh ; /home/pi/tor.sh ; du -sh /home/pi/storage/blocks/"
 ```
+
+Ann also add this function to my *~.bashrc*
 
 And start the node
 
@@ -286,230 +289,18 @@ Bitcoin server starting
 
 Let's check if is everything ok!
 
-The node is being pruned? 
+It's not an expensive hardware. Only a $35 hardware + power adapter + sdcard + external hard drive. And there it is, everything we need to guarantee your financial sovereignty!
 
-```
-$ du -sh ~/.bitcoin/blocks/
-56M     /home/pi/.bitcoin/blocks/
-
-$ BTC_status
-OK!!! bitcoind is running
-
-Number of blocks 92883
-415276 blocks behind
-18.27 % Done 
-
-$ ls -lisah  ~/.bitcoin/
-total 23M
-1076829 4.0K drwxr-xr-x  2 pi pi 4.0K Feb  7 22:02 .
-1048579 4.0K drwxr-xr-x 44 pi pi 4.0K Feb  7 22:06 ..
-1076862 4.0K -rw-------  1 pi pi   75 Feb  7 22:02 .cookie
-1076856    0 -rw-------  1 pi pi    0 Feb  7 22:02 .lock
-1076864 4.0K -rw-------  1 pi pi   37 Feb  7 22:02 banlist.dat
-1076855 8.0K -rw-------  1 pi pi 7.5K Feb  7 21:34 bitcoin.conf
-1076860 4.0K -rw-------  1 pi pi    5 Feb  7 22:02 bitcoind.pid
-1076857    0 lrwxrwxrwx  1 pi pi   24 Feb  7 21:50 blocks -> /home/pi/storage/blocks/
-1076858    0 lrwxrwxrwx  1 pi pi   28 Feb  7 21:50 chainstate -> /home/pi/storage/chainstate/
-1076861  23M -rw-------  1 pi pi  23M Feb  7 22:08 debug.log
-1076863 8.0K -rw-------  1 pi pi 4.1K Feb  7 22:02 peers.dat
-
-$ date
-Wed  7 Feb 22:09:53 WET 2018
-```
-
-How much time will take to sync the node??? 
-
-## Syncing the node 
-
-Already pass some time but the blockchain is at the moment around 160GB and my node have to sync it all.
-
-```
-$ date
-Wed  7 Feb 23:28:15 WET 2018
-
-$ inxi 
-CPU~Quad core ARMv7 rev 4 (v7l) (-MCP-) speed~1200 MHz Kernel~4.9.32-v7-arm armv7l Up~2:24 Mem~280.6/923.4MB HDD~31.9GB(49.0% used) Procs~144 Client~Shell inxi~2.3.56  
-
-$ du -sh ~/storage/blocks/
-529M    /home/pi/storage/blocks/
-
-$ cat /etc/slackware-version 
-Slackware 14.2
-
-$ BTC_status
-OK!!! bitcoind is running
-
-Number of blocks 233847
-274346 blocks behind
-46.01 % Done
-```
-It's not an expensive hardware. Only a $35 hardware + power adapter + sdcard + USB memory stick. And there it is, everything we need to guarantee your financial sovereignty!
-
-In meanwhile I am listening some music on it, just waiting to full sync my node.
-
-I think will also configure tor on it!
-
-I will leave some link about that.
-
-**Update - 8 Feb 2018** 
-
-It passed almost 24 hours since the last time posted my node progress syncing the full blockchain.
-
-```
-$ date
-Thu  8 Feb 18:34:31 WET 2018
-
-$ BTC_status
-OK!!! bitcoind is running
-
-Number of blocks 290825
-217449 blocks behind
-57.21 % Done 
-
-(Not all processes could be identified, non-owned process info
- will not be shown, you would have to be root to see it all.)
-
-Your Tor IP is:
-   Current IP Address: NOT.MY.TOR.ADDRESS
-      Congratulations. This browser is configured to use Tor.
-      Congratulations. This browser is configured to use Tor.
-Number of Tor connections: 19
-676M    /home/pi/storage/blocks/
-
-$ uptime
- 18:35:30 up 21:32,  2 users,  load average: 3.41, 2.76, 2.82
-
-```
-
-It's not fast because I am using only one core, like you can see on bitcoin.conf. But at least the system load is low.
-
-But I am receiving a full blockchain that is pruned after 600M. It started from the beginning of the blockchain and goes until the current block. Now I am at 57% of blockchain and I think that this blocks are still not full. So it will not put a lot of load on the computer for now. Maybe around 75% I will see some increase on my system load. Let's see at happens until then.
-
-I could be doing this in a different way. I already have a full blockchain on my personal computer. I could just copy that blockchain to the RPi3 and I think doing that would be faster. But I prefer to test this like if this was my only hardware available for my full node. And for that I will sync the all blockchain.
-
-**Update - 8 Feb 2018**
-
-I changed somethings on my .bashrc to get better stats.
-
-```
-function BTC_status () {
-
-  source ~/.bashrc
-
-  process="bitcoind"
-  pidof -s "$process" > /dev/null 2>&1
-  status=$?
-
-  if [[ "$status" -eq 0 ]]; then
-    printf "\n"
-    echo "$process is running"
-    printf "\n"
-    uname -a
-    printf "\n"
-    date
-    printf "\n"
-    uptime
-    printf "\n"
-    /home/pi/programming/Raspberry_RPi3/scripts/bitcoinsync.sh
-    /home/pi/tor.sh
-    du -sh /home/pi/storage/blocks/
-    du -sh /home/pi/storage/chainstate/
-  else
-    echo "$process is NOT running"
-  fi
-
-}
-
-```
-
-The output of this change it this
-
-```
-$ BTC_status
-
-bitcoind is running
-
-Linux RaspberryRPi3 4.9.32-v7-arm #1 SMP Sat Jun 17 13:52:41 BST 2017 armv7l BCM2835 GNU/Linux
-
-Thu  8 Feb 22:07:13 WET 2018
-
- 22:07:13 up 1 day,  1:03,  2 users,  load average: 3.19, 2.56, 2.22
-
-OK!!! bitcoind is running
-
-Number of blocks 295950
-212343 blocks behind
-58.22 % Done 
-
-(Not all processes could be identified, non-owned process info
- will not be shown, you would have to be root to see it all.)
-
-Your Tor IP is:
-   Current IP Address: NOT.MY.TOR.ADDRESS
-      Congratulations. This browser is configured to use Tor.
-      Congratulations. This browser is configured to use Tor.
-Number of Tor connections: 22
-635M    /home/pi/storage/blocks/
-540M    /home/pi/storage/chainstate/
-```
-
-**Update - 13 Feb 2018**
-
-I came a cross with some difficulties. The USB memory stick that I'm using for store the blockchain has another data inside and also it's an old USB memory stick that I had laying around. And because of that my node was always stopping. 
-
-But now I am using another USB memory stick only for the blockchain.
-
-My /etc/fstab
-```
-...
-UUID=523ce6cf-a026-467b-822e-3c7cd0e8f94e        /storage1         ext4        defaults         0   0
-...
-```
-
-```
-$ BTC_status
-
-bitcoind is running
-
-Linux RaspberryRPi3 4.9.32-v7-arm #1 SMP Sat Jun 17 13:52:41 BST 2017 armv7l BCM2835 GNU/Linux
-
-Tue 13 Feb 18:21:35 WET 2018
-
- 18:21:35 up 1 day,  2:26,  5 users,  load average: 2.58, 2.82, 2.86
-
-OK!!! bitcoind is running
-
-Number of blocks 353543
-155484 blocks behind
-69.45 % Done 
-
-(Not all processes could be identified, non-owned process info
- will not be shown, you would have to be root to see it all.)
-
-Your Tor IP is:
-   Current IP Address: NOT.MY.TOR.ADDRESS
-      Congratulations. This browser is configured to use Tor.
-      Congratulations. This browser is configured to use Tor.
-Number of Tor connections: 3
-584M    /home/pi/storage1/blocks/
-982M    /home/pi/storage1/chainstate/
-
-```
-
-And now is already running for a while!
-
-**Update - 19 Feb 2018**
-
-The node synced until 75% then it crashed. And think the problem is using the USB memory stick to store the blockchain. I have an 2,5'' HDD hard drive laying around so I will use it. The HDD hard drive is inside a case similar to this one
-
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.jpg "Logo Title Text 1")
-
+I will also configure tor on it!
 
 ## Tor setup
 
 I followed this guide
 
 https://en.bitcoin.it/wiki/Setting_up_a_Tor_hidden_service
+
+## Syncing the node
+
 
 ## Next step...
 
