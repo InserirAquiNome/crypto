@@ -374,6 +374,8 @@ Full node running for days-hours:minutes:seconds
    07:18:31
 ```
 
+This is my final [bitcoin.conf](https://github.com/InserirAquiNome/crypto/blob/draft/config/bitcoin.conf)
+
 ## Next step...
 
 I am also thinking on putting a node on an RPi zero W. 
