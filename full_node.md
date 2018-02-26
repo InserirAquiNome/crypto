@@ -349,7 +349,7 @@ bitcoind is running
 
 Linux RaspberryRPi3 4.9.32-v7-arm #1 SMP Sat Jun 17 13:52:41 BST 2017 armv7l BCM2835 GNU/Linux
 
-Mon 26 Feb 03:56:34 WET 2018
+Sat 24 Feb 03:56:34 WET 2018
 
  03:56:34 up 2 days,  2:28,  5 users,  load average: 0.32, 0.29, 0.26
 
