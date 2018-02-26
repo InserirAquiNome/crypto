@@ -316,7 +316,7 @@ So I can copy that blockchain to my RPi3 and just wait it to sync a few blocks t
 
 If you are thinking that downloading and verifying a full blockchain even in a x64 hardware take to long for you. I am sorry but you have to do that. You can't get a trusted source for a blockchain besides your own blockchain. If you already have one it's great because in that way you can copy to another computers controlled by you and only you. Bitcoin is trust less system! We don't trust anyone and we verify everything. And the ability of anyone verifying their own blockchain is the key of the success of bitcoin, the decentralization. A full P2P decentralized network that no one controls and that no one can shutdown.
 
-So I will copy the files from my full node on a x64 machine to my RPi.
+So I will copy the files from my full node on a x64 machine to my RPi3.
 
 ```
 $ rsync -av ~/.bitcoin/blocks/ pi@rpi3_local_address:~/.bitcoin/blocks/
