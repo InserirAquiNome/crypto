@@ -259,13 +259,6 @@ $ wget https://raw.githubusercontent.com/InserirAquiNome/crypto/master/bash/tor.
 $ chmod +x bitcoinsync.sh tor.sh
 ```
 
-I add this to my *~/.bash_profile*
-
-```
-#PATH to bitcoin client
-export PATH=$PATH:/home/pi/bitcoin-0.15.1/bin/
-```
-
 And now I will add some alias to my *~/.bashrc*
 
 ```
