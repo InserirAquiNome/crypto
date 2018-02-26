@@ -30,7 +30,7 @@ https://bitcoin.org/bin/
 
 **Always check the integrity and authenticity of any software downloaded from the internet**
 
-Besides the reference client there is alternatives clients like knots, bitcoinj and others. All this clients came to consensus on the bitcoin network agreeing what are the rules of the network, or in other words this clients vote on the network on what is bitcoin. **There is some scammers in the crypto space claiming that bitcoin core is the only client, and that's a lie. Always check everything before put your money in one project!!!** 
+Besides the reference client there is alternatives clients like knots, bitcoinj and others. All this clients came to consensus on the bitcoin network agreeing what are the rules of the network, or in other words this clients vote on the network on what is bitcoin. **There is some scammers in the crypto space claiming that bitcoin core is the only client, and that's a lie. Always check everything before put your money in a project!!!** 
 
 
 More about this:
