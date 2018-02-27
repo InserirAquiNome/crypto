@@ -310,7 +310,7 @@ https://en.bitcoin.it/wiki/Setting_up_a_Tor_hidden_service
 
 I could download the full blockchain and validate everything on my RPi3. But the RPi3 is not a very powerful hardware so it would take a lot of time doing that. And even worse is that I am using only one core of my RPi3, because I need it for other stuff.
 
-I also run a full node on my x64 hardware and I have a local blockchain on that node already verified by me. **This is very important "a blockchain verified my me"** or in other words verified by my full node.
+I also run a full node on my x64 hardware and I have a local blockchain on that node already verified by me. **This is very important "a blockchain verified by me"** or in other words verified by my full node.
 
 So I can copy that blockchain to my RPi3 and just wait it to sync a few blocks that were mined while I was copying the files over my LAN network.
 
