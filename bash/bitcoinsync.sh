@@ -5,7 +5,7 @@
 
 export PATH=$PATH:$HOME/BITCOIN/bitcoin-0.15.1/bin/
 
-bitcoindSynce(d) {
+bitcoindSynced () {
 
   process=bitcoind
   pidof -s "$process" > /dev/null 2>&1
