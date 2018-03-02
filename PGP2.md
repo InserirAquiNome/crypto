@@ -121,7 +121,7 @@ Adding a picture
 
 You might want to add a picture of yourself for completeness. Since the picture is stored in your public key and your public key gets distributed in a lot of places, including sometimes email, it’s best to use a small image to save space.
 
-Use the `gpg ‐‐edit-key` command. At the gpg> prompt, enter the command addphoto and give GPG the path of the picture you’d like to use. When you’re done, use save at the final gpg> prompt to save your changes:
+Use the `gpg ‐‐edit-key` command. At the `gpg>` prompt, enter the command addphoto and give GPG the path of the picture you’d like to use. When you’re done, use save at the final gpg> prompt to save your changes:
 
 ```
 gpg --edit-key bilbo@shire.org
