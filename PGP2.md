@@ -287,7 +287,8 @@ gpg --output \<bilbo@shire.org\>.gpg-revocation-certificate --gen-revoke bilbo@s
 ```
 
 Store the revocation certificate file in a different place than your master keypair (which we’ll export in a later step). You’ll use it to revoke your master keypair should you lose access to it. If you only lose access to your laptop keypair, then you’ll revoke those subkeys using the master keypair, not this revocation certificate.
-Exporting the final product
+
+## Exporting the final product
 
 Now that your keypair has been created, let’s export it so that we can back it up:
 gpg --export-secret-keys --armor bilbo@shire.org > \<bilbo@shire.org\>.private.gpg-key gpg --export --armor bilbo@shire.org > \<bilbo@shire.org\>.public.gpg-key
