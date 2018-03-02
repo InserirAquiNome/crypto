@@ -209,7 +209,8 @@ sub  4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E
 gpg> 
 
 ```
-Adding a new signing subkey
+
+## Adding a new signing subkey
 
 Now for the special sauce: let’s add our new signing subkey.
 
