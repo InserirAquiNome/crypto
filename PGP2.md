@@ -280,8 +280,11 @@ gpg>
 
 ## Creating a revocation certificate
 
-Now we generate a revocation certificate file. If your master keypair gets lost or stolen, this certificate file is the only way you’ll be able to tell people to ignore the stolen key. This is important, don’t skip this step!
+Now we generate a revocation certificate file. If your master keypair gets lost or stolen, this certificate file is the only way you’ll be able to tell people to ignore the stolen key. **This is important, don’t skip this step!**
+
+```
 gpg --output \<bilbo@shire.org\>.gpg-revocation-certificate --gen-revoke bilbo@shire.org
+```
 
 Store the revocation certificate file in a different place than your master keypair (which we’ll export in a later step). You’ll use it to revoke your master keypair should you lose access to it. If you only lose access to your laptop keypair, then you’ll revoke those subkeys using the master keypair, not this revocation certificate.
 Exporting the final product
