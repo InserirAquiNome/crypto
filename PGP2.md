@@ -215,6 +215,8 @@ gpg>
 Now for the special sauce: let’s add our new signing subkey.
 
 Use the gpg `‐‐edit-key` command. At the `gpg>` prompt, enter the command addkey. Select `RSA (sign only)` and `4096` for the `keysize`. Don’t forget to save at the last `gpg>` prompt:
+
+```
 gpg --edit-key bilbo@shire.org
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
@@ -273,7 +275,10 @@ sub  4096R/C24C2CDA  created: 2013-03-13  expires: never       usage: S
 [ultimate] (2)  [jpeg image of size 5324]
 
 gpg> 
-Creating a revocation certificate
+
+```
+
+## Creating a revocation certificate
 
 Now we generate a revocation certificate file. If your master keypair gets lost or stolen, this certificate file is the only way you’ll be able to tell people to ignore the stolen key. This is important, don’t skip this step!
 gpg --output \<bilbo@shire.org\>.gpg-revocation-certificate --gen-revoke bilbo@shire.org
