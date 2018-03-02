@@ -4,7 +4,6 @@
 
 Note
 -------
-
 > Before you start reading, keep in mind that I’m a layperson, just like you. This guide was created by synthesizing a lot of different information and tutorials available online, but I’m not a GPG developer, or even a cryptography professional. I’m just an enthusiast who thinks encryption is a critical part of modern society.
  > The encryption technology landscape can change rapidly, the PGP standard is bewilderingly complex, and GPG is a stunningly obtuse piece of software on the best of days. There are a lot of ways of creating a functional keypair, and my perfect way may not be your perfect way. Please make sure to do your own research to ensure the explanations and steps below make sense for you and your situation.
 > While I’ll do my best to keep this guide updated with what I personally consider to be the latest best practice, I can’t guarantee anything and I can’t answer any GPG-related questions.
@@ -45,7 +44,10 @@ What’s the benefit to this setup? Since your master keypair isn’t stored on 
 
 I’m going to lead you through the steps to create a new keypair using this subkey method. To do this we’ll be using GPG 1.4.11, which is the version currently distributed with Ubuntu 12.04 LTS.
 
-GPG can be pretty noisy in its output. Some of the output below might be cut off due to the fixed-width layout of this blog; what’s cut off isn’t really important, but you can see it by highlighting it with your mouse.
+Note
+------
+>GPG can be pretty noisy in its output. Some of the output below might be cut off due to the fixed-width layout of this blog; what’s cut off isn’t really important, but you can see it by highlighting it with your mouse.
+
 Creating your initial keypair
 
 Use the gpg ‐‐gen-key command to create a new GPG keypair.
