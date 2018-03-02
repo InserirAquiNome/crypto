@@ -166,7 +166,9 @@ gpg>
 
 ## Strengthening hash preferences
 
-Now we set our key to prefer stronger hashes. Use the gpg ‐‐edit-key command. At the gpg> prompt, enter the command setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed (note that this will probably be cut off in the example below; highlight it with your mouse to see it), then save.
+Now we set our key to prefer stronger hashes. Use the gpg ‐‐edit-key command. At the gpg> prompt, enter the command `setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed` (note that this will probably be cut off in the example below; highlight it with your mouse to see it), then `save`.
+
+```
 gpg --edit-key bilbo@shire.org
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
@@ -206,6 +208,7 @@ sub  4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E
 
 gpg> 
 
+```
 Adding a new signing subkey
 
 Now for the special sauce: let’s add our new signing subkey.
