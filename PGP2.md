@@ -4,7 +4,7 @@
 
 Before you start reading, keep in mind that I’m a layperson, just like you. This guide was created by synthesizing a lot of different information and tutorials available online, but I’m not a GPG developer, or even a cryptography professional. I’m just an enthusiast who thinks encryption is a critical part of modern society.
  
-The encryption technology landscape can change rapidly, the PGP standard is bewilderingly complex, and GPG is a stunningly obtuse piece of software on the best of days. There are a lot of ways of creating a functional keypair, and my perfect way may not be your perfect way. Please make sure to do your own research to ensure the explanations and steps below make sense for you and your situation.**
+The encryption technology landscape can change rapidly, the PGP standard is bewilderingly complex, and GPG is a stunningly obtuse piece of software on the best of days. There are a lot of ways of creating a functional keypair, and my perfect way may not be your perfect way. Please make sure to do your own research to ensure the explanations and steps below make sense for you and your situation.
 
 While I’ll do my best to keep this guide updated with what I personally consider to be the latest best practice, I can’t guarantee anything and I can’t answer any GPG-related questions.
 
@@ -39,7 +39,8 @@ The concept behind this technique is as follows:
 Your laptop keypair is what you’ll use for day-to-day GPG usage.
 
 What’s the benefit to this setup? Since your master keypair isn’t stored on your traveling laptop, that means you can revoke the subkeys on your laptop should your laptop be stolen. Since you’re not revoking the original subkey you created in the master keypair—remember, we removed it from our laptop’s keypair—that means you don’t have to create a new keypair and go through the hassle of getting people to sign it again. You’d still have to revoke the stolen subkey, and the thief could still use the encryption subkey to decrypt any messages you’ve already received, but at least the damage done won’t be as catastrophic.
-Creating the perfect GPG keypair, step-by-step
+
+## Creating the perfect GPG keypair, step-by-step
 
 I’m going to lead you through the steps to create a new keypair using this subkey method. To do this we’ll be using GPG 1.4.11, which is the version currently distributed with Ubuntu 12.04 LTS.
 
