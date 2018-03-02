@@ -313,15 +313,20 @@ GPG doesn’t make this easy, but here we go:
     sudo chown $(logname):$(logname) /tmp/gpg 
     gpg --export-secret-subkeys bilbo@shire.org > /tmp/gpg/subkeys
     ```
-    
-
-    Delete the original signing subkey from the keypair in our keyring:
+ 1. Delete the original signing subkey from the keypair in our keyring:
+    ```
     gpg --delete-secret-key bilbo@shire.org
+    ```
 
-    Re-import the keys we exported and clean up our temporary file:
-    gpg --import /tmp/gpg/subkeys sudo umount /tmp/gpg rmdir /tmp/gpg
+ 1. Re-import the keys we exported and clean up our temporary file:
+    ```
+    gpg --import /tmp/gpg/subkeys 
+    sudo umount /tmp/gpg 
+    rmdir /tmp/gpg
+    ```
 
 That’s all! You can verify it worked by running:
+```
 gpg --list-secret-keys
 /home/bilbo/.gnupg/secring.gpg
 -----------------------------
@@ -329,7 +334,7 @@ sec#  4096R/488BA441 2013-03-13
 uid                  Bilbo Baggins <bilbo@shire.org>
 ssb   4096R/69B0EA85 2013-03-13
 ssb   4096R/C24C2CDA 2013-03-13
-
+```
 See how the third line begins with “sec#”, not “sec”? The pound sign means the signing subkey is not in the keypair located in the keyring.
 
 You’re all done!
