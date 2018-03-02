@@ -2,9 +2,7 @@
 
 [Original document](https://alexcabal.com/creating-the-perfect-gpg-keypair/)
 
-Creating the perfect GPG keypair
-March 13th, 2013
-A rusty lock
+## Creating the perfect GPG keypair
 
 Before you start reading, keep in mind that I’m a layperson, just like you. This guide was created by synthesizing a lot of different information and tutorials available online, but I’m not a GPG developer, or even a cryptography professional. I’m just an enthusiast who thinks encryption is a critical part of modern society.
 
