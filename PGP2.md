@@ -22,7 +22,7 @@ On one hand, you need your private key with you to decrypt or sign messages.
 
 On the other hand, if your laptop is stolen then you risk losing your entire online identity, perhaps going back years, because the thief would have access to your private key and could then impersonate you.
 
-You’d think that today, where laptops and world travel are commonplace, there’d be a little more information on how to secure a private key you have to travel with. But I could only find one resource: the Debian Wiki entry on subkeys. Fortunately it turns out this wiki page has exactly the solution we need.
+You’d think that today, where laptops and world travel are commonplace, there’d be a little more information on how to secure a private key you have to travel with. But I could only find one resource: the [Debian Wiki](http://wiki.debian.org/subkeys) entry on subkeys. Fortunately it turns out this wiki page has exactly the solution we need.
 Subkeys help protect your identity in case of private key (laptop) theft
 
 If a thief gets ahold of the laptop with your private key on it, it’s pretty much game over. The thief can not only decrypt messages intended for you, they can also impersonate you by signing messages with your private key. Your only recourse would be to revoke your key, but that would mean losing years of signatures on that key and basically creating a massive inconvenience for yourself.
