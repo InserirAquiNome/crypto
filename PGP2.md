@@ -1,11 +1,7 @@
-# Revisiting PGP 
-
-[Original document](https://alexcabal.com/creating-the-perfect-gpg-keypair/)
-
-## Creating the perfect GPG keypair
-
+# Revisiting PGP -  Creating the perfect GPG keypair
  
- 
+## Intro 
+
 Before you start reading, keep in mind that I’m a layperson, just like you. This guide was created by synthesizing a lot of different information and tutorials available online, but I’m not a GPG developer, or even a cryptography professional. I’m just an enthusiast who thinks encryption is a critical part of modern society.
  
 The encryption technology landscape can change rapidly, the PGP standard is bewilderingly complex, and GPG is a stunningly obtuse piece of software on the best of days. There are a lot of ways of creating a functional keypair, and my perfect way may not be your perfect way. Please make sure to do your own research to ensure the explanations and steps below make sense for you and your situation.**
@@ -22,8 +18,9 @@ On one hand, you need your private key with you to decrypt or sign messages.
 
 On the other hand, if your laptop is stolen then you risk losing your entire online identity, perhaps going back years, because the thief would have access to your private key and could then impersonate you.
 
-You’d think that today, where laptops and world travel are commonplace, there’d be a little more information on how to secure a private key you have to travel with. But I could only find one resource: the [Debian Wiki](http://wiki.debian.org/subkeys) entry on subkeys. Fortunately it turns out this wiki page has exactly the solution we need.
-Subkeys help protect your identity in case of private key (laptop) theft
+You’d think that today, where laptops and world travel are commonplace, there’d be a little more information on how to secure a private key you have to travel with. But I could only find one resource: the [Debian Wiki](http://wiki.debian.org/subkeys) entry on subkeys. Fortunately it turns out this wiki page has exactly the solution we need. 
+
+## Subkeys help protect your identity in case of private key (laptop) theft
 
 If a thief gets ahold of the laptop with your private key on it, it’s pretty much game over. The thief can not only decrypt messages intended for you, they can also impersonate you by signing messages with your private key. Your only recourse would be to revoke your key, but that would mean losing years of signatures on that key and basically creating a massive inconvenience for yourself.
 
@@ -413,4 +410,4 @@ Further reading
     Creating GPG Keys at the Fedora project, a step-by-step guide to creating a new GPG keypair.
     GPG How-to at the Ubuntu Community Help Wiki.
 
-https://alexcabal.com/creating-the-perfect-gpg-keypair/
+*source* https://alexcabal.com/creating-the-perfect-gpg-keypair/
