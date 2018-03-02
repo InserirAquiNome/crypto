@@ -50,7 +50,7 @@ Note
 
 Creating your initial keypair
 
-Use the gpg ‐‐gen-key command to create a new GPG keypair.
+Use the `gpg ‐‐gen-key` command to create a new GPG keypair.
 
 Generally you should set your key to expire within a year or less. You can always change the expiration date later, but if you upload a key without an expiration date to a keyserver, and then your key is lost or compromised, the bad key will remain out there forever. Giving it an expiration date is a safeguard against that. For our example key, we’ll set it to not expire to simplify things a little.
 
