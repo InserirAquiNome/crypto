@@ -28,13 +28,10 @@ Part of the answer to this problem is the concept of subkeys. Subkeys can’t pr
 
 The concept behind this technique is as follows:
 
-    Create a regular GPG keypair. By default GPG creates one signing subkey (your identity) and one encryption subkey (how you receive messages intended for you).
-
-    Use GPG to add an additional signing subkey to your keypair. This new subkey is linked to the first signing key. Now we have three subkeys.
-
-    This keypair is your master keypair. Store it in a protected place like your house or a safe-deposit box. Your master keypair is the one whose loss would be truly catastrophic.
-
-    Copy your master keypair to your laptop. Then use GPG to remove the original signing subkey, leaving only the new signing subkey and the encryption subkey. This transforms your master keypair into your laptop keypair.
+ * Create a regular GPG keypair. By default GPG creates one signing subkey (your identity) and one encryption subkey (how you receive messages intended for you).
+ * Use GPG to add an additional signing subkey to your keypair. This new subkey is linked to the first signing key. Now we have three subkeys.
+ * This keypair is your master keypair. Store it in a protected place like your house or a safe-deposit box. Your master keypair is the one whose loss would be truly catastrophic.
+ * Copy your master keypair to your laptop. Then use GPG to remove the original signing subkey, leaving only the new signing subkey and the encryption subkey. This transforms your master keypair into your laptop keypair.
 
 Your laptop keypair is what you’ll use for day-to-day GPG usage.
 
