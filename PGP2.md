@@ -296,8 +296,9 @@ Now that your keypair has been created, let’s export it so that we can back it
 gpg --export-secret-keys --armor bilbo@shire.org > \<bilbo@shire.org\>.private.gpg-key gpg --export --armor bilbo@shire.org > \<bilbo@shire.org\>.public.gpg-key
 ```
 
-This will create two files: your public key and your private key. Protect these two files, along with the revocation certificate file, as best as you can—don’t keep them on your laptop, keep them in your house or in a safe-deposit box. These three files are your master keypair.
-Transforming your master keypair into your laptop keypair
+This will create two files: your public key and your private key. Protect these two files, along with the revocation certificate file, as best as you can—don’t keep them on your laptop, keep them in your house or in a safe-deposit box. These three files are **your master keypair**.
+
+## Transforming your master keypair into your laptop keypair
 
 Now we have our master keypair in our keyring, along with three files representing the master keypair plus the keypair’s revocation certificate. To transform our master keypair into our laptop keypair, we have to remove the original signing subkey from the master keypair in our keyring.
 
