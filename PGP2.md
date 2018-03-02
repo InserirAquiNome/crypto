@@ -6,9 +6,7 @@ Note
 -------
 
 > Before you start reading, keep in mind that I’m a layperson, just like you. This guide was created by synthesizing a lot of different information and tutorials available online, but I’m not a GPG developer, or even a cryptography professional. I’m just an enthusiast who thinks encryption is a critical part of modern society.
- 
-> The encryption technology landscape can change rapidly, the PGP standard is bewilderingly complex, and GPG is a stunningly obtuse piece of software on the best of days. There are a lot of ways of creating a functional keypair, and my perfect way may not be your perfect way. Please make sure to do your own research to ensure the explanations and steps below make sense for you and your situation.
-
+ > The encryption technology landscape can change rapidly, the PGP standard is bewilderingly complex, and GPG is a stunningly obtuse piece of software on the best of days. There are a lot of ways of creating a functional keypair, and my perfect way may not be your perfect way. Please make sure to do your own research to ensure the explanations and steps below make sense for you and your situation.
 > While I’ll do my best to keep this guide updated with what I personally consider to be the latest best practice, I can’t guarantee anything and I can’t answer any GPG-related questions.
 
 There’s a lot of information online on how to create a new GPG keypair. Unfortunately a lot of it is old advice and recommends settings that today might be unsafe.
