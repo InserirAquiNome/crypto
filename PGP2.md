@@ -214,7 +214,7 @@ gpg>
 
 Now for the special sauce: let’s add our new signing subkey.
 
-Use the gpg ‐‐edit-key command. At the gpg> prompt, enter the command addkey. Select RSA (sign only) and 4096 for the keysize. Don’t forget to save at the last gpg> prompt:
+Use the gpg `‐‐edit-key` command. At the `gpg>` prompt, enter the command addkey. Select `RSA (sign only)` and `4096` for the `keysize`. Don’t forget to save at the last `gpg>` prompt:
 gpg --edit-key bilbo@shire.org
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
