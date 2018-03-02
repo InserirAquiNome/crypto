@@ -54,7 +54,11 @@ Use the `gpg ‐‐gen-key` command to create a new GPG keypair.
 
 Generally you should set your key to expire within a year or less. You can always change the expiration date later, but if you upload a key without an expiration date to a keyserver, and then your key is lost or compromised, the bad key will remain out there forever. Giving it an expiration date is a safeguard against that. For our example key, we’ll set it to not expire to simplify things a little.
 
-When you create your new keypair, use the highest possible values for key length. As computers get more powerful and storage gets cheaper, it’s conceivable that a nasty person could archive a message that’s unbreakable today, then in the future break it using a more powerful computer. Using the highest possible value for key length helps protect you from that scenario. Don’t use GPG’s default of 2048!
+Warning 
+=========
+>When you create your new keypair, use the highest possible values for key length. As computers get more powerful and storage gets cheaper, it’s conceivable that a nasty person could archive a message that’s unbreakable today, then in the future break it using a more powerful computer. Using the highest possible value for key length helps protect you from that scenario. Don’t use GPG’s default of 2048!
+
+```
 gpg --gen-key
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and  redistribute it.
@@ -110,6 +114,7 @@ pub   4096R/488BA441 2013-03-13
       Key fingerprint = B878 1FB6 B187 B94C 3E52  2AFA EB1D B79A 488B A441
 uid                  Bilbo Baggins <bilbo@shire.org>
 sub   4096R/69B0EA85 2013-03-13
+```
 
 When prompted for a passphrase, make sure to pick a long and unique one. If your key gets stolen, this passphrase is the only thing protecting it!
 Adding a picture
