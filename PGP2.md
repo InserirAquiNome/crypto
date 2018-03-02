@@ -306,8 +306,14 @@ Now we have our master keypair in our keyring, along with three files representi
 
 GPG doesn’t make this easy, but here we go:
 
-    Export all of the subkeys from our new keypair to a file. We first create a RAM-based ramfs temporary folder to prevent our keys from being written to permanent storage. we use ramfs instead of tmpfs/ or /dev/shm/ because ramfs doesn’t write to swap.
-    mkdir /tmp/gpg sudo mount -t ramfs -o size=1M ramfs /tmp/gpg sudo chown $(logname):$(logname) /tmp/gpg gpg --export-secret-subkeys bilbo@shire.org > /tmp/gpg/subkeys
+ 1. Export all of the subkeys from our new keypair to a file. We first create a RAM-based ramfs temporary folder to prevent our keys from being written to permanent storage. we use ramfs instead of tmpfs/ or /dev/shm/ because ramfs doesn’t write to swap.
+    ```
+    mkdir /tmp/gpg 
+    sudo mount -t ramfs -o size=1M ramfs /tmp/gpg 
+    sudo chown $(logname):$(logname) /tmp/gpg 
+    gpg --export-secret-subkeys bilbo@shire.org > /tmp/gpg/subkeys
+    ```
+    
 
     Delete the original signing subkey from the keypair in our keyring:
     gpg --delete-secret-key bilbo@shire.org
