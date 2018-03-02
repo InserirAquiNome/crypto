@@ -50,7 +50,7 @@ Note
 
 Creating your initial keypair
 
-Use the `gpg ‐‐gen-key` command to create a new GPG keypair.
+Use the `$ gpg ‐‐gen-key` command to create a new GPG keypair.
 
 Generally you should set your key to expire within a year or less. You can always change the expiration date later, but if you upload a key without an expiration date to a keyserver, and then your key is lost or compromised, the bad key will remain out there forever. Giving it an expiration date is a safeguard against that. For our example key, we’ll set it to not expire to simplify things a little.
 
@@ -59,7 +59,7 @@ Warning
 >When you create your new keypair, use the highest possible values for key length. As computers get more powerful and storage gets cheaper, it’s conceivable that a nasty person could archive a message that’s unbreakable today, then in the future break it using a more powerful computer. Using the highest possible value for key length helps protect you from that scenario. Don’t use GPG’s default of 2048!
 
 ```
-gpg --gen-key
+$ gpg --gen-key
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and  redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -121,10 +121,10 @@ Adding a picture
 
 You might want to add a picture of yourself for completeness. Since the picture is stored in your public key and your public key gets distributed in a lot of places, including sometimes email, it’s best to use a small image to save space.
 
-Use the `gpg ‐‐edit-key` command. At the `gpg>` prompt, enter the command addphoto and give GPG the path of the picture you’d like to use. When you’re done, use save at the final `gpg>` prompt to save your changes:
+Use the `$ gpg ‐‐edit-key` command. At the `gpg>` prompt, enter the command addphoto and give GPG the path of the picture you’d like to use. When you’re done, use save at the final `gpg>` prompt to save your changes:
 
 ```
-gpg --edit-key bilbo@shire.org
+$ gpg --edit-key bilbo@shire.org
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -169,7 +169,7 @@ gpg>
 Now we set our key to prefer stronger hashes. Use the gpg ‐‐edit-key command. At the gpg> prompt, enter the command `setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed` (note that this will probably be cut off in the example below; highlight it with your mouse to see it), then `save`.
 
 ```
-gpg --edit-key bilbo@shire.org
+$ gpg --edit-key bilbo@shire.org
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -217,7 +217,7 @@ Now for the special sauce: let’s add our new signing subkey.
 Use the gpg `‐‐edit-key` command. At the `gpg>` prompt, enter the command addkey. Select `RSA (sign only)` and `4096` for the `keysize`. Don’t forget to save at the last `gpg>` prompt:
 
 ```
-gpg --edit-key bilbo@shire.org
+$ gpg --edit-key bilbo@shire.org
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -283,7 +283,7 @@ gpg>
 Now we generate a revocation certificate file. If your master keypair gets lost or stolen, this certificate file is the only way you’ll be able to tell people to ignore the stolen key. **This is important, don’t skip this step!**
 
 ```
-gpg --output \<bilbo@shire.org\>.gpg-revocation-certificate --gen-revoke bilbo@shire.org
+$ gpg --output \<bilbo@shire.org\>.gpg-revocation-certificate --gen-revoke bilbo@shire.org
 ```
 
 Store the revocation certificate file in a different place than your master keypair (which we’ll export in a later step). You’ll use it to revoke your master keypair should you lose access to it. If you only lose access to your laptop keypair, then you’ll revoke those subkeys using the master keypair, not this revocation certificate.
@@ -293,7 +293,9 @@ Store the revocation certificate file in a different place than your master keyp
 Now that your keypair has been created, let’s export it so that we can back it up:
 
 ```
-gpg --export-secret-keys --armor bilbo@shire.org > \<bilbo@shire.org\>.private.gpg-key gpg --export --armor bilbo@shire.org > \<bilbo@shire.org\>.public.gpg-key
+$ gpg --export-secret-keys --armor bilbo@shire.org > \<bilbo@shire.org\>.private.gpg-key 
+
+$ gpg --export --armor bilbo@shire.org > \<bilbo@shire.org\>.public.gpg-key
 ```
 
 This will create two files: your public key and your private key. Protect these two files, along with the revocation certificate file, as best as you can—don’t keep them on your laptop, keep them in your house or in a safe-deposit box. These three files are **your master keypair**.
