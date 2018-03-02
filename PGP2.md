@@ -291,7 +291,10 @@ Store the revocation certificate file in a different place than your master keyp
 ## Exporting the final product
 
 Now that your keypair has been created, let’s export it so that we can back it up:
+
+```
 gpg --export-secret-keys --armor bilbo@shire.org > \<bilbo@shire.org\>.private.gpg-key gpg --export --armor bilbo@shire.org > \<bilbo@shire.org\>.public.gpg-key
+```
 
 This will create two files: your public key and your private key. Protect these two files, along with the revocation certificate file, as best as you can—don’t keep them on your laptop, keep them in your house or in a safe-deposit box. These three files are your master keypair.
 Transforming your master keypair into your laptop keypair
