@@ -1,3 +1,7 @@
+# Revisiting PGP 
+
+[Original document](https://alexcabal.com/creating-the-perfect-gpg-keypair/)
+
 Creating the perfect GPG keypair
 March 13th, 2013
 A rusty lock
