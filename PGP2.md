@@ -103,7 +103,7 @@ Change (N)ame, (C)omment, (E)-mail or (O)kay/(Q)uit? o
 
 You need a Passphrase to protect your secret key.
 
-<type your passphare>
+<type your passphrase>
 
 gpg: key 488BA441 marked as ultimately trusted
 public and secret key created and signed.
@@ -137,7 +137,7 @@ pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC
 sub  4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E   
 [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
 
-gpg> 
+gpg> addphoto 
 
 
 Pick an image to use for your photo ID.  The image must be a JPEG file.
@@ -145,15 +145,16 @@ Remember that the image is stored within your public key.  If you use a
 very large picture, your key will become very large as well!
 Keeping the image close to 240x288 is a good size to use.
 
-Enter JPEG filename for photo ID: 
+Enter JPEG filename for photo ID: /home/biblo/me.gp
 
-Is this photo correct (y/N/q)? 
+Is this photo correct (y/N/q)? y
 
 
 You need a passphrase to unlock the secret key for
 user: "Bilbo Baggins <bilbo@shire.org>"
 4096-bit RSA key, ID 488BA441, created 2013-03-13
 
+<type your passphrase>
 
 pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
                      trust: ultimate      validity: ultimate
@@ -161,7 +162,7 @@ sub  4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E
 [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
 [ unknown] (2)  [jpeg image of size 5324]
 
-gpg> 
+gpg> save
 
 ```
 
