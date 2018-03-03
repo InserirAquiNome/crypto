@@ -463,4 +463,5 @@ Should the worst happen and your laptop with your special keypair gets lost or s
     
   * [GPG How-to](https://help.ubuntu.com/community/GnuPrivacyGuardHowto) at the Ubuntu Community Help Wiki.
 
+
 *source* https://alexcabal.com/creating-the-perfect-gpg-keypair/
