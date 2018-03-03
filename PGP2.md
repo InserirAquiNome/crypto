@@ -370,7 +370,8 @@ Should the worst happen and your laptop with your special keypair gets lost or s
     ``````
 
  1. Now use `gpg ‐‐edit-key` to interactively revoke your subkeys:
-    gpg --edit-key bilbo@shire.org
+    ```
+    $ gpg --edit-key bilbo@shire.org
     gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
     This is free software: you are free to change and redistribute it.
     There is NO WARRANTY, to the extent permitted by law.
@@ -388,72 +389,78 @@ Should the worst happen and your laptop with your special keypair gets lost or s
 
 
 
-pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
+    pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
                      trust: ultimate      validity: ultimate
-sub* 4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E   
-sub  4096R/C24C2CDA  created: 2013-03-13  expires: never       usage: S   
-[ultimate] (1). Bilbo Baggins <bilbo@shire.org>
-[ultimate] (2)  [jpeg image of size 5324]
+    sub* 4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E   
+    sub  4096R/C24C2CDA  created: 2013-03-13  expires: never       usage: S   
+    [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
+    [ultimate] (2)  [jpeg image of size 5324]
+    
+    gpg> 
 
-gpg> 
 
-
-pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
+    pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
                      trust: ultimate      validity: ultimate
-sub* 4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E   
-sub* 4096R/C24C2CDA  created: 2013-03-13  expires: never       usage: S   
-[ultimate] (1). Bilbo Baggins <bilbo@shire.org>
-[ultimate] (2)  [jpeg image of size 5324]
+    sub* 4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E   
+    sub* 4096R/C24C2CDA  created: 2013-03-13  expires: never       usage: S    
+    [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
+    [ultimate] (2)  [jpeg image of size 5324]
 
-gpg> 
-
-
-Do you really want to revoke the selected subkeys? (y/N) 
-
-Please select the reason for the revocation:
-  0 = No reason specified
-  1 = Key has been compromised
-  2 = Key is superseded
-  3 = Key is no longer used
-  Q = Cancel
-Your decision? 
-
-Enter an optional description; end it with an empty line:
-> 
-Reason for revocation: Key has been compromised
-(No description given)
-Is this okay? (y/N) 
+    gpg> 
+    
 
 
-You need a passphrase to unlock the secret key for
-user: "Bilbo Baggins <bilbo@shire.org>"
-4096-bit RSA key, ID 488BA441, created 2013-03-13
+    Do you really want to revoke the selected subkeys? (y/N) 
+
+    Please select the reason for the revocation:
+        0 = No reason specified
+        1 = Key has been compromised
+        2 = Key is superseded
+        3 = Key is no longer used
+        Q = Cancel
+    
+    Your decision? 
+    Enter an optional description; end it with an empty line:
+    > 
+    Reason for revocation: Key has been compromised
+    (No description given)
+    
+    Is this okay? (y/N) 
+    
+    You need a passphrase to unlock the secret key for
+    user: "Bilbo Baggins <bilbo@shire.org>"
+    4096-bit RSA key, ID 488BA441, created 2013-03-13
 
 
-You need a passphrase to unlock the secret key for
-user: "Bilbo Baggins <bilbo@shire.org>"
-4096-bit RSA key, ID 488BA441, created 2013-03-13
+    You need a passphrase to unlock the secret key for
+    user: "Bilbo Baggins <bilbo@shire.org>"
+    4096-bit RSA key, ID 488BA441, created 2013-03-13
 
 
-pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
+    pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
                      trust: ultimate      validity: ultimate
-This key was revoked on 2013-03-13 by RSA key 488BA441 Bilbo Baggins    
-sub  4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E
-This key was revoked on 2013-03-13 by RSA key 488BA441 Bilbo Baggins    
-sub  4096R/C24C2CDA  created: 2013-03-13  expires: never       usage: S   
-[ultimate] (1). Bilbo Baggins <bilbo@shire.org>
-[ultimate] (2)  [jpeg image of size 5324]
+    This key was revoked on 2013-03-13 by RSA key 488BA441 Bilbo Baggins    
+    sub  4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E
+    This key was revoked on 2013-03-13 by RSA key 488BA441 Bilbo Baggins    
+    sub  4096R/C24C2CDA  created: 2013-03-13  expires: never       usage: S   
+    [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
+    [ultimate] (2)  [jpeg image of size 5324]
+    
+    gpg> 
+    
+    ```
 
-gpg> 
 
+ 1. Now that your subkey has been revoked, you have to tell the world about it by distributing your key to a keyserver.
 
-    Now that your subkey has been revoked, you have to tell the world about it by distributing your key to a keyserver.
+## Further reading
 
-Further reading
-
-    The GNU Privacy Handbook, a very detailed explanation of how public-key cryptography works and how to use GPG.
-    Subkeys at the Debian Wiki, an explanation of why using subkeys is a good idea and a step-by-step guide to setting them up.
-    Creating GPG Keys at the Fedora project, a step-by-step guide to creating a new GPG keypair.
-    GPG How-to at the Ubuntu Community Help Wiki.
+  * [The GNU Privacy Handbook](http://www.gnupg.org/gph/en/manual.html), a very detailed explanation of how public-key cryptography works and how to use GPG.
+  
+  * [Subkeys](http://wiki.debian.org/subkeys) at the Debian Wiki, an explanation of why using subkeys is a good idea and a step-by-step guide to setting them up.
+  
+  * [Creating GPG Keys](http://fedoraproject.org/wiki/Creating_GPG_Keys) at the Fedora project, a step-by-step guide to creating a new GPG keypair.
+    
+  * [GPG How-to](https://help.ubuntu.com/community/GnuPrivacyGuardHowto) at the Ubuntu Community Help Wiki.
 
 *source* https://alexcabal.com/creating-the-perfect-gpg-keypair/
