@@ -335,7 +335,7 @@ uid                  Bilbo Baggins <bilbo@shire.org>
 ssb   4096R/69B0EA85 2013-03-13
 ssb   4096R/C24C2CDA 2013-03-13
 ```
-See how the third line begins with “sec#”, not “sec”? The pound sign means the signing subkey is not in the keypair located in the keyring.
+See how the third line begins with `sec#`, not `sec`? The pound sign means the signing subkey is not in the keypair located in the keyring.
 
 You’re all done!
 What have we just accomplished?
