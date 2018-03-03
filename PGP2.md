@@ -214,7 +214,7 @@ gpg>
 
 Now for the special sauce: let’s add our new signing subkey.
 
-Use the gpg `‐‐edit-key` command. At the `gpg>` prompt, enter the command addkey. Select `RSA (sign only)` and `4096` for the `keysize`. Don’t forget to save at the last `gpg>` prompt:
+Use the `gpg ‐‐edit-key` command. At the `gpg>` prompt, enter the command addkey. Select `RSA (sign only)` and `4096` for the `keysize`. Don’t forget to save at the last `gpg>` prompt:
 
 ```
 $ gpg --edit-key bilbo@shire.org
@@ -308,26 +308,26 @@ GPG doesn’t make this easy, but here we go:
 
  1. Export all of the subkeys from our new keypair to a file. We first create a RAM-based ramfs temporary folder to prevent our keys from being written to permanent storage. we use ramfs instead of tmpfs/ or /dev/shm/ because ramfs doesn’t write to swap.
     ```
-    mkdir /tmp/gpg 
-    sudo mount -t ramfs -o size=1M ramfs /tmp/gpg 
-    sudo chown $(logname):$(logname) /tmp/gpg 
-    gpg --export-secret-subkeys bilbo@shire.org > /tmp/gpg/subkeys
+   $  mkdir /tmp/gpg 
+   $ sudo mount -t ramfs -o size=1M ramfs /tmp/gpg 
+   $ sudo chown $(logname):$(logname) /tmp/gpg 
+   $ gpg --export-secret-subkeys bilbo@shire.org > /tmp/gpg/subkeys
     ```
  1. Delete the original signing subkey from the keypair in our keyring:
     ```
-    gpg --delete-secret-key bilbo@shire.org
+    $ gpg --delete-secret-key bilbo@shire.org
     ```
 
  1. Re-import the keys we exported and clean up our temporary file:
     ```
-    gpg --import /tmp/gpg/subkeys 
-    sudo umount /tmp/gpg 
-    rmdir /tmp/gpg
+    $ gpg --import /tmp/gpg/subkeys 
+    $ sudo umount /tmp/gpg 
+    $ rmdir /tmp/gpg
     ```
 
 That’s all! You can verify it worked by running:
 ```
-gpg --list-secret-keys
+$ gpg --list-secret-keys
 /home/bilbo/.gnupg/secring.gpg
 -----------------------------
 sec#  4096R/488BA441 2013-03-13
@@ -350,23 +350,26 @@ If you followed all the steps in this guide, you:
 
  1. Removed the original signing subkey from the master keypair in your laptop’s keyring, thus transforming your master keypair into your laptop keypair. Your life will now be a little easier should your laptop get lost or stolen.
 
-Using your new laptop keypair
+## Using your new laptop keypair
 
 You can now use your keypair to encrypt, decrypt, and sign files and messages.
 
 To sign someone else’s key or to create or revoke a subkey on this keypair, you need to use the master keypair that you keep safe—the one that’s not on your laptop.
 
 You should distribute your public key to a keyserver. There are plenty of tutorials online on how to do that.
-In case of emergency
+
+## In case of emergency
 
 Should the worst happen and your laptop with your special keypair gets lost or stolen (or your special keypair is otherwise compromised), we need to revoke the subkeys on that keypair.
 
-    Unlock your safe-deposit box and get your master keypair out.
+ 1. Unlock your safe-deposit box and get your master keypair out.
 
-    Boot a live USB of Ubuntu or your distro of choice. Then, import your master keypair into the live USB’s keyring:
-    gpg --import /path/to/\<bilbo@shire.org\>.public.gpg-key /path/to/\<bilbo@shire.org\>.private.gpg-key
+ 1. Boot a live USB of Ubuntu or your distro of choice. Then, import your master keypair into the live USB’s keyring:
+    ```
+    $ gpg --import /path/to/\<bilbo@shire.org\>.public.gpg-key /path/to/\<bilbo@shire.org\>.private.gpg-key
+    ``````
 
-    Now use gpg ‐‐edit-key to interactively revoke your subkeys:
+ 1. Now use `gpg ‐‐edit-key` to interactively revoke your subkeys:
     gpg --edit-key bilbo@shire.org
     gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
     This is free software: you are free to change and redistribute it.
