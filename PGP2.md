@@ -342,13 +342,13 @@ What have we just accomplished?
 
 If you followed all the steps in this guide, you:
 
-    Created a new keypair using the strongest possible settings.
+ 1. Created a new keypair using the strongest possible settings.
 
-    Added a new signing subkey to that keypair.
+ 1. Added a new signing subkey to that keypair.
 
-    Exported the complete keypair to two files plus a revocation certificate, all three of which you’ve stored up in a safe place, not on your laptop. This is your master keypair.
+ 1. Exported the complete keypair to two files plus a revocation certificate, all three of which you’ve stored up in a safe place, not on your laptop. This is your master keypair.
 
-    Removed the original signing subkey from the master keypair in your laptop’s keyring, thus transforming your master keypair into your laptop keypair. Your life will now be a little easier should your laptop get lost or stolen.
+ 1. Removed the original signing subkey from the master keypair in your laptop’s keyring, thus transforming your master keypair into your laptop keypair. Your life will now be a little easier should your laptop get lost or stolen.
 
 Using your new laptop keypair
 
