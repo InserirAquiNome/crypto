@@ -234,6 +234,11 @@ bitcoin-0.15.1-x86_64-linux-gnu.tar.gz: OK
 sha256sum: WARNING: 20 lines are improperly formatted
 
 ```
+## Creating the perfect GPG keypair
+
+I found a amazing [article](https://alexcabal.com/creating-the-perfect-gpg-keypair/) on the web and copy it to my [git repository](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md), just in case it get lost.
+
+This article will guide you on some extra options, like using sub keys to create a PGP key to use on your laptop.
 
 ## Links:
 
