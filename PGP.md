@@ -244,7 +244,7 @@ This article will guide you on some extra options, like using sub keys to create
 
 My PGP OPSEC is supported on the previous points but I use on offline machine only for PGP keyring. For this I need a large size USB stick memory for the Linux Live Distro. I will use a 32GB one.
 
-I also need media devices backup my full PGP keyring and also to export the PGP keyring for the online machine: USB memory sticks, SD cards and DVDs.
+I also need media devices backup my full PGP keyring and also to export the PGP keyring for the online machine: USB memory sticks and SD cards.
 
 On the online machines I will use PGP keyring as mention in [here](https://alexcabal.com/creating-the-perfect-gpg-keypair) and also in [here](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md), as the *laptop keypair*.
 
@@ -268,7 +268,7 @@ Now I will transfer the ISO to my 32GB USB stick memory. My options are 40% of t
 # sync
 ```
 
-Like I said I will use USB memory sticks, SD cards and DVDs to store the keyring for backup and export it to online machines.
+Like I said I will use USB memory sticks and SD cards to store the keyring for backup and export it to online machines.
 
 I will use only vfat filesystem on USB memory sticks and SD cards. Because in linux, can't be executable files on vfat. 
 
@@ -360,13 +360,7 @@ Now I will create a ISO file of my folder `~/gpg_archive`
 $ mkisofs -o PGP.iso -r -J /home/live/gpg_archive
 ```
 
-Now I can transfer this ISO to an DVD
-
-```
-
-```
-
-Or to an USB memory stick
+And transfer the iso to an USB memory stick
 
 ```
 # dd bs=4M if=PGP.iso of=/dev/sdc
