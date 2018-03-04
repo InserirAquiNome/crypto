@@ -451,29 +451,6 @@ I noticed that creating PGP keys on air gaped machines will create a PGP key in 
 # date -s "3 March 2018 18:00:00"
 ```
 
-To increase the entropy consider install `rng-tools` and `haveged` from https://slackbuilds.org/
-
-Like this
-
-```
-$ wget http://www.issihosts.com/haveged/haveged-1.9.1.tar.gz
-$ wget https://slackbuilds.org/slackbuilds/14.2/system/haveged.tar.gz
-```
-
-Transfer the downloaded files to the offline machine using the media in vfat filesystem.
-
-On the offline machine do
-
-```
-$ tar zpvfx haveged.tar.gz
-$ rm haveged.tar.gz
-$ mv haveged-1.9.1.tar.gz haveged
-$ cd haveged/
-$ chmod +x haveged.SlackBuild
-# ./haveged.SlackBuild
-# installpkg /tmp/haveged-1.9.1-x86_64-2_SBo.tgz
-```
-
 And now I have an air gaped machine for PGP in a 32GB USB memory stick
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/pgp.jpg "Logo Title Text 1")
