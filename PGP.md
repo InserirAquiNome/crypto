@@ -336,13 +336,28 @@ You can change the script to tweak more chars or less or even remove some of tho
 
 The offline machine warn me about not having not enough entropy for generate the PGP key. 
 
-So I did
+To increase the entropy consider install `rng-tools` and `haveged` from https://slackbuilds.org/
+
+Like this
 
 ```
-$ while true ; do find / *  ; done 
+$ wget http://www.issihosts.com/haveged/haveged-1.9.1.tar.gz
+$ wget https://slackbuilds.org/slackbuilds/14.2/system/haveged.tar.gz
 ```
 
-After the key is created just it ctrl + c to stop it.
+Transfer the downloaded files to the offline machine using the media in vfat filesystem.
+
+On the offline machine do
+
+```
+$ tar zpvfx haveged.tar.gz
+$ rm haveged.tar.gz
+$ mv haveged-1.9.1.tar.gz haveged
+$ cd haveged/
+$ chmod +x haveged.SlackBuild
+# ./haveged.SlackBuild
+# installpkg /tmp/haveged-1.9.1-x86_64-2_SBo.tgz
+```
 
 I created also some directories to store backups of my PGP keyring and revocation certificates 
 
