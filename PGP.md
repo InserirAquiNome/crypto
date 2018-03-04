@@ -240,6 +240,212 @@ I found a amazing [article](https://alexcabal.com/creating-the-perfect-gpg-keypa
 
 This article will guide you on some extra options, like using sub keys to create a PGP key to use on your laptop.
 
+## My PGP OPSEC
+
+My PGP OPSEC is supported on the previous points but I use on offline machine only for PGP keyring. For this I need a large size USB stick memory for the Linux Live Distro. I will use a 32GB one.
+
+I also need media devices backup my full PGP keyring and also to export the PGP keyring for the online machine: USB memory sticks, SD cards and DVDs.
+
+On the online machines I will use PGP keyring as mention in [here](https://alexcabal.com/creating-the-perfect-gpg-keypair/) and also in [here](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md), as the *laptop keypair*.
+
+
+
+### Creating a Linux Live Distro
+
+I will use Slackware Linux Live to this setup 
+
+https://docs.slackware.com/slackware:liveslak
+
+The command bellow check the integrity of the ISO downloaded from one of the sites available on the link above.
+```
+$ md5sum -c slackware64-live-xfce-current.iso.md5 
+slackware64-live-xfce-current.iso: OK
+```
+
+Now I will transfer the ISO to my 32GB USB stick memory. My options are 40% of the all size to the /home mount point that will encrypted and also 50% for the persistent filesystem. The persistent filesystem will store any changes that I make on the OS. So this setup will allow changes on the OS, when I reboot that changes will be available because they are persistent and not reset like in a DVD.
+```
+# ./iso2usb.sh -i slackware64-live-xfce-current.iso -o /dev/sdf -c 40% -C 50%
+# sync
+```
+
+Like I said I will use USB memory sticks, SD cards and DVDs to store the keyring for backup and export it to online machines.
+
+I will use only vfat filesystem on USB memory sticks and SD cards. Because in linux, can't be executable files on vfat. 
+
+The `fdisk -l` will list all my connected drives. The USB memory stick that I connected to store the keyring is on `/dev/sdf`. It's a 4GB memory stick and I need to create a vfat partition first with `fdisk /dev/sdf`. Then I will format the new vfat partition `mkfs.vfat /dev/sdf1`. To insure that the partition is really I will list all my drives again `fdisk -l`. Run `sync` before unplug the USB stick and connect the next media: USB stick or SD cards.
+```
+# fdisk -l
+# fdisk /dev/sdf
+# mkfs.vfat /dev/sdf1
+# fdisk -l
+# sync
+```
+DVDs are blank so they not need any preparation.
+
+Now I will disconnect my laptop from the internet and boot with the Linux Live Distro. 
+
+### Make sure that the offline machine don't connect to any device.
+
+This laptop was Ethernet adapter, Wi-Fi adapter and a Bluetooth adapter. I will blacklist the kernel modules of this adapters to try to prevent any connection from this adapters to other devices.
+
+I will see how many network adapters I have 
+
+```
+# ifconfig -a
+```
+
+Using `# lspci` I will list all my pci devices. Then I will find the kernel modules that I want to blacklist. For example the Ethernet controller: 
+```
+# lspci
+...
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168B PCI Express Gigabit Ethernet controller (rev 01)
+
+# find /sys | grep drivers.*02:00
+/sys/bus/pci/drivers/r8169/0000:02:00.0
+```
+ Uses the r8169 kernel module drive. So I will remove it and blacklist it.
+ 
+ ```
+ # modprobe -r r8169 
+ # echo "blacklist r8169" >> /etc/modprobe.d/blacklist.conf
+ ```
+
+And I will do `ifconfig -a` again to see the if really was removed I go to the next network adapter.
+
+### Creating PGP keyring on the offline machine
+
+Using this article and the one I linked called *Creating the perfect GPG keypair* I will create my PGP keys.
+
+For generate the password for my PGP keys I use this script
+
+```
+!/bin/bash
+
+# This line will genereate a 32 char random pass using A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~ chars 
+#
+
+digits=$(( RANDOM % (32 - 16 + 1 ) + 16 ))
+
+LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c $digits ; echo
+
+```
+
+This will generate a password between 16-32 chars from this chars  A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~
+
+You can change the script to tweak more chars or less or even remove some of those chars.
+
+The offline machine warn me about not having not enough entropy for generate the PGP key. 
+
+So I did
+
+```
+$ while true ; do find / *  ; done 
+```
+
+After the key is created just it ctrl + c to stop it.
+
+I created also some directories to store backups of my PGP keyring and revocation certificates 
+
+```
+$ mkdir ~/gpg_archive
+$ mkdir ~/gpg_archive/gpg_backup/
+$ mkdir ~/gpg_archive/gpg_revocation_certificates/
+$ mkdir ~/gpg_archive/gpg_public/
+```
+Then I copy the PGP keyring to there before making any modification on it `$ cp -av ~/.gnupg ~/gpg_archive/gpg_backup/gpg_1`
+
+Now I will create a ISO file of my folder `~/gpg_archive`
+
+```
+$ mkisofs -o PGP.iso -r -J /home/live/gpg_archive
+```
+
+Now I can transfer this ISO to an DVD
+
+```
+
+```
+
+Or to an USB memory stick
+
+```
+# dd bs=4M if=PGP.iso of=/dev/sdc
+```
+
+So now I did this on the offline machine:
+
+ 1. Created a new keypair using the strongest possible settings.
+
+ 1. Added a new signing subkey to that keypair.
+
+ 1. Exported my public PGP key and revocation certificates and copied my entire keypair to backup directory and make a ISO file of that.
+
+ 1. Removed the original signing subkey from the master keypair in your laptop’s keyring, thus transforming your master keypair into your laptop keypair.
+
+
+### Exporting the keys for the online machine
+
+I just use a media with vfat filesystem where I only have keys without signing keys.
+
+Creating a script like this called GPG.sh can be useful for creating the keys for online use. Because this something that you need to do a lot. 
+
+```
+#!/bin/bash
+
+mkdir /tmp/gpg 
+mount -t ramfs -o size=1M ramfs /tmp/gpg 
+chown live:users /tmp/gpg 
+```
+
+I also use this both scripts
+
+```
+#!/bin/bash
+
+for (( i=1 ; i > 0 ;  i++ )); do
+	if [[ -d  ~/gpg_archive/gpg_backup/gnupg_${i} ]]; then
+		echo "exists $i"
+	else
+		echo "no exists $i"
+		break
+	fi
+
+done
+
+cp -av ~/.gnupg  ~/gpg_archive/gpg_backup/gnupg_${i}
+
+if [[ -f ~/PGP.iso ]]; then rm ~/PGP.iso ; fi
+
+mkisofs -o ~/PGP.iso -r -J /home/live/gpg_archive
+```
+This backups the keyring creating a new gnupg_X folder without overwriting any existing one. And also creates the PGP.iso of the `~/.gnu_archive` folder.
+
+```
+#!/bin/bash
+ 
+
+gpg --export-secret-subkeys 1B9706E8 > /tmp/gpg/subkeys
+printf "\n\nsecret subkey 1B9706E8 exported\n\n" 
+gpg --delete-secret-key 1B9706E8
+printf "\n\nimporting secret subkey 1B9706E8 right now\n\n" 
+gpg --import  /tmp/gpg/subkeys
+gpg --list-secret-keys
+rm  /tmp/gpg/subkeys
+```
+This create the keys for using online but it needs to been to executed after the first script that a posted on this section.
+
+I added a few lines of my others keys.
+
+### Final comments
+
+I noticed that creating PGP keys on air gaped machines will create a PGP key in few hours in the future. The best solution I came a cross is to change the clock of the offline machine to the day before.
+
+```
+# date -s "3 March 2018 18:00:00"
+```
+
+
+
 ## Links:
 
 http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
