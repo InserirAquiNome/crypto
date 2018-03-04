@@ -467,7 +467,7 @@ $ chmod +x haveged.SlackBuild
 
 And now I have an air gaped machine for PGP in a 32GB USB memory stick
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/pgp.jpg "Logo Title Text 1")
 
 ## Links:
 
