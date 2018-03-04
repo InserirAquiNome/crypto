@@ -246,7 +246,7 @@ My PGP OPSEC is supported on the previous points but I use on offline machine on
 
 I also need media devices backup my full PGP keyring and also to export the PGP keyring for the online machine: USB memory sticks, SD cards and DVDs.
 
-On the online machines I will use PGP keyring as mention in [here](https://alexcabal.com/creating-the-perfect-gpg-keypair/) and also in [here](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md), as the *laptop keypair*.
+On the online machines I will use PGP keyring as mention in [here](https://alexcabal.com/creating-the-perfect-gpg-keypair) and also in [here](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md), as the *laptop keypair*.
 
 
 
@@ -465,18 +465,25 @@ $ chmod +x haveged.SlackBuild
 # installpkg /tmp/haveged-1.9.1-x86_64-2_SBo.tgz
 ```
 
+And now I have an air gaped machine for PGP in a 32GB USB memory stick
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
 
 ## Links:
 
-http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
+http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg
 
 https://futureboy.us/pgp.html
 
-https://bitzuma.com/posts/how-to-verify-an-electrum-download-on-windows/
+https://bitzuma.com/posts/how-to-verify-an-electrum-download-on-windows
 
 https://bitcointalk.org/index.php?topic=1836004.msg18341475#msg18341475
 
 https://gist.github.com/turingbirds/3df43f1920a98010667a
+
+https://alexcabal.com/creating-the-perfect-gpg-keypair
+
+https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md
 
 
 ## Support my work
