@@ -432,18 +432,38 @@ gpg --import  /tmp/gpg/subkeys
 gpg --list-secret-keys
 rm  /tmp/gpg/subkeys
 ```
-This create the keys for using online but it needs to been to executed after the first script that a posted on this section.
-
-I added a few lines of my others keys.
+This create the keys for using online but it needs to been to executed after the first script that a posted on this section. I added a few lines for my others keys.
 
 ### Final comments
 
-I noticed that creating PGP keys on air gaped machines will create a PGP key in few hours in the future. The best solution I came a cross is to change the clock of the offline machine to the day before.
+I noticed that creating PGP keys on air gaped machines will create a PGP key in few hours in the future. The best solution I came a cross is to change the clock of the offline machine to two days before.
 
 ```
 # date -s "3 March 2018 18:00:00"
 ```
 
+To increase the entropy consider install `rng-tools` and `haveged` from https://slackbuilds.org/
+
+Like this
+
+```
+$ wget http://www.issihosts.com/haveged/haveged-1.9.1.tar.gz
+$ wget https://slackbuilds.org/slackbuilds/14.2/system/haveged.tar.gz
+```
+
+Transfer the downloaded files to the offline machine using the media in vfat filesystem.
+
+On the offline machine do
+
+```
+$ tar zpvfx haveged.tar.gz
+$ rm haveged.tar.gz
+$ mv haveged-1.9.1.tar.gz haveged
+$ cd haveged/
+$ chmod +x haveged.SlackBuild
+# ./haveged.SlackBuild
+# installpkg /tmp/haveged-1.9.1-x86_64-2_SBo.tgz
+```
 
 
 ## Links:
