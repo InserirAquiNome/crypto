@@ -280,7 +280,6 @@ The `fdisk -l` will list all my connected drives. The USB memory stick that I co
 # fdisk -l
 # sync
 ```
-DVDs are blank so they not need any preparation.
 
 Now I will disconnect my laptop from the internet and boot with the Linux Live Distro. 
 
