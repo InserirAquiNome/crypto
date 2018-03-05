@@ -262,7 +262,7 @@ $ md5sum -c slackware64-live-xfce-current.iso.md5
 slackware64-live-xfce-current.iso: OK
 ```
 
-Now I will transfer the ISO to my 32GB USB stick memory. My options are 40% of the all size to the /home mount point that will encrypted and also 50% for the persistent filesystem. The persistent filesystem will store any changes that I make on the OS. So this setup will allow changes on the OS, when I reboot that changes will be available because they are persistent and not reset like in a DVD.
+Now I will transfer the ISO to my 32GB USB stick memory. My options are 40% of the all size to the /home mount point that will be encrypted and also 50% for the persistent filesystem. The persistent filesystem will store any changes that I make on the OS and is also encrypted. So this setup will allow changes on the OS, when I reboot that changes will be available because they are persistent and not reset like in a DVD.
 ```
 # ./iso2usb.sh -i slackware64-live-xfce-current.iso -o /dev/sdf -c 40% -C 50%
 # sync
