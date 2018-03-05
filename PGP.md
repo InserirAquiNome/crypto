@@ -451,7 +451,16 @@ I noticed that creating PGP keys on air gaped machines will create a PGP key in 
 # date -s "3 March 2018 18:00:00"
 ```
 
-And now I have an air gaped machine for PGP in a 32GB USB memory stick
+I will recommend the following permissions for `~/.gnupg`
+
+```
+find ~/.gnupg/ -type d -exec chmod 700 {} \;
+find ~/.gnupg/ -type f -exec chmod 600 {} \;
+```
+
+And this my `~/.gnupg/gpg.conf`
+
+Now I have an air gaped machine for PGP in a 32GB USB memory stick
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/pgp.jpg "Logo Title Text 1")
 
@@ -471,6 +480,9 @@ https://alexcabal.com/creating-the-perfect-gpg-keypair
 
 https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md
 
+https://davesteele.github.io/gpg/2014/09/20/anatomy-of-a-gpg-key/ [copy](https://davesteele.github.io/gpg/2014/09/20/anatomy-of-a-gpg-key/)
+ 
+http://www.spywarewarrior.com/uiuc/gpg/gpg-com-4.htm
 
 ## Support my work
 
