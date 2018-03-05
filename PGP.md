@@ -480,7 +480,9 @@ https://alexcabal.com/creating-the-perfect-gpg-keypair
 
 https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md
 
-https://davesteele.github.io/gpg/2014/09/20/anatomy-of-a-gpg-key/ [copy](https://davesteele.github.io/gpg/2014/09/20/anatomy-of-a-gpg-key/)
+https://davesteele.github.io/gpg/2014/09/20/anatomy-of-a-gpg-key/ 
+
+[copy from the above](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP_anatomy.md)
  
 http://www.spywarewarrior.com/uiuc/gpg/gpg-com-4.htm
 
