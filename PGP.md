@@ -272,7 +272,7 @@ Like I said I will use USB memory sticks and SD cards to store the keyring for b
 
 I will use only vfat filesystem on USB memory sticks and SD cards. Because in linux, can't be executable files on vfat. 
 
-The `fdisk -l` will list all my connected drives. The USB memory stick that I connected to store the keyring is on `/dev/sdf`. It's a 4GB memory stick and I need to create a vfat partition first with `fdisk /dev/sdf`. Then I will format the new vfat partition `mkfs.vfat /dev/sdf1`. To insure that the partition is really I will list all my drives again `fdisk -l`. Run `sync` before unplug the USB stick and connect the next media: USB stick or SD cards.
+The `fdisk -l` will list all my connected drives. The USB memory stick that I connected to store the keyring is on `/dev/sdf`. It's a 4GB memory stick and I need to create a vfat partition first with `fdisk /dev/sdf`. Then I will format the new vfat partition `mkfs.vfat /dev/sdf1`. To insure that the partition is really vfat, I will list all my drives again `fdisk -l`. Run `sync` before unplug the USB stick and connect the next media: USB stick or SD cards.
 ```
 # fdisk -l
 # fdisk /dev/sdf
