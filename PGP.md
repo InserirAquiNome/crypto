@@ -244,7 +244,7 @@ This article will guide you on some extra options, like using sub keys to create
 
 My PGP OPSEC is supported on the previous points but I use on offline machine only for PGP keyring. For this I need a large size USB stick memory for the Linux Live Distro. I will use a 32GB one.
 
-I also need media devices backup my full PGP keyring and also to export the PGP keyring for the online machine: USB memory sticks and SD cards.
+I also need media devices to backup my full PGP keyring and also to export the PGP keyring for the online machine: USB memory sticks and SD cards.
 
 On the online machines I will use PGP keyring as mention in [here](https://alexcabal.com/creating-the-perfect-gpg-keypair) and also in [here](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md), as the *laptop keypair*.
 
