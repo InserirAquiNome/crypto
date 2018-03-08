@@ -485,6 +485,7 @@ https://davesteele.github.io/gpg/2014/09/20/anatomy-of-a-gpg-key/
  
 http://www.spywarewarrior.com/uiuc/gpg/gpg-com-4.htm
 
+
 ## Support my work
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
