@@ -333,7 +333,7 @@ Now I will disconnect my laptop from the internet and boot with the Linux Live D
 
 ### Make sure that the offline machine don't connect to any device.
 
-This laptop was Ethernet adapter and Wi-Fi adapter. I will blacklist the kernel modules of this adapters to try to prevent any connection from this adapters to other devices.
+This laptop was Ethernet adapter and Wi-Fi adapter. I will blacklist the kernel modules of this adapters to try to prevent any connection from this adapters to the internet.
 
 I will see how many network adapters I have 
 
