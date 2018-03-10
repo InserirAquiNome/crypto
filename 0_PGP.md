@@ -242,7 +242,7 @@ This article will guide you on some extra options, like using sub keys to create
 
 ## My PGP OPSEC
 
-My PGP OPSEC is supported on the previous points but I use on offline machine only for PGP keyring. For this I need a large size USB stick memory to install a Linux Live Distro, on it. So I will use a 32GB, one.
+My PGP OPSEC is supported on the previous points but I use on offline machine only for PGP keyring. For this I need a large size USB stick memory to install a Linux Live Distro on it. So I will use a 32GB one.
 
 I also need media devices to backup my full PGP keyring and also to export the PGP keyring for the online machine: USB memory sticks and SD cards.
 
