@@ -262,6 +262,54 @@ $ md5sum -c slackware64-live-xfce-current.iso.md5
 slackware64-live-xfce-current.iso: OK
 ```
 
+To check the authenticity it hard to find the PGP pub key that signed. I knew that was Eric Hameleers to sign it. So I make a search by his emails on https://keyserver.mattrude.com/ using tone his emails alien@slackbuilds.org
+
+```
+pub  4096R/769EE011 2016-08-21            
+	 Fingerprint=2AD1 07EA F451 32C8 A991  F4F9 883E C63B 769E E011 
+
+uid Eric Hameleers (Alien BOB) <alien@slackware.com>
+sig  sig3  769EE011 2016-08-21 __________ __________ [selfsig]
+sig  sig   A75CBDA0 2016-08-21 __________ __________ Eric Hameleers <alien@sox.homeip.net>
+sig  sig   5D88D6C4 2016-11-10 __________ __________ Willy Sudiarto Raharjo <willy.sudiarto.raharjo@gmail.com>
+sig  sig   1623FC33 2016-11-10 __________ __________ Slackware ARM (Slackware ARM Linux Project) <mozes@slackware.com>
+sig  sig   74423266 2016-11-10 __________ __________ mRgOBLIN <mrgoblin@sastk.org>
+sig  sig   06EBC16C 2016-11-10 __________ __________ Ambrose Field <ajfield22@gmail.com>
+sig  sig   7FA33132 2016-11-11 __________ __________ []
+sig  sig   CF4CDA75 2016-11-14 __________ __________ Max Rottenkolber <max@mr.gy>
+sig  sig   CC4AF23F 2016-11-19 __________ __________ apopa (Cheia care trebuie folosita) <aep@protonmail.ch>
+sig  sig   13E0F512 2016-11-19 __________ __________ []
+sig  sig   69620D53 2016-11-19 __________ __________ Matteo Paoluzzi <duwath@gmail.com>
+sig  sig   65DB53F5 2016-12-07 __________ __________ Franz Sauerzopf <sauer@ati.ac.at>
+sig  sig   AEA97E11 2016-12-20 __________ __________ Alan Aversa <alan.aversa@cox.net>
+sig  sig   9773568B 2017-02-08 __________ __________ []
+sig  sig   7B3B0632 2017-02-23 __________ __________ Delcadroid SonyZ3 (Da Sony Z3) <delcadroid@sony.z3>
+sig  sig   B0BA88DE 2017-04-22 __________ __________ Lyuben Deninski <ldeninski@gmail.com>
+sig  sig   F10DF103 2017-09-08 __________ __________ []
+sig  sig   1B9706E8 2018-03-04 __________ __________ InserirAquiNome (Bitcoin_O_Plomo) <ten.thousands.fists@gmail.com>
+...
+
+```
+
+I checked that is signed by people I know form the slackware community and I already signed it also. Nevertheless I ask him on his twitter for his PGP Long Key ID.
+
+After importing his PGP key I verified the authenticity of the downloaded ISO.
+
+```
+$ gpg --verify slackware64-live-xfce-current.iso.asc 
+gpg: assuming signed data in `slackware64-live-xfce-current.iso'
+gpg: Signature made Sun 11 Feb 2018 00:59:51 WET
+gpg:                using RSA key 0x883EC63B769EE011
+gpg: Good signature from "Eric Hameleers (Alien BOB) <alien@slackware.com>" [full]
+gpg:                 aka "Eric Hameleers <eric.hameleers@gmail.com>" [unknown]
+gpg:                 aka "Eric Hameleers (SBo) <alien@slackbuilds.org>" [unknown]
+gpg:                 aka "Eric Hameleers (Thuis) <e.hameleers@chello.nl>" [unknown]
+gpg:                 aka "Eric Hameleers (Alien Base) <eric.hameleers@alienbase.nl>" [unknown]
+gpg:                 aka "[jpeg image of size 4594]" [unknown]
+Primary key fingerprint: 2AD1 07EA F451 32C8 A991  F4F9 883E C63B 769E E011
+
+```
+
 Now I will transfer the ISO to my 32GB USB stick memory. My options are 40% of the all size to the /home mount point that will be encrypted and also 50% for the persistent filesystem. The persistent filesystem will store any changes that I make on the OS and is also encrypted. So this setup will allow changes on the OS, when I reboot that changes will be available because they are persistent and not reseted like in a DVD.
 ```
 # ./iso2usb.sh -i slackware64-live-xfce-current.iso -o /dev/sdf -c 40% -C 50%
