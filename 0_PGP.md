@@ -262,7 +262,7 @@ $ md5sum -c slackware64-live-xfce-current.iso.md5
 slackware64-live-xfce-current.iso: OK
 ```
 
-To check the authenticity it hard to find the PGP pub key that signed. I knew that was Eric Hameleers to sign it. So I make a search by his emails on https://keyserver.mattrude.com/ using tone his emails alien@slackbuilds.org
+To check the authenticity it hard to find the PGP pub key that signed. I knew that was Eric Hameleers to sign it. So I make a search by his emails on https://keyserver.mattrude.com/ using one his emails alien@slackbuilds.org.
 
 ```
 pub  4096R/769EE011 2016-08-21            
