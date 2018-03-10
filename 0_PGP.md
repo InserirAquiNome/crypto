@@ -291,7 +291,7 @@ sig  sig   1B9706E8 2018-03-04 __________ __________ InserirAquiNome (Bitcoin_O_
 
 ```
 
-I checked that is signed by people I know form the slackware community and I already signed it also. Nevertheless I ask him on his twitter for his PGP Long Key ID.
+I checked that is signed by people I know from the slackware community and I already signed it also. Nevertheless I ask him on his twitter for his PGP Long Key ID.
 
 After importing his PGP key I verified the authenticity of the downloaded ISO.
 
@@ -310,7 +310,7 @@ Primary key fingerprint: 2AD1 07EA F451 32C8 A991  F4F9 883E C63B 769E E011
 
 ```
 
-Now I will transfer the ISO to my 32GB USB stick memory. My options are 40% of the all size to the /home mount point that will be encrypted and also 50% for the persistent filesystem. The persistent filesystem will store any changes that I make on the OS and is also encrypted. So this setup will allow changes on the OS, when I reboot that changes will be available because they are persistent and not reseted like in a DVD.
+Now I will transfer the ISO to my 32GB USB stick memory. My options are 40% of the all size to the /home mount point that will be encrypted and also 50% for the persistent filesystem. The persistent filesystem will store any changes that I make on the OS and is also encrypted. So this setup will allow changes on the OS, and when I reboot that changes will be available because they are persistent and not reseted like in a DVD.
 ```
 # ./iso2usb.sh -i slackware64-live-xfce-current.iso -o /dev/sdf -c 40% -C 50%
 # sync
