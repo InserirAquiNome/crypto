@@ -252,7 +252,7 @@ On the online machines I will use PGP keyring as mention in [here](https://alexc
 
 ### Creating a Linux Live Distro
 
-I will use Slackware Linux Live to this setup 
+I will use Slackware Linux Live for this setup 
 
 https://docs.slackware.com/slackware:liveslak
 
