@@ -377,7 +377,7 @@ LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | h
 
 ```
 
-This will generate a password between 16-32 chars from this chars  A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~
+This will generate a password between 16-32 chars from this chars  `A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~`
 
 You can change the script to tweak more chars or less or even remove some of those chars.
 
