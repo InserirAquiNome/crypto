@@ -496,9 +496,9 @@ find ~/.gnupg/ -type d -exec chmod 700 {} \;
 find ~/.gnupg/ -type f -exec chmod 600 {} \;
 ```
 
-And this my [`~/.gnupg/gpg.conf`](https://github.com/InserirAquiNome/crypto/blob/master/config/gpg.conf)
+I advice also to change your `~/.gnupg/gpg.conf`. There is a few files already configured out there. I use a mix of a few with some options from the manual.
 
-Now I have an air gaped machine for PGP in a 32GB USB memory stick
+And now I have an air gaped machine for PGP in a 32GB USB memory stick
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/pgp.jpg "Logo Title Text 1")
 
