@@ -430,7 +430,7 @@ And transfer the ISO created to an USB memory stick
 # dd bs=4M if=PGP.iso of=/dev/sdc
 ```
 
-So now I did this on the offline machine:
+So I did this on the offline machine:
 
  1. Created a new keypair using the strongest possible settings.
 
