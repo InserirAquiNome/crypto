@@ -316,6 +316,8 @@ Now I will transfer the ISO to my 32GB USB stick memory. My options are 40% of t
 # sync
 ```
 
+### Storage and export devices 
+
 Like I said I will use USB memory sticks and SD cards to store the keyring for backup and export it to online machines.
 
 I will use only vfat filesystem on USB memory sticks and SD cards. Because in linux, can't be executable files on vfat. 
