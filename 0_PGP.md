@@ -424,7 +424,7 @@ Now I will create a ISO file of my folder `~/gpg_archive`
 $ mkisofs -o PGP.iso -r -J /home/live/gpg_archive
 ```
 
-And transfer the iso to an USB memory stick
+And transfer the ISO created to an USB memory stick
 
 ```
 # dd bs=4M if=PGP.iso of=/dev/sdc
