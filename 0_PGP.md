@@ -430,17 +430,6 @@ And transfer the ISO created to an USB memory stick
 # dd bs=4M if=PGP.iso of=/dev/sdc
 ```
 
-So I did this on the offline machine:
-
- 1. Created a new keypair using the strongest possible settings.
-
- 1. Added a new signing subkey to that keypair.
-
- 1. Exported my public PGP key and revocation certificates and copied my entire keypair to backup directory and make a ISO file of that.
-
- 1. Removed the original signing subkey from the master keypair in your laptop’s keyring, thus transforming your master keypair into your laptop keypair.
-
-
 ### Exporting the keys for the online machine
 
 I just use a media with vfat filesystem where I only have keys without signing keys.
