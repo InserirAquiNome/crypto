@@ -240,17 +240,289 @@ I found a amazing [article](https://alexcabal.com/creating-the-perfect-gpg-keypa
 
 This article will guide you on some extra options, like using sub keys to create a PGP key to use on your laptop.
 
+## My PGP OPSEC
+
+My PGP OPSEC is supported on the previous points but I use on offline machine only for PGP keyring. For this I need a large size USB stick memory to install a Linux Live Distro on it. So I will use a 32GB one.
+
+I also need media devices to backup my full PGP keyring and also to export the PGP keyring for the online machine: USB memory sticks and SD cards.
+
+On the online machines I will use PGP keyring as mention in [here](https://alexcabal.com/creating-the-perfect-gpg-keypair) and also in [here](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md), as the *laptop keypair*.
+
+
+
+### Creating a Linux Live Distro
+
+I will use Slackware Linux Live for this setup 
+
+https://docs.slackware.com/slackware:liveslak
+
+The command bellow check the integrity of the ISO downloaded from one of the sites available on the link above.
+```
+$ md5sum -c slackware64-live-xfce-current.iso.md5 
+slackware64-live-xfce-current.iso: OK
+```
+
+To check the authenticity it's hard to find the PGP pub key that signed the ISO. I knew that was Eric Hameleers to sign it. So I make a search by his emails on https://keyserver.mattrude.com/ using one his emails alien@slackbuilds.org.
+
+```
+pub  4096R/769EE011 2016-08-21            
+	 Fingerprint=2AD1 07EA F451 32C8 A991  F4F9 883E C63B 769E E011 
+
+uid Eric Hameleers (Alien BOB) <alien@slackware.com>
+sig  sig3  769EE011 2016-08-21 __________ __________ [selfsig]
+sig  sig   A75CBDA0 2016-08-21 __________ __________ Eric Hameleers <alien@sox.homeip.net>
+sig  sig   5D88D6C4 2016-11-10 __________ __________ Willy Sudiarto Raharjo <willy.sudiarto.raharjo@gmail.com>
+sig  sig   1623FC33 2016-11-10 __________ __________ Slackware ARM (Slackware ARM Linux Project) <mozes@slackware.com>
+sig  sig   74423266 2016-11-10 __________ __________ mRgOBLIN <mrgoblin@sastk.org>
+sig  sig   06EBC16C 2016-11-10 __________ __________ Ambrose Field <ajfield22@gmail.com>
+sig  sig   7FA33132 2016-11-11 __________ __________ []
+sig  sig   CF4CDA75 2016-11-14 __________ __________ Max Rottenkolber <max@mr.gy>
+sig  sig   CC4AF23F 2016-11-19 __________ __________ apopa (Cheia care trebuie folosita) <aep@protonmail.ch>
+sig  sig   13E0F512 2016-11-19 __________ __________ []
+sig  sig   69620D53 2016-11-19 __________ __________ Matteo Paoluzzi <duwath@gmail.com>
+sig  sig   65DB53F5 2016-12-07 __________ __________ Franz Sauerzopf <sauer@ati.ac.at>
+sig  sig   AEA97E11 2016-12-20 __________ __________ Alan Aversa <alan.aversa@cox.net>
+sig  sig   9773568B 2017-02-08 __________ __________ []
+sig  sig   7B3B0632 2017-02-23 __________ __________ Delcadroid SonyZ3 (Da Sony Z3) <delcadroid@sony.z3>
+sig  sig   B0BA88DE 2017-04-22 __________ __________ Lyuben Deninski <ldeninski@gmail.com>
+sig  sig   F10DF103 2017-09-08 __________ __________ []
+sig  sig   1B9706E8 2018-03-04 __________ __________ InserirAquiNome (Bitcoin_O_Plomo) <ten.thousands.fists@gmail.com>
+...
+
+```
+
+I checked that is signed by people I know from the slackware community and I already signed it also. Nevertheless I ask him on his twitter for his PGP Long Key ID.
+
+After importing his PGP key I verified the authenticity of the downloaded ISO.
+
+```
+$ gpg --verify slackware64-live-xfce-current.iso.asc 
+gpg: assuming signed data in `slackware64-live-xfce-current.iso'
+gpg: Signature made Sun 11 Feb 2018 00:59:51 WET
+gpg:                using RSA key 0x883EC63B769EE011
+gpg: Good signature from "Eric Hameleers (Alien BOB) <alien@slackware.com>" [full]
+gpg:                 aka "Eric Hameleers <eric.hameleers@gmail.com>" [unknown]
+gpg:                 aka "Eric Hameleers (SBo) <alien@slackbuilds.org>" [unknown]
+gpg:                 aka "Eric Hameleers (Thuis) <e.hameleers@chello.nl>" [unknown]
+gpg:                 aka "Eric Hameleers (Alien Base) <eric.hameleers@alienbase.nl>" [unknown]
+gpg:                 aka "[jpeg image of size 4594]" [unknown]
+Primary key fingerprint: 2AD1 07EA F451 32C8 A991  F4F9 883E C63B 769E E011
+
+```
+
+Now I will transfer the ISO to my 32GB USB stick memory. My options are 40% of the all size to the /home mount point that will be encrypted and also 50% for the persistent filesystem. The persistent filesystem will store any changes that I make on the OS and is also encrypted. So this setup will allow changes on the OS, and when I reboot that changes will be available because they are persistent and not reseted like in a DVD.
+```
+# ./iso2usb.sh -i slackware64-live-xfce-current.iso -o /dev/sdf -c 40% -C 50%
+# sync
+```
+
+### Storage and export devices 
+
+Like I said I will use USB memory sticks and SD cards to store the keyring for backup and export it to online machines.
+
+I will use only vfat filesystem on USB memory sticks and SD cards. Because in linux, can't be executable files on vfat. 
+
+The `fdisk -l` will list all my connected drives. The USB memory stick that I connected to store the keyring is on `/dev/sdf`. It's a 4GB memory stick and I need to create a vfat partition first with `fdisk /dev/sdf`. Then I will format the new vfat partition `mkfs.vfat /dev/sdf1`. To insure that the partition is really vfat, I will list all my drives again `fdisk -l`. Run `sync` before unplug the USB stick and connect the next media: USB stick or SD cards.
+```
+# fdisk -l
+# fdisk /dev/sdf
+# mkfs.vfat /dev/sdf1
+# fdisk -l
+# sync
+```
+
+Now I will disconnect my laptop from the internet and boot with the Linux Live Distro. 
+
+### Make sure that the offline machine don't connect to any device.
+
+This laptop was Ethernet adapter and Wi-Fi adapter. I will blacklist the kernel modules of this adapters to try to prevent any connection from this adapters to the internet.
+
+I will see how many network adapters I have 
+
+```
+# ifconfig -a
+```
+
+Using `# lspci` I will list all my pci devices. Then I will find the kernel modules that I want to blacklist. For example the Ethernet controller: 
+```
+# lspci
+...
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168B PCI Express Gigabit Ethernet controller (rev 01)
+
+# find /sys | grep drivers.*02:00
+/sys/bus/pci/drivers/r8169/0000:02:00.0
+```
+ Uses the r8169 kernel module drive. So I will remove it and blacklist it.
+ 
+ ```
+ # modprobe -r r8169 
+ # echo "blacklist r8169" >> /etc/modprobe.d/blacklist.conf
+ ```
+
+And I will do `ifconfig -a` again to see the if really was removed I go to the next network adapter.
+
+### Creating PGP keyring on the offline machine
+
+Using this article and the one I linked called *Creating the perfect GPG keypair* I will create my PGP keys.
+
+For generate the password for my PGP keys I use this script
+
+```
+!/bin/bash
+
+# This line will genereate a 32 char random pass using A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~ chars 
+#
+
+digits=$(( RANDOM % (32 - 16 + 1 ) + 16 ))
+
+LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c $digits ; echo
+
+```
+
+This will generate a password between 16-32 chars from this chars A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~
+
+You can change the script to tweak more chars or less or even remove some of those chars.
+
+The offline machine warn me about not having not enough entropy for generate the PGP key. 
+
+To increase the entropy consider install `rng-tools` and `haveged` from https://slackbuilds.org/
+
+Like this
+
+```
+$ wget http://www.issihosts.com/haveged/haveged-1.9.1.tar.gz
+$ wget https://slackbuilds.org/slackbuilds/14.2/system/haveged.tar.gz
+```
+
+Transfer the downloaded files to the offline machine using the media in vfat filesystem.
+
+On the offline machine do
+
+```
+$ tar zpvfx haveged.tar.gz
+$ rm haveged.tar.gz
+$ mv haveged-1.9.1.tar.gz haveged
+$ cd haveged/
+$ chmod +x haveged.SlackBuild
+# ./haveged.SlackBuild
+# installpkg /tmp/haveged-1.9.1-x86_64-2_SBo.tgz
+```
+
+I created also some directories to store backups of my PGP keyring and revocation certificates 
+
+```
+$ mkdir ~/gpg_archive
+$ mkdir ~/gpg_archive/gpg_backup/
+$ mkdir ~/gpg_archive/gpg_revocation_certificates/
+$ mkdir ~/gpg_archive/gpg_public/
+```
+Then I copy the PGP keyring to there before making any modification on it `$ cp -av ~/.gnupg ~/gpg_archive/gpg_backup/gpg_1`
+
+Now I will create a ISO file of my folder `~/gpg_archive`
+
+```
+$ mkisofs -o PGP.iso -r -J /home/live/gpg_archive
+```
+
+And transfer the ISO created to an USB memory stick
+
+```
+# dd bs=4M if=PGP.iso of=/dev/sdc
+```
+
+### Exporting the keys for the online machine
+
+I just use a media with vfat filesystem where I only have keys without signing keys.
+
+Creating a script like this called GPG.sh can be useful for creating the keys for online use. Because this something that you need to do a lot. 
+
+```
+#!/bin/bash
+
+mkdir /tmp/gpg 
+mount -t ramfs -o size=1M ramfs /tmp/gpg 
+chown live:users /tmp/gpg 
+```
+
+I also use this both scripts
+
+```
+#!/bin/bash
+
+for (( i=1 ; i > 0 ;  i++ )); do
+	if [[ -d  ~/gpg_archive/gpg_backup/gnupg_${i} ]]; then
+		echo "exists $i"
+	else
+		echo "no exists $i"
+		break
+	fi
+
+done
+
+cp -av ~/.gnupg  ~/gpg_archive/gpg_backup/gnupg_${i}
+
+if [[ -f ~/PGP.iso ]]; then rm ~/PGP.iso ; fi
+
+mkisofs -o ~/PGP.iso -r -J /home/live/gpg_archive
+```
+This backups the keyring creating a new gnupg_X folder without overwriting any existing one. And also creates the PGP.iso of the `~/.gnu_archive` folder.
+
+```
+#!/bin/bash
+ 
+
+gpg --export-secret-subkeys 1B9706E8 > /tmp/gpg/subkeys
+printf "\n\nsecret subkey 1B9706E8 exported\n\n" 
+gpg --delete-secret-key 1B9706E8
+printf "\n\nimporting secret subkey 1B9706E8 right now\n\n" 
+gpg --import  /tmp/gpg/subkeys
+gpg --list-secret-keys
+rm  /tmp/gpg/subkeys
+```
+This create the keys for using online but it needs to been to executed after the first script that a posted on this section. I added a few lines for my others keys.
+
+### Final comments
+
+I noticed that creating PGP keys on air gaped machines will create a PGP key in few hours in the future. The best solution I came a cross is to change the clock of the offline machine to two days before.
+
+```
+# date -s "3 March 2018 18:00:00"
+```
+
+I will recommend the following permissions for `~/.gnupg`
+
+```
+find ~/.gnupg/ -type d -exec chmod 700 {} \;
+find ~/.gnupg/ -type f -exec chmod 600 {} \;
+```
+
+I advice also to change your `~/.gnupg/gpg.conf`. There is a few files already configured out there. I use a mix of a few with some options from the manual.
+
+And now I have an air gaped machine for PGP in a 32GB USB memory stick
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/pgp.jpg "Logo Title Text 1")
+
 ## Links:
 
-http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg/
+http://www.mattnworb.com/post/how-to-verify-a-pgp-signature-with-gnupg
 
 https://futureboy.us/pgp.html
 
-https://bitzuma.com/posts/how-to-verify-an-electrum-download-on-windows/
+https://bitzuma.com/posts/how-to-verify-an-electrum-download-on-windows
 
 https://bitcointalk.org/index.php?topic=1836004.msg18341475#msg18341475
 
 https://gist.github.com/turingbirds/3df43f1920a98010667a
+
+https://alexcabal.com/creating-the-perfect-gpg-keypair
+
+https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md
+
+https://davesteele.github.io/gpg/2014/09/20/anatomy-of-a-gpg-key/ 
+
+[copy from the above](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP_anatomy.md)
+ 
+http://www.spywarewarrior.com/uiuc/gpg/gpg-com-4.htm
 
 
 ## Support my work
