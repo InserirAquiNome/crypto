@@ -58,10 +58,11 @@ The Internet of Money Vol 1 & 2, A collection of Andreas' talks explaining why b
 ### PGP
 
 ```
-pub   4096R/5079D156 2018-02-20
-      Key fingerprint = 30FC E66F FC02 D5CE 4947  69ED B042 5FAA 5079 D156
-uid                  InserirAquiNome <ten.thousands.fists@gmail.com>
-sub   4096R/18018313 2018-02-20
+sec#  4096R/0xAD1B89091B9706E8 2018-03-04
+      Key fingerprint = 6AD5 A6B3 A207 1F83 37E4  B7C7 AD1B 8909 1B97 06E8
+uid                            InserirAquiNome (Bitcoin_O_Plomo) <ten.thousands.fists@gmail.com>
+ssb   4096R/0x7982C5B17A14B415 2018-03-04
+ssb   4096R/0x4A19220725DBEC87 2018-03-04
 ```
 
 ## Support my work
