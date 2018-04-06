@@ -524,6 +524,12 @@ https://davesteele.github.io/gpg/2014/09/20/anatomy-of-a-gpg-key/
  
 http://www.spywarewarrior.com/uiuc/gpg/gpg-com-4.htm
 
+https://www.gnupg.org/index.html
+
+https://www.gnupg.org/documentation/manuals.html
+
+https://wiki.debian.org/Subkeys?action=show&redirect=subkeys
+
 
 ## Support my work
 
