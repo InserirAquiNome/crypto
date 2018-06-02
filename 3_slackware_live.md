@@ -134,3 +134,8 @@ For large USB sticks, bigger then 16GB I use
 ```
 # ./iso2usb.sh -i slackware64-live-current.iso -o /dev/sdX -c 40% -C 40% 
 ```
+
+
+## Support my work
+
+![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
