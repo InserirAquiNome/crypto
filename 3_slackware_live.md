@@ -1,6 +1,6 @@
 # Create a live Slackware distro that runs on a DVD or a USB stick
 
-The usb stick variant can hold changes or in other words is a persistent instalation.
+The usb stick variant can hold changes or in other words is a persistent installation.
 
 ## Links
 
@@ -17,7 +17,7 @@ The usb stick variant can hold changes or in other words is a persistent instala
 
 In http://git.slackware.nl/liveslak/ is possible to get the latest version of liveslack scripts.
 
-I personaly clone the git repo.
+I personally clone the git repo.
 
 ```
 git git://slackware.nl/liveslak.git
@@ -41,7 +41,7 @@ M       make_slackware_live.conf
 Switched to branch '1.1.9.8'
 ```
 
-Verify authentaticity 
+Verify authenticity 
 
 ```
 $ git tag -v  1.1.9.8 
