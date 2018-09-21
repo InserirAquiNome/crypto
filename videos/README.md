@@ -29,3 +29,5 @@ https://www.cnbc.com/2018/01/16/skeptics-say-bitcoin-has-no-value-heres-why-they
 
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png "Logo Title Text 1")
 
+bc1qqd0wpu2ekpay0yms79sev3h7c0kl22g5h6kzv4
+
