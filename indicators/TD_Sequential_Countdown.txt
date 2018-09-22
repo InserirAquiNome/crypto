@@ -1,6 +1,3 @@
-//@version=3
-//@Author: 
-
 // Something that helps me with my trades.
 
 // Trade after countdown reaches 13 after the perfection of a buy or sell Setup.
