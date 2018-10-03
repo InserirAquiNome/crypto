@@ -200,7 +200,7 @@ Extract the file
 
 Some people run the client as root or create a new user just for that. I will run it with my regular user.
 
-And I use a symbolic to make it easier to upgrade in the future.
+And I use a symbolic link to make it easier to upgrade in the future.
 
 `$ ln -s bitcoin-0.15.1 bitcoin`
 
