@@ -200,13 +200,18 @@ Extract the file
 
 Some people run the client as root or create a new user just for that. I will run it with my regular user.
 
+And I use a symbolic to make it easier to upgrade in the future.
+
+`$ ln -s bitcoin-0.15.1 bitcoin`
+
+
 `$ vim ~/.bash_profile`
 
 And add this at the end
 
 ```
 #PATH to bitcoin client
-export PATH=$PATH:$HOME/BITCOIN/bitcoin-0.15.1/bin/
+export PATH=$PATH:$HOME/BITCOIN/bitcoin/bin/
 ```
 
 Be aware to not leave any blank space at the end of that file.
