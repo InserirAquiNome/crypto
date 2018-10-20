@@ -27,6 +27,15 @@ filesystem.
 
 [hashes](https://mega.nz/#!60VyEYBL!Q431y6a_2WpFQ6_a2jDwZlGLjR_gNq_VgcSu3yZrilo)
 
+## Burn img
+
+`$ gzip -d wallet_empty_30Sep2018.img.gz`
+
+Plug an empty 32GB USB stick with at least 31482445824 bytes of capacity.
+
+`# dd if=wallet_empty_30Sep2018.img of=/dev/sdX bs=65536 status=progress`
+
+Where `/dev/sdX` it's the your USB stick.
 
 # Usage 
 
