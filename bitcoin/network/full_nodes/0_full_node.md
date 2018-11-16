@@ -218,7 +218,21 @@ Be aware to not leave any blank space at the end of that file.
 
 ## Configuration
 
-Create the ~/.bitcoin directory 
+It is possible the generate a custom configuration suitable to you in here
+https://jlopp.github.io/bitcoin-core-config-generator/
+
+Also this links are very useful to setup your configuration
+
+https://bitcoin.org/en/full-node
+
+https://en.bitcoin.it/wiki/Full_node
+
+https://en.bitcoin.it/wiki/Running_Bitcoin
+
+https://en.bitcoin.it/wiki/Bitcoind
+
+
+For my configuration I created the ~/.bitcoin directory 
 
 `$ mkdir ~/.bitcoin`
 
