@@ -73,7 +73,7 @@ I used 200GB as an example.
 
 # lvresize -l+100%FREE /dev/mapper/cryptvg-root.
 
-# e2fsck -f /dev/mapper/mapper/cryptvg-root
+# e2fsck -f /dev/mapper/cryptvg-root
 
 # resize2fs /dev/mapper/cryptvg-root
 ```
