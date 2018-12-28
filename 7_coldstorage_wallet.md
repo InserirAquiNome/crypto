@@ -69,7 +69,7 @@ I used 200GB as an example.
 
 # vgchange -a y cryptvg
 
-# pvresize /dev/mapper/cryptvg-root
+# pvresize /dev/mapper/slackluks
 
 # lvresize -l+100%FREE /dev/mapper/cryptvg-root.
 
