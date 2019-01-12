@@ -31,3 +31,7 @@ https://www.cnbc.com/2018/01/16/skeptics-say-bitcoin-has-no-value-heres-why-they
 
 bc1qqd0wpu2ekpay0yms79sev3h7c0kl22g5h6kzv4
 
+
+
+Lighting Tip Box
+http://bitcoin0plomo.ddns.net:9115

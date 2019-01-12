@@ -80,3 +80,7 @@ Like you can see I have two mail lists on it   *bitcoin-dev* and *lightning-dev*
 
 bc1qqd0wpu2ekpay0yms79sev3h7c0kl22g5h6kzv4
 
+
+
+Lighting Tip Box
+http://bitcoin0plomo.ddns.net:9115
