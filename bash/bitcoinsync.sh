@@ -3,9 +3,7 @@
 # bash script que verifica se o node esta sincronizado ou quantos blocks faltam.
 #
 
-export PATH=$PATH:$HOME/BITCOIN/bitcoin-0.15.1/bin/
-
-bitcoindSynced () {
+bitcoindSynced() {
 
   process=bitcoind
   pidof -s "$process" > /dev/null 2>&1
@@ -33,27 +31,35 @@ bitcoindSynced () {
 
   if [[ -z "$blockChain" ]] ; then
 	printf "ERROR!!! Error getting blockcount from http://blockchain.info/\n\n"
-	exit 1
-  fi
+	
+  else
+      blockDiff=$(($blockChain -  $blockCount))
 
-  blockDiff=$(($blockChain -  $blockCount))
-
-  if [[ ! -z "$blockChain" ]] && [[ ! -z "$blockChain" ]] &&  [[ ! -z "$blockDiff" ]] ; then
-	if [[ "$blockDiff" = 0 ]] ; then
-	  echo "up to date"
-	else
-	  echo ""$blockDiff" blocks behind"
-	fi
-  fi
-
+      if [[ ! -z "$blockChain" ]] && [[ ! -z "$blockChain" ]] &&  [[ ! -z "$blockDiff" ]] ; then
+	  if [[ "$blockDiff" = 0 ]] ; then
+	      echo "up to date"
+	  else
+	      echo ""$blockDiff" blocks behind"
+	  fi
+      fi
+      
   perc=$(echo "$blockCount" / "$blockChain" | bc -l)
 
   perc=$(echo "$perc"*"100" | bc)
 
   perc=$(echo "$perc" | cut -c-5)
 
-  printf ""$perc" %% Done \n\n"
+  printf ""$perc" %% Done \n"
+  
+  fi
+  
+  chaintip=$(bitcoin-cli getbestblockhash)
+
+  printf "\nChaintip: "$chaintip"\n\n"
 
 } 2>/dev/null
 
-bitcoindSynced
+source $HOME/.bash_profile
+
+clear
+bitcoindSynced 
