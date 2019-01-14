@@ -59,7 +59,41 @@ bitcoindSynced() {
 
 } 2>/dev/null
 
+
+function BTC_status () {                                                                                                                    
+                                                                                                                                            
+  source ~/.bash_profile                                                                                                                    
+                                                                                                                                            
+  process="bitcoind"                                                                                                                        
+  pidof -s "$process" > /dev/null 2>&1                                                                                                      
+  status=$?                                                                                                                                 
+                                                                                                                                            
+  if [[ "$status" -eq 0 ]]; then                                                                                                            
+    printf "\n"                                                                                                                             
+#    echo "$process is running"                                                                                                              
+    printf "\n"                                                                                                                             
+    uname -a                                                                                                                                
+    printf "\n"                                                                                                                             
+    date                                                                                                                                    
+    printf "\n"                                                                                                                             
+    uptime                                                                                                                                  
+    printf "\n"                                                                                                                             
+    bitcoindSynced
+
+    printf "\n"               
+    str1=$(du -sh $HOME/.bitcoin/blocks/ | cut -f 1 )                                                                                                     
+    str2=$(du -sh $HOME/.bitcoin/chainstate/ | cut -f 1 )
+    printf "\nBlockchain storage space:\n${str1}\t ~/.bitcoin/blocks" 
+    printf "\n${str2}\t ~/.bitcoin/chainstate"
+    printf "\n\nFull node running for days-hours:minutes:seconds\n$(ps -o etime= -p "$(pidof "$process")")\n\n"                               
+  else                                                                                                                                      
+    echo "$process is NOT running"                                                                                                          
+  fi                                                                                                                                        
+                                                                                                                                            
+}
+
+
 source $HOME/.bash_profile
 
 clear
-bitcoindSynced 
+BTC_status
