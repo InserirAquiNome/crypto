@@ -214,3 +214,13 @@ PidFile /var/run/tor/tor.pid
 ## a private bridge, for example because you'll give out your bridge
 ## address manually to your friends, uncomment this line:
 #PublishServerDescriptor 0
+
+# Bitcoin full node                                                                                                                         
+HiddenServiceDir /var/lib/tor/bitcoin-service/                                                                                              
+HiddenServiceVersion 2                                                                                                                      
+HiddenServicePort 8333 127.0.0.1:8333                                                                                                       
+                                                                                                                                            
+# Lightning full node                                                                                                                         
+HiddenServiceDir /var/lib/tor/ln-service-v3/                                                                                                
+HiddenServiceVersion 3                                                                                                                      
+HiddenServicePort 9740 127.0.0.1:9740    
