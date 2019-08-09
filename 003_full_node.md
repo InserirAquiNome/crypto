@@ -385,7 +385,7 @@ Full node running for days-hours:minutes:seconds
    07:18:31
 ```
 
-This is my final [bitcoin.conf](https://github.com/InserirAquiNome/crypto/blob/master/config/bitcoin.conf)
+This is my final [bitcoin.conf](https://github.com/InserirAquiNome/dotfiles/blob/master/bitcoin.conf)
 
 ## Next step...
 
