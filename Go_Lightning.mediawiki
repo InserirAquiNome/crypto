@@ -1,4 +1,3 @@
-
 <pre>
   Title: Go Lighting 
   Author: Bitcoin_O_Plomo <https://twitter.com/BitcoinOPlomo/>
@@ -15,18 +14,15 @@
 <img src=https://i.imgur.com/GSmnANu.png></img>
 <img src=https://i.imgur.com/NdSPlBb.png></img>
 <img src=https://i.imgur.com/kdN549R.png></img>
-<img src=https://i.imgur.com/kdN549R.png></img>
 <img src=https://i.imgur.com/KXZ9YQV.png></img>
-<img src=></img>
-<img src=></img>
-<img src=></img>
-<img src=></img>
-<img src=></img>
-<img src=></img>
-<img src=></img>
+<img src=https://i.imgur.com/1OA595n.png></img>
+<img src=https://i.imgur.com/XEI1hXP.png></img>
+<img src=https://i.imgur.com/tluaCxF.png></img>
+<img src=https://i.imgur.com/vKoLXpu.png></img>
 
+<!--
 '''Example''':
 <pre>
 81e05e3258b92637d75747096aa76464bc12223e0081cc03ee1736a16ed05764 *VirtualBox-6.0.8-130520-Win.exe
 </pre>
-
+ -->
