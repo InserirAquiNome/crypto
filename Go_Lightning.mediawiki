@@ -4,12 +4,26 @@
   Author: Bitcoin_O_Plomo <https://twitter.com/BitcoinOPlomo/>
   Status: Draft
   Created: 2019-12-12
+  Last update:2019-12-17
 </pre>
 
 ==Requirements==
 
 
-<img src=https://i.imgur.com/XOxxGOZ.png></img>
+<img src=https://i.imgur.com/J35paX1.png></img>
+<img src=https://i.imgur.com/m3V7AlR.png></img>
+<img src=https://i.imgur.com/GSmnANu.png></img>
+<img src=https://i.imgur.com/NdSPlBb.png></img>
+<img src=https://i.imgur.com/kdN549R.png></img>
+<img src=https://i.imgur.com/kdN549R.png></img>
+<img src=https://i.imgur.com/KXZ9YQV.png></img>
+<img src=></img>
+<img src=></img>
+<img src=></img>
+<img src=></img>
+<img src=></img>
+<img src=></img>
+<img src=></img>
 
 '''Example''':
 <pre>
