@@ -6,10 +6,9 @@
   Last update:2019-12-17
 </pre>
 
-<!--
-==Requirements==
--->
+==Zap-wallet==
 
+https://www.zaphq.io/download
 
 <img src=https://i.imgur.com/J35paX1.png></img>
 <img src=https://i.imgur.com/m3V7AlR.png></img>
@@ -22,6 +21,18 @@
 <img src=https://i.imgur.com/tluaCxF.png></img>
 <img src=https://i.imgur.com/vKoLXpu.png></img>
 
+https://www.bitrefill.com/buy/lightning-channel/?hl=en
+
+https://pro.coinbase.com/
+https://www.revolut.com/en-PT/  (UE citizens)
+
+https://www.bitrefill.com/?hl=en
+
+https://satoshis.games/games/
+https://lightnite.io/
+
+https://www.earnsats.co/
+https://twitter.com/Bitsahara
 
 <!--
 '''Example''':
