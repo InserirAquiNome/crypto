@@ -3,12 +3,19 @@
   Author: Bitcoin_O_Plomo <https://twitter.com/BitcoinOPlomo/>
   Status: Draft
   Created: 2019-12-12
-  Last update:2019-12-17
+  Last update:2019-12-18
 </pre>
 
 ==Zap-wallet==
 
+===Software===
+
+Get the software from here
+
 https://www.zaphq.io/download
+
+
+===Setting up a wallet===
 
 <img src=https://i.imgur.com/J35paX1.png></img>
 <img src=https://i.imgur.com/m3V7AlR.png></img>
@@ -20,6 +27,38 @@ https://www.zaphq.io/download
 <img src=https://i.imgur.com/XEI1hXP.png></img>
 <img src=https://i.imgur.com/tluaCxF.png></img>
 <img src=https://i.imgur.com/vKoLXpu.png></img>
+
+===Using the wallet===
+
+The Zap wallet, as wallet, is a lightning node.
+
+It runs neutrino and lnd, the golang implementation of lightning network.
+
+The use the wallet you need funds on the base layer or on the second layer.
+
+Funds on the base layer are bitcoin that you can send from any other base layer wallet or even a exchange where you buy bitcoin.
+
+Funds on the second layer are funds in lighthing channels. Right now you can have outgoing channels and incoming channels.
+
+====Ligthning channels====
+
+'''Incoming channels'''
+
+Incoming channels are channels from other lightning node to yours. And these channels allow you to receive.
+
+'''Outgoing channels'''
+
+Outgoing channels are channels from your node to others node. And these channels allow you to send.
+
+You can have many channels of both types.
+
+But since Zap wallet is lightweight wallet, I will recommend only one of each type.
+
+If you have a full bitcoin node instead of neutrino with a lightning software implementation that is always running, you can should have more channels.
+
+There already a few easy solutions to run these type of nodes in [https://en.wikipedia.org/wiki/System_on_a_chip SoC machines].
+
+
 
 https://www.bitrefill.com/buy/lightning-channel/?hl=en
 
