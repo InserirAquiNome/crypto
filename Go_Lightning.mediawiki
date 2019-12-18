@@ -117,7 +117,7 @@ https://www.earnsats.co/
 https://twitter.com/Bitsahara
 
 
-<span style="font-family:Georgia;font-size:120%">Support my work</span>
+<span style="font-family:Georgia;font-size:200%">Support my work</span>
 
 <img src=https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate.png></img>
 
