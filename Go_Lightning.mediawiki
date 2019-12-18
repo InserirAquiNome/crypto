@@ -40,7 +40,7 @@ Funds on the base layer are bitcoin that you can send from any other base layer 
 
 Funds on the second layer are funds in lighthing channels. Right now you can have outgoing channels and incoming channels.
 
-====Ligthning channels====
+===Ligthning channels===
 
 '''Incoming channels'''
 
@@ -58,26 +58,61 @@ If you have a full bitcoin node instead of neutrino with a lightning software im
 
 There already a few easy solutions to run these type of nodes in [https://en.wikipedia.org/wiki/System_on_a_chip SoC machines].
 
+[https://github.com/openoms/raspiblitz Raspiblitz] [https://github.com/rootzoll/raspiblitz Raspiblitz]
 
+[https://mynodebtc.com/ myNode]
+
+[https://keys.casa/ Casa]
+
+Raspiblitz is DIY.
+
+myNode is DIY or you can buy the full working version of it with support.
+
+Casa is a full working version of with support.
+
+
+You can also install all the software by hand in any type of hardware. Since it is open source.
+
+https://lightning.engineering/
+
+https://github.com/ElementsProject/lightning
+
+https://bitcoincore.org/
+
+To open an outgoing channel you just need some bitcoin in your wallet and connect to another lightning node. Some wallets even have autopilot to does exactly this.
+
+To have a incoming channel you have to ask someone to open it, your wait or you can use Bitrefill and buy a Thor lightning channel capacity.
 
 https://www.bitrefill.com/buy/lightning-channel/?hl=en
 
 <img src=https://i.imgur.com/N9Dms6V.png></img>
 
-https://pro.coinbase.com/
-https://www.revolut.com/en-PT/  (UE citizens)
+Of course if you a real beginner, most likely you will not have any bitcoin at all. Not even to pay in the Bitrefill website.
+
+The easy way to do it, if you don't worry to much with AML and KYC, is using a regular exchange.
+
+Like [https://pro.coinbase.com/ Coinbase]
+
+You can connect the Coinbase account directly to your bank account.
+
+Your can use a intermediary, like  [https://www.revolut.com/en-PT/  Revolut]  for UE citizens.
+
+Just register in both sites and then associate the Revolut account to Coinbase.
+
+Then, send some money to Revolut. And then from Revolut to Coinbase.
+
+After having money in Coinbase, just make a order a buy bitcoin. 
+
+
+==Links==
 
 https://www.bitrefill.com/?hl=en
 
+===LN Games==
 https://satoshis.games/games/
 https://lightnite.io/
 
+===LN stack sats===
 https://www.earnsats.co/
 https://twitter.com/Bitsahara
 
-<!--
-'''Example''':
-<pre>
-81e05e3258b92637d75747096aa76464bc12223e0081cc03ee1736a16ed05764 *VirtualBox-6.0.8-130520-Win.exe
-</pre>
- -->
