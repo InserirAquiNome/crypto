@@ -38,7 +38,7 @@ Every time you add a new PATH to the existing PATH use `;`.
 The PGP config files will be in your user settings. To get there put %APPDATA% in
 the file manager.
 
-My configuration file [gpg.conf](https://github.com/bitcoinoplomo/dotfiles/blob/master/config/gpg.conf)
+My configuration file [gpg.conf](https://github.com/bitcoinoplomo/dotfiles/blob/master/gpg.conf)
 will not work in windows as it is. But you can adapt it, adding line by line and see how
 it works. 
 
