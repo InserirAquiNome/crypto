@@ -2,7 +2,7 @@
 
 ## Introduction 
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node3.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/full_node3.png "Logo Title Text 1")
 
 Most people holding bitcoin aren't running full nodes, so they are trusting someone to provide the balance of their address. Only running a full node allows trust less interaction with bitcoin.
 
@@ -90,7 +90,7 @@ But because miners are using lot of energy to mine bitcoin they are reward for t
 
 An example how this works is looking to a lock like this one:
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node4.jpg "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/full_node4.jpg "Logo Title Text 1")
 
 Everyone with a bike should know this kind of looks!
 
@@ -108,7 +108,7 @@ In this way the bitcoin network is sustainable in the future and the devs workin
 
 ## Hardware - An $35 computer, an RPi3
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node1.jpg "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/full_node1.jpg "Logo Title Text 1")
 
 This is a setup of a bitcoin full node running on a RPi3 hardware. I run other nodes but this is my first bitcoin full node on an ARM machine.
 
@@ -117,7 +117,7 @@ My RPi3 run a Linux OS, without X. This even make the cost of running this node 
  
 And I access my node through SSH, so I don't even need a mouse or keyboard. It's only the RPi3, it's power supply, micro sd card and an 2,5'' external hard drive like this one
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node2.jpg "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/full_node2.jpg "Logo Title Text 1")
 
 The final cost of this setup is less than 200 usd with cables, the plastic box to put the RPi3 and the hard drive.
 
@@ -139,7 +139,7 @@ bitcoin-0.15.1-aarch64-linux-gnu.tar.gz: OK
 sha256sum: WARNING: 20 lines are improperly formatted
 ```
 
-Integrity is checked and now I will check it's authenticity, like I wrote on my [PGP.md](https://github.com/InserirAquiNome/crypto/blob/master/000_PGP.md)
+Integrity is checked and now I will check it's authenticity, like I wrote on my [PGP.md](https://github.com/bitcoinoplomo/crypto/blob/master/000_PGP.md)
 
 `$ gpg --gen-key`
 
@@ -271,8 +271,8 @@ I have a script called *bitcoinsync.sh* and another called *tor.sh* that I will 
 
 ```
 $ cd ~/programming/Raspberry_RPi3/scripts/
-$ wget https://raw.githubusercontent.com/InserirAquiNome/crypto/master/bash/bitcoinsync.sh
-$ wget https://raw.githubusercontent.com/InserirAquiNome/crypto/master/bash/tor.sh
+$ wget https://raw.githubusercontent.com/bitcoinoplomo/crypto/master/bash/bitcoinsync.sh
+$ wget https://raw.githubusercontent.com/bitcoinoplomo/crypto/master/bash/tor.sh
 $ chmod +x bitcoinsync.sh tor.sh
 ```
 
@@ -385,13 +385,13 @@ Full node running for days-hours:minutes:seconds
    07:18:31
 ```
 
-This is my final [bitcoin.conf](https://github.com/InserirAquiNome/dotfiles/blob/master/bitcoin.conf)
+This is my final [bitcoin.conf](https://github.com/bitcoinoplomo/dotfiles/blob/master/bitcoin.conf)
 
 ## Next step...
 
 I am also thinking on putting a node on an RPi zero W. 
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/full_node5.jpg "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/full_node5.jpg "Logo Title Text 1")
 
 https://www.raspberrypi.org/products/raspberry-pi-zero-w/
 
@@ -433,11 +433,11 @@ Plz! Run a full bitcoin node and experience bitcoin and try to see beyond the pr
 
 ## Support my work
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate1.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/donate1.png "Logo Title Text 1")
 
 37dEqgQC38PFqXusHPyLGEbN23yzhCGPGv
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate2.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/donate2.png "Logo Title Text 1")
 
 lnurl1dp68gurn8ghj7arfwqhxy6t8wd6kutnc09az7mrww4exctesxgcrqepj89nrscesv56nvd3j89jn2cfhxf3kyvecxqurzc3c8qmnvenpxpnxzdt9vyunqvfc8qurqvehxgmrycfcxqek2vty8yek2epk9acxzunpd4esflug0h
 
