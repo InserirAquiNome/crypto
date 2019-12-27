@@ -81,7 +81,7 @@ I used 200GB as an example.
 # Usage 
 
 Can be used as cold storage signer or as PGP key system with revoke
-certifications as [described](https://github.com/bitcoinoplomo/crypto/blob/master/0_PGP.md)
+certifications as [described](https://github.com/bitcoinoplomo/crypto/blob/master/000_PGP.md)
 
 In there is also possible to find how to blacklist the network adapter kernel
 modules. 
@@ -134,7 +134,7 @@ Change password of wallet user
 ```
 
 Third, blacklist your network adapter kernel modules like described in
-[here](https://github.com/bitcoinoplomo/crypto/blob/master/0_PGP.md)
+[here](https://github.com/bitcoinoplomo/crypto/blob/master/000_PGP.md)
 
 Finally hide any partitions entries besides the ones used by the usb stick to not open
 them by mistake, editing  `/etc/fstab/`.
