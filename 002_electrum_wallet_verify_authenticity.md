@@ -4,7 +4,7 @@
 
 Electrum wallet is a bitcoin wallet. There is also a fork of the electrum wallet that can be used as a litecoin wallet.
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum1.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/electrum1.png "Logo Title Text 1")
 
 This the bitcoin wallet
 
@@ -14,7 +14,7 @@ And this is a fork from the above that works on litecoin
 
 https://electrum-ltc.org/
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum2.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/electrum2.png "Logo Title Text 1")
 
 **Electrum can be used as an hot wallet or as cold storage wallet. On cold storage your private keys stay offline so you will need a way to sign the transactions on a offline machine. You can use bitkey for that or create your own linux distro that runs on a storage device that is only connect with the machine offline, e.g: USB memory stick, external hard drive and etc...**
 
@@ -47,11 +47,11 @@ This will download the wallet and signature.
 
 But now I need to check if this software is the real software created by his author. The author of this software is [ThomasV](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x2BD5824B7F9470E6)
 
-In my git repo there is an article created by me about [PGP](https://github.com/InserirAquiNome/crypto/blob/master/PGP.md)
+In my git repo there is an article created by me about [PGP](https://github.com/bitcoinoplomo/crypto/blob/master/PGP.md)
 
 And there is also a couple cheat sheets on my git repo about PGP
 
-https://github.com/InserirAquiNome/articles/tree/master/cheatsheets
+https://github.com/bitcoinoplomo/articles/tree/master/cheatsheets
 
 I need the key from the author. And from the website that I provided and that is also no the Electrum website
 
@@ -243,7 +243,7 @@ The private keys always remain on the encrypted offline machine!
 
 But this is only useful for online attacks and physical attacks on your devices like drives and hardware wallets. But a physical attack is more likely to be an $5 wrench attack that someone trying to decrepit your drives or hack your hardware wallets by physical access.
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/electrum3.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/electrum3.png "Logo Title Text 1")
 
 In crypto you need not only take care of your online exposure but also your every day security.
 
@@ -256,11 +256,11 @@ Be safe!!!
 
 ## Support my work
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate1.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/donate1.png "Logo Title Text 1")
 
 37dEqgQC38PFqXusHPyLGEbN23yzhCGPGv
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate2.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/donate2.png "Logo Title Text 1")
 
 lnurl1dp68gurn8ghj7arfwqhxy6t8wd6kutnc09az7mrww4exctesxgcrqepj89nrscesv56nvd3j89jn2cfhxf3kyvecxqurzc3c8qmnvenpxpnxzdt9vyunqvfc8qurqvehxgmrycfcxqek2vty8yek2epk9acxzunpd4esflug0h
 
