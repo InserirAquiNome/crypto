@@ -81,7 +81,7 @@ I used 200GB as an example.
 # Usage 
 
 Can be used as cold storage signer or as PGP key system with revoke
-certifications as [described](https://github.com/InserirAquiNome/crypto/blob/master/0_PGP.md)
+certifications as [described](https://github.com/bitcoinoplomo/crypto/blob/master/0_PGP.md)
 
 In there is also possible to find how to blacklist the network adapter kernel
 modules. 
@@ -91,14 +91,14 @@ configured. On a laptop the battery should be removed and the power cable
 disconnect at least one minute before booting.
 
 More info about PGP keys with revoke certificate in
-[here](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP_anatomy.md)
-and [here](https://github.com/InserirAquiNome/articles/blob/master/misc/PGP2.md)
+[here](https://github.com/bitcoinoplomo/articles/blob/master/misc/PGP_anatomy.md)
+and [here](https://github.com/bitcoinoplomo/articles/blob/master/misc/PGP2.md)
 
 
 # Setup 
 
 The password of the usb stick is on txt provided with also the root and wallet
-user password. The checksum is also available and signed with my [PGP key](https://github.com/InserirAquiNome/crypto/tree/master/pubkeys)
+user password. The checksum is also available and signed with my [PGP key](https://github.com/bitcoinoplomo/crypto/tree/master/pubkeys)
 
 The first thing to do is to change the password of the usb stick. Help can be
 find in
@@ -134,7 +134,7 @@ Change password of wallet user
 ```
 
 Third, blacklist your network adapter kernel modules like described in
-[here](https://github.com/InserirAquiNome/crypto/blob/master/0_PGP.md)
+[here](https://github.com/bitcoinoplomo/crypto/blob/master/0_PGP.md)
 
 Finally hide any partitions entries besides the ones used by the usb stick to not open
 them by mistake, editing  `/etc/fstab/`.
@@ -168,8 +168,8 @@ or Ledger wallet and be safe!**
 **But if you are interested in learn about cold storage use this usb stick for
 small amounts!**
 
-**Always but always write down your seedkeys in a paper like [this](https://github.com/InserirAquiNome/misc/blob/master/blank_seedkey_12.pdf) and
-[this](https://github.com/InserirAquiNome/misc/blob/master/blank_seedkey_24.pdf).** 
+**Always but always write down your seedkeys in a paper like [this](https://github.com/bitcoinoplomo/misc/blob/master/blank_seedkey_12.pdf) and
+[this](https://github.com/bitcoinoplomo/misc/blob/master/blank_seedkey_24.pdf).** 
 
 **That is the only way that you can recover your funds!!!**
 
@@ -190,11 +190,11 @@ https://en.bitcoin.it/wiki/Bech32
 
 ## Support my work
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate1.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/donate1.png "Logo Title Text 1")
 
 37dEqgQC38PFqXusHPyLGEbN23yzhCGPGv
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate2.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/donate2.png "Logo Title Text 1")
 
 lnurl1dp68gurn8ghj7arfwqhxy6t8wd6kutnc09az7mrww4exctesxgcrqepj89nrscesv56nvd3j89jn2cfhxf3kyvecxqurzc3c8qmnvenpxpnxzdt9vyunqvfc8qurqvehxgmrycfcxqek2vty8yek2epk9acxzunpd4esflug0h
 
