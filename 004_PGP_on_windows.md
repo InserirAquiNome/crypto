@@ -62,7 +62,7 @@ If you already have a key in linux you can search on [PGP
 guides](http://www.spywarewarrior.com/uiuc/gpg/gpg-com-4.htm) or in [PGP manual](https://www.gnupg.org/gph/en/manual.html) how to import
 the key.
 
-For a more complex setup with revoke certificates follow this guide [1](https://alexcabal.com/creating-the-perfect-gpg-keypair) [2](https://github.com/bitcoinoplomo/articles/blob/master/misc/PGP2.md) [3](https://github.com/bitcoinoplomo/crypto/blob/master/0_PGP.md#creating-the-perfect-gpg-keypair)
+For a more complex setup with revoke certificates follow this guide [1](https://alexcabal.com/creating-the-perfect-gpg-keypair) [2](https://github.com/bitcoinoplomo/articles/blob/master/misc/PGP2.md) [3](https://github.com/bitcoinoplomo/crypto/blob/master/000_PGP.md#creating-the-perfect-gpg-keypair)
 
 ## Usage 
 
