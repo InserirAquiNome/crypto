@@ -25,9 +25,9 @@ You can use different clients like:
     
     *Screenshots*
 
-    ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/mutt1.jpg "Logo Title Text 1")
+    ![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/mutt1.jpg "Logo Title Text 1")
     
-    ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/mutt1.jpg "Logo Title Text 1")
+    ![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/mutt1.jpg "Logo Title Text 1")
  
  
   * Claws Mail
@@ -36,9 +36,9 @@ You can use different clients like:
     
     *Screenshots*
     
-    ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/clawsmail1.jpg "Logo Title Text 1")
+    ![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/clawsmail1.jpg "Logo Title Text 1")
     
-    ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/clawsmail2.png "Logo Title Text 1")
+    ![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/clawsmail2.png "Logo Title Text 1")
     
     
    * And many others. 
@@ -70,18 +70,18 @@ To subscribe them go to [more information about this list](https://lists.linuxfo
 
 This is my Claws Mail 
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/clawsmail3.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/clawsmail3.png "Logo Title Text 1")
 
 Like you can see I have two mail lists on it   *bitcoin-dev* and *lightning-dev*
 
 
 ## Support my work
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate1.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/donate1.png "Logo Title Text 1")
 
 37dEqgQC38PFqXusHPyLGEbN23yzhCGPGv
 
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate2.png "Logo Title Text 1")
+![alt text](https://github.com/bitcoinoplomo/crypto/blob/master/static/image/donate2.png "Logo Title Text 1")
 
 lnurl1dp68gurn8ghj7arfwqhxy6t8wd6kutnc09az7mrww4exctesxgcrqepj89nrscesv56nvd3j89jn2cfhxf3kyvecxqurzc3c8qmnvenpxpnxzdt9vyunqvfc8qurqvehxgmrycfcxqek2vty8yek2epk9acxzunpd4esflug0h
 
