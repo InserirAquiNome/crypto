@@ -13,10 +13,3 @@ ssb   4096R/0x4A19220725DBEC87 2018-03-04
 ![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate1.png "Logo Title Text 1")
 
 37dEqgQC38PFqXusHPyLGEbN23yzhCGPGv
-
-![alt text](https://github.com/InserirAquiNome/crypto/blob/master/static/image/donate2.png "Logo Title Text 1")
-
-lnurl1dp68gurn8ghj7arfwqhxy6t8wd6kutnc09az7mrww4exctesxgcrqepj89nrscesv56nvd3j89jn2cfhxf3kyvecxqurzc3c8qmnvenpxpnxzdt9vyunqvfc8qurqvehxgmrycfcxqek2vty8yek2epk9acxzunpd4esflug0h
-
-Lighting Tip Box
-http://bitcoin0plomo.ddns.net:9115
